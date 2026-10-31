@@ -11,7 +11,7 @@ import com.disaster.analysis.domain.model.entities.Project;
 /**
  * Bản hợp đồng định nghĩa công cụ xuất dữ liệu của hệ thống ra các file bên ngoài (PDF, Excel, CSV...).
  */
-public interface Exporter {
+public interface  Exporter {
 
     /**
      * Đóng gói toàn bộ dữ liệu của một chiến dịch và xuất ra file.

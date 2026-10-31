@@ -1,6 +1,6 @@
 package com.disaster.analysis.infrastructure.social;
 
-import com.disaster.analysis.domain.model.Post;
+import com.disaster.analysis.domain.model .Post;
 import io.github.cdimascio.dotenv.Dotenv;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
