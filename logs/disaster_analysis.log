@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 [2026-06-11 20:30:55.735] [INFO] Hệ thống ghi nhật ký (Logging System) đã được khởi động.
 [2026-06-11 20:30:55.737] [INFO] === Disaster Social Media Analysis Application ===
 [2026-06-11 20:30:55.737] [INFO] Starting application with Java version: 21.0.11
@@ -22,6 +23,32 @@ Stack trace:
   at com.disaster.analysis.infrastructure.repository.SqlServerDatabaseInitializerImpl.initialize(SqlServerDatabaseInitializerImpl.java:32)
   at com.disaster.analysis.config.ApplicationContext.initialize(ApplicationContext.java:87)
   at com.disaster.analysis.ui.controller.MainController.initialize(MainController.java:36)
+=======
+[2026-06-13 21:22:17.145] [INFO] Hệ thống ghi nhật ký (Logging System) đã được khởi động.
+[2026-06-13 21:22:17.148] [INFO] === Disaster Social Media Analysis Application ===
+[2026-06-13 21:22:17.150] [INFO] Starting application with Java version: 21.0.11
+[2026-06-13 21:22:17.162] [INFO] Initializing application...
+[2026-06-13 21:22:17.184] [INFO] Starting application...
+[2026-06-13 21:22:17.575] [INFO] Starting ApplicationContext initialization pipeline...
+[2026-06-13 21:22:17.596] [INFO] Database startup and verification sequence initiated.
+[2026-06-13 21:22:18.766] [INFO] HikariCP Connection Pool initialized successfully.
+[2026-06-13 21:22:19.247] [INFO] Database [Disaster] already exists. Skipping database creation step.
+[2026-06-13 21:22:19.264] [INFO] Reading schema.sql from system resources to verify entity tables...
+[2026-06-13 21:22:19.303] [ERROR] Critical failure encountered during target database initialization flow! - Exception: com.microsoft.sqlserver.jdbc.SQLServerException: There is already an object named 'projects' in the database.
+Stack trace:
+  at com.microsoft.sqlserver.jdbc.SQLServerException.makeFromDatabaseError(SQLServerException.java:259)
+  at com.microsoft.sqlserver.jdbc.SQLServerStatement.getNextResult(SQLServerStatement.java:1695)
+  at com.microsoft.sqlserver.jdbc.SQLServerStatement.doExecuteStatement(SQLServerStatement.java:920)
+  at com.microsoft.sqlserver.jdbc.SQLServerStatement$StmtExecCmd.doExecute(SQLServerStatement.java:814)
+  at com.microsoft.sqlserver.jdbc.TDSCommand.execute(IOBuffer.java:7675)
+  at com.microsoft.sqlserver.jdbc.SQLServerConnection.executeCommand(SQLServerConnection.java:4137)
+  at com.microsoft.sqlserver.jdbc.SQLServerStatement.executeCommand(SQLServerStatement.java:272)
+  at com.microsoft.sqlserver.jdbc.SQLServerStatement.executeStatement(SQLServerStatement.java:246)
+  at com.microsoft.sqlserver.jdbc.SQLServerStatement.execute(SQLServerStatement.java:787)
+  at com.disaster.analysis.infrastructure.repository.SqlServerDatabaseInitializerImpl.initialize(SqlServerDatabaseInitializerImpl.java:70)
+  at com.disaster.analysis.config.ApplicationContext.initialize(ApplicationContext.java:87)
+  at com.disaster.analysis.ui.controller.MainController.initialize(MainController.java:27)
+>>>>>>> 6e9fef73ef94784e3c9b5b74f2bdb6a4d7614b8f
   at javafx.fxml/javafx.fxml.FXMLLoader.loadImpl(FXMLLoader.java:2670)
   at javafx.fxml/javafx.fxml.FXMLLoader.loadImpl(FXMLLoader.java:2563)
   at javafx.fxml/javafx.fxml.FXMLLoader.load(FXMLLoader.java:2531)
@@ -36,6 +63,7 @@ Stack trace:
   at javafx.graphics/com.sun.glass.ui.win.WinApplication.lambda$runLoop$3(WinApplication.java:190)
   at java.base/java.lang.Thread.run(Thread.java:1583)
 
+<<<<<<< HEAD
 [2026-06-11 20:31:26.158] [INFO] PreprocessingService initialized.
 [2026-06-11 20:31:26.191] [WARN] YouTube API Key missing. Falling back to MockDataSource.
 [2026-06-11 20:31:26.207] [INFO] NewsDataSource initialized with Two-Step Scraping Strategy for 4 sources.
@@ -68,6 +96,48 @@ Stack trace:
   at com.disaster.analysis.infrastructure.repository.SqlServerDatabaseInitializerImpl.initialize(SqlServerDatabaseInitializerImpl.java:32)
   at com.disaster.analysis.config.ApplicationContext.initialize(ApplicationContext.java:87)
   at com.disaster.analysis.ui.controller.MainController.initialize(MainController.java:36)
+=======
+[2026-06-13 21:22:19.441] [INFO] PreprocessingService initialized.
+[2026-06-13 21:22:19.854] [INFO] YouTube API client initialized with real API
+[2026-06-13 21:22:19.856] [INFO] YouTube DataSource injected with real API Key.
+[2026-06-13 21:22:19.888] [INFO] NewsDataSource initialized with Two-Step Scraping Strategy for 4 sources.
+[2026-06-13 21:22:19.914] [INFO] Initialized API clients for 2 platforms
+[2026-06-13 21:22:21.127] [INFO] SentimentAnalysisService initialized.
+[2026-06-13 21:22:21.160] [INFO] DamageClassificationService initialized.
+[2026-06-13 21:22:21.219] [INFO] Initialized API clients for mock-ai-offline successfully
+[2026-06-13 21:22:21.237] [INFO] ExportService initialized successfully.
+[2026-06-13 21:22:21.238] [INFO] ApplicationContext initialized successfully. All dependencies wired up.
+[2026-06-13 21:22:21.529] [ERROR] Load Error: An error occurred while loading projects: No enum constant com.disaster.analysis.domain.model.enums.Platform.REDDIT
+[2026-06-13 21:22:40.869] [INFO] Application started successfully
+[2026-06-13 21:22:42.153] [INFO] Shutting down application...
+[2026-06-13 21:22:42.154] [INFO] Application shutdown complete
+[2026-06-13 21:22:42.169] [INFO] Shutting down application...
+[2026-06-13 21:22:42.170] [INFO] Application shutdown complete
+[2026-06-13 21:22:51.626] [INFO] Hệ thống ghi nhật ký (Logging System) đã được khởi động.
+[2026-06-13 21:22:51.629] [INFO] === Disaster Social Media Analysis Application ===
+[2026-06-13 21:22:51.630] [INFO] Starting application with Java version: 21.0.11
+[2026-06-13 21:22:51.636] [INFO] Initializing application...
+[2026-06-13 21:22:51.650] [INFO] Starting application...
+[2026-06-13 21:22:51.802] [INFO] Starting ApplicationContext initialization pipeline...
+[2026-06-13 21:22:51.803] [INFO] Database startup and verification sequence initiated.
+[2026-06-13 21:22:52.607] [INFO] HikariCP Connection Pool initialized successfully.
+[2026-06-13 21:22:53.032] [INFO] Database [Disaster] already exists. Skipping database creation step.
+[2026-06-13 21:22:53.037] [INFO] Reading schema.sql from system resources to verify entity tables...
+[2026-06-13 21:22:53.046] [ERROR] Critical failure encountered during target database initialization flow! - Exception: com.microsoft.sqlserver.jdbc.SQLServerException: There is already an object named 'projects' in the database.
+Stack trace:
+  at com.microsoft.sqlserver.jdbc.SQLServerException.makeFromDatabaseError(SQLServerException.java:259)
+  at com.microsoft.sqlserver.jdbc.SQLServerStatement.getNextResult(SQLServerStatement.java:1695)
+  at com.microsoft.sqlserver.jdbc.SQLServerStatement.doExecuteStatement(SQLServerStatement.java:920)
+  at com.microsoft.sqlserver.jdbc.SQLServerStatement$StmtExecCmd.doExecute(SQLServerStatement.java:814)
+  at com.microsoft.sqlserver.jdbc.TDSCommand.execute(IOBuffer.java:7675)
+  at com.microsoft.sqlserver.jdbc.SQLServerConnection.executeCommand(SQLServerConnection.java:4137)
+  at com.microsoft.sqlserver.jdbc.SQLServerStatement.executeCommand(SQLServerStatement.java:272)
+  at com.microsoft.sqlserver.jdbc.SQLServerStatement.executeStatement(SQLServerStatement.java:246)
+  at com.microsoft.sqlserver.jdbc.SQLServerStatement.execute(SQLServerStatement.java:787)
+  at com.disaster.analysis.infrastructure.repository.SqlServerDatabaseInitializerImpl.initialize(SqlServerDatabaseInitializerImpl.java:70)
+  at com.disaster.analysis.config.ApplicationContext.initialize(ApplicationContext.java:87)
+  at com.disaster.analysis.ui.controller.MainController.initialize(MainController.java:27)
+>>>>>>> 6e9fef73ef94784e3c9b5b74f2bdb6a4d7614b8f
   at javafx.fxml/javafx.fxml.FXMLLoader.loadImpl(FXMLLoader.java:2670)
   at javafx.fxml/javafx.fxml.FXMLLoader.loadImpl(FXMLLoader.java:2563)
   at javafx.fxml/javafx.fxml.FXMLLoader.load(FXMLLoader.java:2531)
@@ -82,6 +152,7 @@ Stack trace:
   at javafx.graphics/com.sun.glass.ui.win.WinApplication.lambda$runLoop$3(WinApplication.java:190)
   at java.base/java.lang.Thread.run(Thread.java:1583)
 
+<<<<<<< HEAD
 [2026-06-11 20:32:19.275] [INFO] PreprocessingService initialized.
 [2026-06-11 20:32:19.278] [WARN] YouTube API Key missing. Falling back to MockDataSource.
 [2026-06-11 20:32:19.280] [INFO] NewsDataSource initialized with Two-Step Scraping Strategy for 4 sources.
@@ -128,6 +199,43 @@ Stack trace:
   at com.disaster.analysis.infrastructure.repository.SqlServerDatabaseInitializerImpl.initialize(SqlServerDatabaseInitializerImpl.java:32)
   at com.disaster.analysis.config.ApplicationContext.initialize(ApplicationContext.java:87)
   at com.disaster.analysis.ui.controller.MainController.initialize(MainController.java:36)
+=======
+[2026-06-13 21:22:53.054] [INFO] PreprocessingService initialized.
+[2026-06-13 21:22:53.166] [INFO] YouTube API client initialized with real API
+[2026-06-13 21:22:53.166] [INFO] YouTube DataSource injected with real API Key.
+[2026-06-13 21:22:53.168] [INFO] NewsDataSource initialized with Two-Step Scraping Strategy for 4 sources.
+[2026-06-13 21:22:53.169] [INFO] Initialized API clients for 2 platforms
+[2026-06-13 21:22:53.884] [INFO] SentimentAnalysisService initialized.
+[2026-06-13 21:22:53.886] [INFO] DamageClassificationService initialized.
+[2026-06-13 21:22:53.892] [INFO] Initialized API clients for mock-ai-offline successfully
+[2026-06-13 21:22:53.894] [INFO] ExportService initialized successfully.
+[2026-06-13 21:22:53.895] [INFO] ApplicationContext initialized successfully. All dependencies wired up.
+[2026-06-13 21:22:54.022] [ERROR] Load Error: An error occurred while loading projects: No enum constant com.disaster.analysis.domain.model.enums.Platform.REDDIT
+[2026-06-13 21:25:18.313] [INFO] Hệ thống ghi nhật ký (Logging System) đã được khởi động.
+[2026-06-13 21:25:18.315] [INFO] === Disaster Social Media Analysis Application ===
+[2026-06-13 21:25:18.315] [INFO] Starting application with Java version: 21.0.11
+[2026-06-13 21:25:18.319] [INFO] Initializing application...
+[2026-06-13 21:25:18.337] [INFO] Starting application...
+[2026-06-13 21:25:18.535] [INFO] Starting ApplicationContext initialization pipeline...
+[2026-06-13 21:25:18.539] [INFO] Database startup and verification sequence initiated.
+[2026-06-13 21:25:19.410] [INFO] HikariCP Connection Pool initialized successfully.
+[2026-06-13 21:25:20.534] [INFO] Database [Disaster] already exists. Skipping database creation step.
+[2026-06-13 21:25:20.540] [INFO] Reading schema.sql from system resources to verify entity tables...
+[2026-06-13 21:25:20.552] [ERROR] Critical failure encountered during target database initialization flow! - Exception: com.microsoft.sqlserver.jdbc.SQLServerException: There is already an object named 'projects' in the database.
+Stack trace:
+  at com.microsoft.sqlserver.jdbc.SQLServerException.makeFromDatabaseError(SQLServerException.java:259)
+  at com.microsoft.sqlserver.jdbc.SQLServerStatement.getNextResult(SQLServerStatement.java:1695)
+  at com.microsoft.sqlserver.jdbc.SQLServerStatement.doExecuteStatement(SQLServerStatement.java:920)
+  at com.microsoft.sqlserver.jdbc.SQLServerStatement$StmtExecCmd.doExecute(SQLServerStatement.java:814)
+  at com.microsoft.sqlserver.jdbc.TDSCommand.execute(IOBuffer.java:7675)
+  at com.microsoft.sqlserver.jdbc.SQLServerConnection.executeCommand(SQLServerConnection.java:4137)
+  at com.microsoft.sqlserver.jdbc.SQLServerStatement.executeCommand(SQLServerStatement.java:272)
+  at com.microsoft.sqlserver.jdbc.SQLServerStatement.executeStatement(SQLServerStatement.java:246)
+  at com.microsoft.sqlserver.jdbc.SQLServerStatement.execute(SQLServerStatement.java:787)
+  at com.disaster.analysis.infrastructure.repository.SqlServerDatabaseInitializerImpl.initialize(SqlServerDatabaseInitializerImpl.java:70)
+  at com.disaster.analysis.config.ApplicationContext.initialize(ApplicationContext.java:87)
+  at com.disaster.analysis.ui.controller.MainController.initialize(MainController.java:27)
+>>>>>>> 6e9fef73ef94784e3c9b5b74f2bdb6a4d7614b8f
   at javafx.fxml/javafx.fxml.FXMLLoader.loadImpl(FXMLLoader.java:2670)
   at javafx.fxml/javafx.fxml.FXMLLoader.loadImpl(FXMLLoader.java:2563)
   at javafx.fxml/javafx.fxml.FXMLLoader.load(FXMLLoader.java:2531)
@@ -142,6 +250,7 @@ Stack trace:
   at javafx.graphics/com.sun.glass.ui.win.WinApplication.lambda$runLoop$3(WinApplication.java:190)
   at java.base/java.lang.Thread.run(Thread.java:1583)
 
+<<<<<<< HEAD
 [2026-06-11 23:19:11.261] [INFO] PreprocessingService initialized.
 [2026-06-11 23:19:11.292] [WARN] YouTube API Key missing. Falling back to MockDataSource.
 [2026-06-11 23:19:11.310] [INFO] NewsDataSource initialized with Two-Step Scraping Strategy for 4 sources.
@@ -180,3 +289,1721 @@ Stack trace:
 [2026-06-11 23:31:56.742] [INFO] Application shutdown complete
 [2026-06-11 23:31:56.780] [INFO] Shutting down application...
 [2026-06-11 23:31:56.781] [INFO] Application shutdown complete
+=======
+[2026-06-13 21:25:20.565] [INFO] PreprocessingService initialized.
+[2026-06-13 21:25:20.721] [INFO] YouTube API client initialized with real API
+[2026-06-13 21:25:20.721] [INFO] YouTube DataSource injected with real API Key.
+[2026-06-13 21:25:20.723] [INFO] NewsDataSource initialized with Two-Step Scraping Strategy for 4 sources.
+[2026-06-13 21:25:20.725] [INFO] Initialized API clients for 2 platforms
+[2026-06-13 21:25:21.444] [INFO] SentimentAnalysisService initialized.
+[2026-06-13 21:25:21.447] [INFO] DamageClassificationService initialized.
+[2026-06-13 21:25:21.453] [INFO] Initialized API clients for mock-ai-offline successfully
+[2026-06-13 21:25:21.455] [INFO] ExportService initialized successfully.
+[2026-06-13 21:25:21.456] [INFO] ApplicationContext initialized successfully. All dependencies wired up.
+[2026-06-13 21:25:21.557] [ERROR] Load Error: An error occurred while loading projects: No enum constant com.disaster.analysis.domain.model.enums.Platform.REDDIT
+[2026-06-13 21:35:54.362] [INFO] Hệ thống ghi nhật ký (Logging System) đã được khởi động.
+[2026-06-13 21:35:54.367] [INFO] === Disaster Social Media Analysis Application ===
+[2026-06-13 21:35:54.367] [INFO] Starting application with Java version: 21.0.11
+[2026-06-13 21:35:54.372] [INFO] Initializing application...
+[2026-06-13 21:35:54.387] [INFO] Starting application...
+[2026-06-13 21:35:54.663] [INFO] Starting ApplicationContext initialization pipeline...
+[2026-06-13 21:35:54.665] [INFO] Database startup and verification sequence initiated.
+[2026-06-13 21:35:55.958] [INFO] HikariCP Connection Pool initialized successfully.
+[2026-06-13 21:35:56.799] [INFO] Database [Disaster] already exists. Skipping database creation step.
+[2026-06-13 21:35:56.810] [INFO] Reading schema.sql from system resources to verify entity tables...
+[2026-06-13 21:35:56.855] [ERROR] Critical failure encountered during target database initialization flow! - Exception: com.microsoft.sqlserver.jdbc.SQLServerException: There is already an object named 'projects' in the database.
+Stack trace:
+  at com.microsoft.sqlserver.jdbc.SQLServerException.makeFromDatabaseError(SQLServerException.java:259)
+  at com.microsoft.sqlserver.jdbc.SQLServerStatement.getNextResult(SQLServerStatement.java:1695)
+  at com.microsoft.sqlserver.jdbc.SQLServerStatement.doExecuteStatement(SQLServerStatement.java:920)
+  at com.microsoft.sqlserver.jdbc.SQLServerStatement$StmtExecCmd.doExecute(SQLServerStatement.java:814)
+  at com.microsoft.sqlserver.jdbc.TDSCommand.execute(IOBuffer.java:7675)
+  at com.microsoft.sqlserver.jdbc.SQLServerConnection.executeCommand(SQLServerConnection.java:4137)
+  at com.microsoft.sqlserver.jdbc.SQLServerStatement.executeCommand(SQLServerStatement.java:272)
+  at com.microsoft.sqlserver.jdbc.SQLServerStatement.executeStatement(SQLServerStatement.java:246)
+  at com.microsoft.sqlserver.jdbc.SQLServerStatement.execute(SQLServerStatement.java:787)
+  at com.disaster.analysis.infrastructure.repository.SqlServerDatabaseInitializerImpl.initialize(SqlServerDatabaseInitializerImpl.java:70)
+  at com.disaster.analysis.config.ApplicationContext.initialize(ApplicationContext.java:87)
+  at com.disaster.analysis.ui.controller.MainController.initialize(MainController.java:27)
+  at javafx.fxml/javafx.fxml.FXMLLoader.loadImpl(FXMLLoader.java:2670)
+  at javafx.fxml/javafx.fxml.FXMLLoader.loadImpl(FXMLLoader.java:2563)
+  at javafx.fxml/javafx.fxml.FXMLLoader.load(FXMLLoader.java:2531)
+  at com.disaster.analysis.Main.start(Main.java:29)
+  at javafx.graphics/com.sun.javafx.application.LauncherImpl.lambda$launchApplication1$9(LauncherImpl.java:839)
+  at javafx.graphics/com.sun.javafx.application.PlatformImpl.lambda$runAndWait$12(PlatformImpl.java:483)
+  at javafx.graphics/com.sun.javafx.application.PlatformImpl.lambda$runLater$10(PlatformImpl.java:456)
+  at java.base/java.security.AccessController.doPrivileged(AccessController.java:400)
+  at javafx.graphics/com.sun.javafx.application.PlatformImpl.lambda$runLater$11(PlatformImpl.java:455)
+  at javafx.graphics/com.sun.glass.ui.InvokeLaterDispatcher$Future.run$$$capture(InvokeLaterDispatcher.java:95)
+  at javafx.graphics/com.sun.glass.ui.InvokeLaterDispatcher$Future.run(InvokeLaterDispatcher.java)
+  at javafx.graphics/com.sun.glass.ui.win.WinApplication._runLoop(Native Method)
+  at javafx.graphics/com.sun.glass.ui.win.WinApplication.lambda$runLoop$3(WinApplication.java:190)
+  at java.base/java.lang.Thread.run(Thread.java:1583)
+
+[2026-06-13 21:35:56.865] [INFO] PreprocessingService initialized.
+[2026-06-13 21:35:56.996] [INFO] YouTube API client initialized with real API
+[2026-06-13 21:35:56.996] [INFO] YouTube DataSource injected with real API Key.
+[2026-06-13 21:35:56.997] [INFO] NewsDataSource initialized with Two-Step Scraping Strategy for 4 sources.
+[2026-06-13 21:35:56.999] [INFO] Initialized API clients for 2 platforms
+[2026-06-13 21:35:57.822] [INFO] SentimentAnalysisService initialized.
+[2026-06-13 21:35:57.824] [INFO] DamageClassificationService initialized.
+[2026-06-13 21:35:57.827] [INFO] Initialized API clients for mock-ai-offline successfully
+[2026-06-13 21:35:57.829] [INFO] ExportService initialized successfully.
+[2026-06-13 21:35:57.830] [INFO] ApplicationContext initialized successfully. All dependencies wired up.
+[2026-06-13 21:35:58.003] [ERROR] Load Error: An error occurred while loading projects: No enum constant com.disaster.analysis.domain.model.enums.Platform.REDDIT
+[2026-06-13 21:36:01.994] [INFO] Application started successfully
+[2026-06-13 21:36:04.701] [INFO] Shutting down application...
+[2026-06-13 21:36:04.702] [INFO] Application shutdown complete
+[2026-06-13 21:36:04.721] [INFO] Shutting down application...
+[2026-06-13 21:36:04.723] [INFO] Application shutdown complete
+[2026-06-13 21:37:02.793] [INFO] Hệ thống ghi nhật ký (Logging System) đã được khởi động.
+[2026-06-13 21:37:02.798] [INFO] === Disaster Social Media Analysis Application ===
+[2026-06-13 21:37:02.799] [INFO] Starting application with Java version: 21.0.11
+[2026-06-13 21:37:02.805] [INFO] Initializing application...
+[2026-06-13 21:37:02.820] [INFO] Starting application...
+[2026-06-13 21:37:03.085] [INFO] Starting ApplicationContext initialization pipeline...
+[2026-06-13 21:37:03.086] [INFO] Database startup and verification sequence initiated.
+[2026-06-13 21:37:36.941] [INFO] HikariCP Connection Pool initialized successfully.
+[2026-06-13 21:37:37.652] [INFO] Database [Disaster] already exists. Skipping database creation step.
+[2026-06-13 21:37:37.659] [INFO] Reading schema.sql from system resources to verify entity tables...
+[2026-06-13 21:37:37.673] [ERROR] Critical failure encountered during target database initialization flow! - Exception: com.microsoft.sqlserver.jdbc.SQLServerException: There is already an object named 'projects' in the database.
+Stack trace:
+  at com.microsoft.sqlserver.jdbc.SQLServerException.makeFromDatabaseError(SQLServerException.java:259)
+  at com.microsoft.sqlserver.jdbc.SQLServerStatement.getNextResult(SQLServerStatement.java:1695)
+  at com.microsoft.sqlserver.jdbc.SQLServerStatement.doExecuteStatement(SQLServerStatement.java:920)
+  at com.microsoft.sqlserver.jdbc.SQLServerStatement$StmtExecCmd.doExecute(SQLServerStatement.java:814)
+  at com.microsoft.sqlserver.jdbc.TDSCommand.execute(IOBuffer.java:7675)
+  at com.microsoft.sqlserver.jdbc.SQLServerConnection.executeCommand(SQLServerConnection.java:4137)
+  at com.microsoft.sqlserver.jdbc.SQLServerStatement.executeCommand(SQLServerStatement.java:272)
+  at com.microsoft.sqlserver.jdbc.SQLServerStatement.executeStatement(SQLServerStatement.java:246)
+  at com.microsoft.sqlserver.jdbc.SQLServerStatement.execute(SQLServerStatement.java:787)
+  at com.disaster.analysis.infrastructure.repository.SqlServerDatabaseInitializerImpl.initialize(SqlServerDatabaseInitializerImpl.java:70)
+  at com.disaster.analysis.config.ApplicationContext.initialize(ApplicationContext.java:87)
+  at com.disaster.analysis.ui.controller.MainController.initialize(MainController.java:27)
+  at javafx.fxml/javafx.fxml.FXMLLoader.loadImpl(FXMLLoader.java:2670)
+  at javafx.fxml/javafx.fxml.FXMLLoader.loadImpl(FXMLLoader.java:2563)
+  at javafx.fxml/javafx.fxml.FXMLLoader.load(FXMLLoader.java:2531)
+  at com.disaster.analysis.Main.start(Main.java:29)
+  at javafx.graphics/com.sun.javafx.application.LauncherImpl.lambda$launchApplication1$9(LauncherImpl.java:839)
+  at javafx.graphics/com.sun.javafx.application.PlatformImpl.lambda$runAndWait$12(PlatformImpl.java:483)
+  at javafx.graphics/com.sun.javafx.application.PlatformImpl.lambda$runLater$10(PlatformImpl.java:456)
+  at java.base/java.security.AccessController.doPrivileged(AccessController.java:400)
+  at javafx.graphics/com.sun.javafx.application.PlatformImpl.lambda$runLater$11(PlatformImpl.java:455)
+  at javafx.graphics/com.sun.glass.ui.InvokeLaterDispatcher$Future.run$$$capture(InvokeLaterDispatcher.java:95)
+  at javafx.graphics/com.sun.glass.ui.InvokeLaterDispatcher$Future.run(InvokeLaterDispatcher.java)
+  at javafx.graphics/com.sun.glass.ui.win.WinApplication._runLoop(Native Method)
+  at javafx.graphics/com.sun.glass.ui.win.WinApplication.lambda$runLoop$3(WinApplication.java:190)
+  at java.base/java.lang.Thread.run(Thread.java:1583)
+
+[2026-06-13 21:37:37.685] [INFO] PreprocessingService initialized.
+[2026-06-13 21:37:37.800] [INFO] YouTube API client initialized with real API
+[2026-06-13 21:37:37.800] [INFO] YouTube DataSource injected with real API Key.
+[2026-06-13 21:37:37.803] [INFO] NewsDataSource initialized with Two-Step Scraping Strategy for 4 sources.
+[2026-06-13 21:37:37.805] [INFO] Initialized API clients for 2 platforms
+[2026-06-13 21:37:38.526] [INFO] SentimentAnalysisService initialized.
+[2026-06-13 21:37:38.528] [INFO] DamageClassificationService initialized.
+[2026-06-13 21:37:38.533] [INFO] Initialized API clients for mock-ai-offline successfully
+[2026-06-13 21:37:38.534] [INFO] ExportService initialized successfully.
+[2026-06-13 21:37:38.535] [INFO] ApplicationContext initialized successfully. All dependencies wired up.
+[2026-06-13 21:37:38.826] [ERROR] Load Error: An error occurred while loading projects: No enum constant com.disaster.analysis.domain.model.enums.Platform.REDDIT
+[2026-06-13 21:38:06.070] [INFO] Application started successfully
+[2026-06-13 21:38:08.805] [INFO] Shutting down application...
+[2026-06-13 21:38:08.806] [INFO] Application shutdown complete
+[2026-06-13 21:38:08.821] [INFO] Shutting down application...
+[2026-06-13 21:38:08.821] [INFO] Application shutdown complete
+[2026-06-13 21:43:52.007] [INFO] Hệ thống ghi nhật ký (Logging System) đã được khởi động.
+[2026-06-13 21:43:52.010] [INFO] === Disaster Social Media Analysis Application ===
+[2026-06-13 21:43:52.011] [INFO] Starting application with Java version: 21.0.11
+[2026-06-13 21:43:52.016] [INFO] Initializing application...
+[2026-06-13 21:43:52.040] [INFO] Starting application...
+[2026-06-13 21:43:52.340] [INFO] Starting ApplicationContext initialization pipeline...
+[2026-06-13 21:43:52.343] [INFO] Database startup and verification sequence initiated.
+[2026-06-13 21:44:23.948] [ERROR] DbContext Static Block Initialization Failed: Failed to initialize pool: Cannot open database "Disasters" requested by the login. The login failed. ClientConnectionId:eb65ce7d-bce1-44a8-80c5-8698b01ed2e3
+[2026-06-13 21:44:24.382] [INFO] Database [Disasters] does not exist. Triggering fresh database provisioning...
+[2026-06-13 21:44:24.628] [INFO] Database [Disasters] has been created successfully from scratch.
+[2026-06-13 21:44:24.635] [INFO] Reading schema.sql from system resources to verify entity tables...
+[2026-06-13 21:44:24.694] [INFO] All schema definitions and table instances have been successfully verified/installed.
+[2026-06-13 21:44:24.707] [INFO] PreprocessingService initialized.
+[2026-06-13 21:44:24.831] [INFO] YouTube API client initialized with real API
+[2026-06-13 21:44:24.833] [INFO] YouTube DataSource injected with real API Key.
+[2026-06-13 21:44:24.835] [INFO] NewsDataSource initialized with Two-Step Scraping Strategy for 4 sources.
+[2026-06-13 21:44:24.838] [INFO] Initialized API clients for 2 platforms
+[2026-06-13 21:44:25.558] [INFO] SentimentAnalysisService initialized.
+[2026-06-13 21:44:25.560] [INFO] DamageClassificationService initialized.
+[2026-06-13 21:44:25.568] [INFO] Initialized API clients for mock-ai-offline successfully
+[2026-06-13 21:44:25.572] [INFO] ExportService initialized successfully.
+[2026-06-13 21:44:25.572] [INFO] ApplicationContext initialized successfully. All dependencies wired up.
+[2026-06-13 21:44:25.672] [ERROR] Load Error: An error occurred while loading projects: Lỗi lấy danh sách dự án: Connection Pool is not initialized.
+[2026-06-13 21:44:49.481] [INFO] Application started successfully
+[2026-06-13 21:44:52.036] [INFO] Shutting down application...
+[2026-06-13 21:44:52.037] [INFO] Application shutdown complete
+[2026-06-13 21:44:52.057] [INFO] Shutting down application...
+[2026-06-13 21:44:52.058] [INFO] Application shutdown complete
+[2026-06-13 21:53:34.668] [INFO] Hệ thống ghi nhật ký (Logging System) đã được khởi động.
+[2026-06-13 21:53:34.669] [INFO] === Disaster Social Media Analysis Application ===
+[2026-06-13 21:53:34.670] [INFO] Starting application with Java version: 21.0.11
+[2026-06-13 21:53:34.674] [INFO] Initializing application...
+[2026-06-13 21:53:34.698] [INFO] Starting application...
+[2026-06-13 21:53:34.999] [INFO] Starting ApplicationContext initialization pipeline...
+[2026-06-13 21:53:35.001] [INFO] Database startup and verification sequence initiated.
+[2026-06-13 21:54:19.983] [INFO] Database [Disasters] already exists. Skipping database creation step.
+[2026-06-13 21:54:20.234] [INFO] Reading schema.sql from system resources to verify entity tables...
+[2026-06-13 21:54:20.269] [ERROR] Critical failure encountered during target database initialization flow! - Exception: com.microsoft.sqlserver.jdbc.SQLServerException: There is already an object named 'projects' in the database.
+Stack trace:
+  at com.microsoft.sqlserver.jdbc.SQLServerException.makeFromDatabaseError(SQLServerException.java:259)
+  at com.microsoft.sqlserver.jdbc.SQLServerStatement.getNextResult(SQLServerStatement.java:1695)
+  at com.microsoft.sqlserver.jdbc.SQLServerStatement.doExecuteStatement(SQLServerStatement.java:920)
+  at com.microsoft.sqlserver.jdbc.SQLServerStatement$StmtExecCmd.doExecute(SQLServerStatement.java:814)
+  at com.microsoft.sqlserver.jdbc.TDSCommand.execute(IOBuffer.java:7675)
+  at com.microsoft.sqlserver.jdbc.SQLServerConnection.executeCommand(SQLServerConnection.java:4137)
+  at com.microsoft.sqlserver.jdbc.SQLServerStatement.executeCommand(SQLServerStatement.java:272)
+  at com.microsoft.sqlserver.jdbc.SQLServerStatement.executeStatement(SQLServerStatement.java:246)
+  at com.microsoft.sqlserver.jdbc.SQLServerStatement.execute(SQLServerStatement.java:787)
+  at com.disaster.analysis.infrastructure.repository.SqlServerDatabaseInitializerImpl.initialize(SqlServerDatabaseInitializerImpl.java:70)
+  at com.disaster.analysis.config.ApplicationContext.initialize(ApplicationContext.java:88)
+  at com.disaster.analysis.ui.controller.MainController.initialize(MainController.java:27)
+  at javafx.fxml/javafx.fxml.FXMLLoader.loadImpl(FXMLLoader.java:2670)
+  at javafx.fxml/javafx.fxml.FXMLLoader.loadImpl(FXMLLoader.java:2563)
+  at javafx.fxml/javafx.fxml.FXMLLoader.load(FXMLLoader.java:2531)
+  at com.disaster.analysis.Main.start(Main.java:29)
+  at javafx.graphics/com.sun.javafx.application.LauncherImpl.lambda$launchApplication1$9(LauncherImpl.java:839)
+  at javafx.graphics/com.sun.javafx.application.PlatformImpl.lambda$runAndWait$12(PlatformImpl.java:483)
+  at javafx.graphics/com.sun.javafx.application.PlatformImpl.lambda$runLater$10(PlatformImpl.java:456)
+  at java.base/java.security.AccessController.doPrivileged(AccessController.java:400)
+  at javafx.graphics/com.sun.javafx.application.PlatformImpl.lambda$runLater$11(PlatformImpl.java:455)
+  at javafx.graphics/com.sun.glass.ui.InvokeLaterDispatcher$Future.run(InvokeLaterDispatcher.java:95)
+  at javafx.graphics/com.sun.glass.ui.win.WinApplication._runLoop(Native Method)
+  at javafx.graphics/com.sun.glass.ui.win.WinApplication.lambda$runLoop$3(WinApplication.java:190)
+  at java.base/java.lang.Thread.run(Thread.java:1583)
+
+[2026-06-13 21:54:20.696] [INFO] HikariCP Connection Pool initialized successfully.
+[2026-06-13 21:54:20.706] [INFO] PreprocessingService initialized.
+[2026-06-13 21:54:20.816] [INFO] YouTube API client initialized with real API
+[2026-06-13 21:54:20.816] [INFO] YouTube DataSource injected with real API Key.
+[2026-06-13 21:54:20.818] [INFO] NewsDataSource initialized with Two-Step Scraping Strategy for 4 sources.
+[2026-06-13 21:54:20.821] [INFO] Initialized API clients for 2 platforms
+[2026-06-13 21:54:21.578] [INFO] SentimentAnalysisService initialized.
+[2026-06-13 21:54:21.579] [INFO] DamageClassificationService initialized.
+[2026-06-13 21:54:21.584] [INFO] Initialized API clients for mock-ai-offline successfully
+[2026-06-13 21:54:21.586] [INFO] ExportService initialized successfully.
+[2026-06-13 21:54:21.586] [INFO] ApplicationContext initialized successfully. All dependencies wired up.
+[2026-06-13 21:54:22.216] [INFO] Application started successfully
+[2026-06-13 21:54:38.749] [INFO] Shutting down application...
+[2026-06-13 21:54:38.750] [INFO] Application shutdown complete
+[2026-06-13 21:54:38.775] [INFO] Shutting down application...
+[2026-06-13 21:54:38.776] [INFO] Application shutdown complete
+[2026-06-14 00:19:27.962] [INFO] Hệ thống ghi nhật ký (Logging System) đã được khởi động.
+[2026-06-14 00:19:27.965] [INFO] === Disaster Social Media Analysis Application ===
+[2026-06-14 00:19:27.967] [INFO] Starting application with Java version: 21.0.11
+[2026-06-14 00:19:27.973] [INFO] Initializing application...
+[2026-06-14 00:19:27.995] [INFO] Starting application...
+[2026-06-14 00:19:28.362] [INFO] Starting ApplicationContext initialization pipeline...
+[2026-06-14 00:19:28.377] [INFO] Database startup and verification sequence initiated.
+[2026-06-14 00:19:29.491] [INFO] Database [Disasters] already exists. Skipping database creation step.
+[2026-06-14 00:19:29.689] [INFO] Reading schema.sql from system resources to verify entity tables...
+[2026-06-14 00:19:29.740] [ERROR] Critical failure encountered during target database initialization flow! - Exception: com.microsoft.sqlserver.jdbc.SQLServerException: There is already an object named 'projects' in the database.
+Stack trace:
+  at com.microsoft.sqlserver.jdbc.SQLServerException.makeFromDatabaseError(SQLServerException.java:259)
+  at com.microsoft.sqlserver.jdbc.SQLServerStatement.getNextResult(SQLServerStatement.java:1695)
+  at com.microsoft.sqlserver.jdbc.SQLServerStatement.doExecuteStatement(SQLServerStatement.java:920)
+  at com.microsoft.sqlserver.jdbc.SQLServerStatement$StmtExecCmd.doExecute(SQLServerStatement.java:814)
+  at com.microsoft.sqlserver.jdbc.TDSCommand.execute(IOBuffer.java:7675)
+  at com.microsoft.sqlserver.jdbc.SQLServerConnection.executeCommand(SQLServerConnection.java:4137)
+  at com.microsoft.sqlserver.jdbc.SQLServerStatement.executeCommand(SQLServerStatement.java:272)
+  at com.microsoft.sqlserver.jdbc.SQLServerStatement.executeStatement(SQLServerStatement.java:246)
+  at com.microsoft.sqlserver.jdbc.SQLServerStatement.execute(SQLServerStatement.java:787)
+  at com.disaster.analysis.infrastructure.repository.SqlServerDatabaseInitializerImpl.initialize(SqlServerDatabaseInitializerImpl.java:70)
+  at com.disaster.analysis.config.ApplicationContext.initialize(ApplicationContext.java:88)
+  at com.disaster.analysis.ui.controller.MainController.initialize(MainController.java:27)
+  at javafx.fxml/javafx.fxml.FXMLLoader.loadImpl(FXMLLoader.java:2670)
+  at javafx.fxml/javafx.fxml.FXMLLoader.loadImpl(FXMLLoader.java:2563)
+  at javafx.fxml/javafx.fxml.FXMLLoader.load(FXMLLoader.java:2531)
+  at com.disaster.analysis.Main.start(Main.java:29)
+  at javafx.graphics/com.sun.javafx.application.LauncherImpl.lambda$launchApplication1$9(LauncherImpl.java:839)
+  at javafx.graphics/com.sun.javafx.application.PlatformImpl.lambda$runAndWait$12(PlatformImpl.java:483)
+  at javafx.graphics/com.sun.javafx.application.PlatformImpl.lambda$runLater$10(PlatformImpl.java:456)
+  at java.base/java.security.AccessController.doPrivileged(AccessController.java:400)
+  at javafx.graphics/com.sun.javafx.application.PlatformImpl.lambda$runLater$11(PlatformImpl.java:455)
+  at javafx.graphics/com.sun.glass.ui.InvokeLaterDispatcher$Future.run(InvokeLaterDispatcher.java:95)
+  at javafx.graphics/com.sun.glass.ui.win.WinApplication._runLoop(Native Method)
+  at javafx.graphics/com.sun.glass.ui.win.WinApplication.lambda$runLoop$3(WinApplication.java:190)
+  at java.base/java.lang.Thread.run(Thread.java:1583)
+
+[2026-06-14 00:19:30.098] [INFO] HikariCP Connection Pool initialized successfully.
+[2026-06-14 00:19:30.248] [INFO] PreprocessingService initialized.
+[2026-06-14 00:19:30.405] [INFO] YouTube API client initialized with real API
+[2026-06-14 00:19:30.405] [INFO] YouTube DataSource injected with real API Key.
+[2026-06-14 00:19:30.430] [INFO] NewsDataSource initialized with Two-Step Scraping Strategy for 4 sources.
+[2026-06-14 00:19:30.442] [INFO] Initialized API clients for 2 platforms
+[2026-06-14 00:19:31.184] [INFO] SentimentAnalysisService initialized.
+[2026-06-14 00:19:31.202] [INFO] DamageClassificationService initialized.
+[2026-06-14 00:19:31.271] [INFO] Initialized API clients for mock-ai-offline successfully
+[2026-06-14 00:19:31.293] [INFO] ExportService initialized successfully.
+[2026-06-14 00:19:31.294] [INFO] ApplicationContext initialized successfully. All dependencies wired up.
+[2026-06-14 00:19:32.070] [INFO] Application started successfully
+[2026-06-14 00:19:40.232] [INFO] DataCollectionController initialize ...
+[2026-06-14 00:19:40.237] [INFO] Loading collected posts and comments for project ID: 2
+[2026-06-14 00:20:09.506] [INFO] Starting data collection for project: Test
+[2026-06-14 00:20:09.507] [INFO] Search query constructed: Damage #Damage
+[2026-06-14 00:20:09.508] [INFO] Async thread started collection from: NEWS
+[2026-06-14 00:20:09.508] [INFO] Async thread started collection from: YOUTUBE
+[2026-06-14 00:20:09.509] [INFO] Searching video on YouTube with keywords: Damage #Damage
+[2026-06-14 00:20:09.509] [INFO] Fetching detailed news articles for query: 'Damage #Damage'
+[2026-06-14 00:20:09.511] [INFO] --------------------------------------------------
+[2026-06-14 00:20:09.511] [INFO] Source [VnExpress]: Starting extraction...
+[2026-06-14 00:20:09.822] [ERROR] Collection from YOUTUBE failed - Exception: java.util.concurrent.ExecutionException: java.lang.RuntimeException: Data fetch error on platform YOUTUBE: Lỗi mạng khi gọi YouTube API
+Stack trace:
+  at java.base/java.util.concurrent.FutureTask.report(FutureTask.java:122)
+  at java.base/java.util.concurrent.FutureTask.get(FutureTask.java:205)
+  at com.disaster.analysis.application.service.DataCollectionService.collectData(DataCollectionService.java:111)
+  at com.disaster.analysis.ui.controller.DataCollectionController$1.call(DataCollectionController.java:298)
+  at com.disaster.analysis.ui.controller.DataCollectionController$1.call(DataCollectionController.java:290)
+  at javafx.graphics/javafx.concurrent.Task$TaskCallable.call(Task.java:1399)
+  at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+  at java.base/java.lang.Thread.run(Thread.java:1583)
+Caused by: java.lang.RuntimeException: Data fetch error on platform YOUTUBE: Lỗi mạng khi gọi YouTube API
+  at com.disaster.analysis.application.service.DataCollectionService.collectFromPlatform(DataCollectionService.java:241)
+  at com.disaster.analysis.application.service.DataCollectionService.lambda$collectData$0(DataCollectionService.java:94)
+  at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+  at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+  at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+  at java.base/java.lang.Thread.run(Thread.java:1583)
+
+[2026-06-14 00:20:10.281] [INFO]    -> Fetching detail: https://timkiem.vnexpress.net/akali-true-damage-duong-thi-hoai-an-4934495.html
+[2026-06-14 00:20:10.417] [WARN]       ✗ Error loading article details: HTTP error fetching URL. Status=404, URL=[https://vnexpress.net/error.html]
+[2026-06-14 00:20:10.417] [INFO]    -> Fetching detail: https://timkiem.vnexpress.net/senna-true-damage-tran-hai-anh-4934484.html
+[2026-06-14 00:20:10.622] [WARN]       ✗ Error loading article details: HTTP error fetching URL. Status=404, URL=[https://vnexpress.net/error.html]
+[2026-06-14 00:20:10.622] [INFO]    -> Fetching detail: https://vnexpress.net/ezin-car-physical-damage-inspection-solution-4498874.html
+[2026-06-14 00:20:10.706] [WARN]       ✗ Skipped: Failed to extract publication date.
+[2026-06-14 00:20:10.707] [INFO] Source [VnExpress]: Finished. Extracted 0 full articles.
+[2026-06-14 00:20:10.707] [INFO] --------------------------------------------------
+[2026-06-14 00:20:10.709] [INFO] Source [Tuổi Trẻ]: Starting extraction...
+[2026-06-14 00:20:11.076] [WARN]    -> Warning: No article links found on the search page.
+[2026-06-14 00:20:11.077] [INFO] Source [Tuổi Trẻ]: Finished. Extracted 0 full articles.
+[2026-06-14 00:20:11.077] [INFO] --------------------------------------------------
+[2026-06-14 00:20:11.078] [INFO] Source [Thanh Niên]: Starting extraction...
+[2026-06-14 00:20:11.311] [INFO]    -> Fetching detail: https://thanhnien.vn/call-of-duty-cho-phep-nguoi-dung-tieu-diet-ke-gian-lan-voi-tinh-nang-moi-1851431299.htm
+[2026-06-14 00:20:11.443] [WARN]       ✗ Skipped: Article is older than the start date.
+[2026-06-14 00:20:11.445] [INFO]    -> Fetching detail: https://thanhnien.vn/lmht-fan-ham-mo-sang-tac-ban-mashup-giua-2-nhom-nhac-kda-va-true-damage-1851146050.htm
+[2026-06-14 00:20:11.484] [WARN]       ✗ Skipped: Article is older than the start date.
+[2026-06-14 00:20:11.485] [INFO]    -> Fetching detail: https://thanhnien.vn/lmht-bai-hat-giants-cua-nhom-nhac-true-damage-can-moc-69-trieu-nguoi-xem-1851146033.htm
+[2026-06-14 00:20:11.605] [WARN]       ✗ Skipped: Article is older than the start date.
+[2026-06-14 00:20:11.605] [INFO]    -> Fetching detail: https://thanhnien.vn/cktg-2019-riot-games-gioi-thieu-ban-nhac-moi-true-damage-tai-tran-chung-ket-1851146020.htm
+[2026-06-14 00:20:11.662] [WARN]       ✗ Skipped: Article is older than the start date.
+[2026-06-14 00:20:11.663] [INFO]    -> Fetching detail: https://thanhnien.vn/lmht-nhom-nhac-ao-true-damage-xuat-hien-them-soyeon-becky-g-keke-palmer-duckwrth-va-thutmost-1851145940.htm
+[2026-06-14 00:20:11.711] [WARN]       ✗ Skipped: Article is older than the start date.
+[2026-06-14 00:20:11.712] [INFO]    -> Fetching detail: https://thanhnien.vn/lmht-lo-nhom-trang-phuc-am-nhac-moi-bao-gom-akali-yasuo-ekko-qiyana-va-senna-1851145878.htm
+[2026-06-14 00:20:11.858] [WARN]       ✗ Skipped: Article is older than the start date.
+[2026-06-14 00:20:11.859] [INFO]    -> Fetching detail: https://thanhnien.vn/epic-games-len-ke-hoach-sua-loi-damage-trap-trong-phien-ban-toi-cua-fornite-1851142732.htm
+[2026-06-14 00:20:11.930] [WARN]       ✗ Skipped: Article is older than the start date.
+[2026-06-14 00:20:11.931] [INFO]    -> Fetching detail: https://thanhnien.vn/cktg-2017-sneaky-pha-vo-ki-luc-the-gioi-voi-luong-sat-thuong-gay-ra-sieu-khung-1851140385.htm
+[2026-06-14 00:20:11.985] [WARN]       ✗ Skipped: Article is older than the start date.
+[2026-06-14 00:20:11.986] [INFO]    -> Fetching detail: https://thanhnien.vn/video-lmht-giap-gai-co-phan-damage-voi-rong-baron-va-quai-rung-hay-khong-1851133667.htm
+[2026-06-14 00:20:12.109] [WARN]       ✗ Skipped: Article is older than the start date.
+[2026-06-14 00:20:12.110] [INFO]    -> Fetching detail: https://thanhnien.vn/tieu-ly-phi-dao-3d-chua-thoat-khoi-giat-lag-da-bi-hacker-hoanh-hanh-1851133459.htm
+[2026-06-14 00:20:12.234] [WARN]       ✗ Skipped: Article is older than the start date.
+[2026-06-14 00:20:12.235] [INFO]    -> Fetching detail: https://thanhnien.vn/video-lmht-het-hon-voi-phan-damage-tu-giap-gai-va-kiem-sung-hextech-1851132155.htm
+[2026-06-14 00:20:12.375] [WARN]       ✗ Skipped: Article is older than the start date.
+[2026-06-14 00:20:12.375] [INFO]    -> Fetching detail: https://thanhnien.vn/video-lmht-keo-solo-kinh-dien-39garen-full-tank39-va-39garen-full-damage39-1851131710.htm
+[2026-06-14 00:20:12.423] [WARN]       ✗ Skipped: Article is older than the start date.
+[2026-06-14 00:20:12.424] [INFO]    -> Fetching detail: https://thanhnien.vn/video-lmht-tro-mat-truoc-kha-nang-soc-damage-khung-khiep-cua-ap-aatrox-1851136319.htm
+[2026-06-14 00:20:12.570] [WARN]       ✗ Skipped: Article is older than the start date.
+[2026-06-14 00:20:12.570] [INFO]    -> Fetching detail: https://thanhnien.vn/video-lmht-thanh-alistar-dame-sieu-to-hien-linh-1851135611.htm
+[2026-06-14 00:20:12.679] [WARN]       ✗ Skipped: Article is older than the start date.
+[2026-06-14 00:20:12.679] [INFO]    -> Fetching detail: https://thanhnien.vn/dirty-bomb-pho-dien-loi-choi-ban-sung-pha-lan-chien-thuat-tai-e3-2015-1851124751.htm
+[2026-06-14 00:20:12.851] [WARN]       ✗ Skipped: Article is older than the start date.
+[2026-06-14 00:20:12.852] [INFO]    -> Fetching detail: https://thanhnien.vn/hearthstone-phan-tich-goblins-vs-gnomes-shaman-1851122462.htm
+[2026-06-14 00:20:12.925] [WARN]       ✗ Skipped: Article is older than the start date.
+[2026-06-14 00:20:12.926] [INFO]    -> Fetching detail: https://thanhnien.vn/tranh-cai-ve-lop-nhan-vat-gladiator-trong-cabal-1851121885.htm
+[2026-06-14 00:20:13.074] [WARN]       ✗ Skipped: Article is older than the start date.
+[2026-06-14 00:20:13.075] [INFO]    -> Fetching detail: https://thanhnien.vn/cach-san-boss-moi-18594670.htm
+[2026-06-14 00:20:13.127] [WARN]       ✗ Skipped: Article is older than the start date.
+[2026-06-14 00:20:13.127] [INFO]    -> Fetching detail: https://thanhnien.vn/3-sieu-nhan-moi-trong-dota-2-185111814.htm
+[2026-06-14 00:20:13.178] [WARN]       ✗ Skipped: Article is older than the start date.
+[2026-06-14 00:20:13.178] [INFO] Source [Thanh Niên]: Finished. Extracted 0 full articles.
+[2026-06-14 00:20:13.179] [INFO] --------------------------------------------------
+[2026-06-14 00:20:13.179] [INFO] Source [Dân Trí]: Starting extraction...
+[2026-06-14 00:20:13.267] [INFO]    -> Fetching detail: https://dantri.com.vn/suc-khoe/cong-ty-phan-phoi-my-pham-han-quoc-bi-phat-gan-150-trieu-dong-20260603165659847.htm
+[2026-06-14 00:20:13.287] [WARN]       ✗ Skipped: Failed to extract publication date.
+[2026-06-14 00:20:13.288] [INFO]    -> Fetching detail: https://dantri.com.vn/cong-nghe/lenovo-ra-mat-laptop-yoga-slim-7-pro-20210922144053251.htm
+[2026-06-14 00:20:13.313] [WARN]       ✗ Skipped: Failed to extract publication date.
+[2026-06-14 00:20:13.314] [INFO]    -> Fetching detail: https://dantri.com.vn/giai-tri/soobin-nhan-loi-khi-nhom-tan-binh-viet-de-thua-doi-nhat-ban-20251026111616132.htm
+[2026-06-14 00:20:13.335] [WARN]       ✗ Skipped: Failed to extract publication date.
+[2026-06-14 00:20:13.336] [INFO]    -> Fetching detail: https://dantri.com.vn/giao-duc/tuyen-sinh-lop-10-tphcm-nam-2019-huong-dan-giai-de-tieng-anh-20190602172957286.htm
+[2026-06-14 00:20:13.359] [WARN]       ✗ Skipped: Failed to extract publication date.
+[2026-06-14 00:20:13.359] [INFO]    -> Fetching detail: https://dantri.com.vn/cong-nghe/asus-tiet-lo-thong-tin-ve-zenbook-infinity-ultrabook-moi-1370334949.htm
+[2026-06-14 00:20:13.381] [WARN]       ✗ Skipped: Failed to extract publication date.
+[2026-06-14 00:20:13.382] [INFO]    -> Fetching detail: https://dantri.com.vn/giai-tri/baby-spice-dang-co-bau-1169948630.htm
+[2026-06-14 00:20:13.398] [WARN]       ✗ Skipped: Failed to extract publication date.
+[2026-06-14 00:20:13.399] [INFO]    -> Fetching detail: https://dantri.com.vn/giao-duc/de-va-dap-an-mon-tieng-anh-thi-lop-10-cua-tphcm-nam-2026-20260601144032938.htm
+[2026-06-14 00:20:13.425] [WARN]       ✗ Skipped: Failed to extract publication date.
+[2026-06-14 00:20:13.426] [INFO]    -> Fetching detail: https://dantri.com.vn/cong-nghe/anh-thuc-te-zenbook-infinity-tai-trien-lam-computex-2013-1370703037.htm
+[2026-06-14 00:20:13.445] [WARN]       ✗ Skipped: Failed to extract publication date.
+[2026-06-14 00:20:13.446] [INFO]    -> Fetching detail: https://dantri.com.vn/giai-tri/cuu-thanh-vien-nhom-spice-girls-len-xe-hoa-1160518673.htm
+[2026-06-14 00:20:13.465] [WARN]       ✗ Skipped: Failed to extract publication date.
+[2026-06-14 00:20:13.466] [INFO] Source [Dân Trí]: Finished. Extracted 0 full articles.
+[2026-06-14 00:20:13.466] [INFO] News scraping completed. Total full articles retrieved: 0
+[2026-06-14 00:20:13.467] [INFO] Collected 0 posts from NEWS
+[2026-06-14 00:20:13.468] [ERROR] Critical error inside data collection pipeline - Exception: java.lang.RuntimeException: All configured platforms failed during execution.
+Stack trace:
+  at com.disaster.analysis.application.service.DataCollectionService.collectData(DataCollectionService.java:129)
+  at com.disaster.analysis.ui.controller.DataCollectionController$1.call(DataCollectionController.java:298)
+  at com.disaster.analysis.ui.controller.DataCollectionController$1.call(DataCollectionController.java:290)
+  at javafx.graphics/javafx.concurrent.Task$TaskCallable.call(Task.java:1399)
+  at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+  at java.base/java.lang.Thread.run(Thread.java:1583)
+
+[2026-06-14 00:20:13.469] [ERROR] Error during data collection - Exception: java.lang.RuntimeException: java.lang.RuntimeException: All configured platforms failed during execution.
+Stack trace:
+  at com.disaster.analysis.application.service.DataCollectionService.collectData(DataCollectionService.java:204)
+  at com.disaster.analysis.ui.controller.DataCollectionController$1.call(DataCollectionController.java:298)
+  at com.disaster.analysis.ui.controller.DataCollectionController$1.call(DataCollectionController.java:290)
+  at javafx.graphics/javafx.concurrent.Task$TaskCallable.call(Task.java:1399)
+  at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+  at java.base/java.lang.Thread.run(Thread.java:1583)
+Caused by: java.lang.RuntimeException: All configured platforms failed during execution.
+  at com.disaster.analysis.application.service.DataCollectionService.collectData(DataCollectionService.java:129)
+  at com.disaster.analysis.ui.controller.DataCollectionController$1.call(DataCollectionController.java:298)
+  at com.disaster.analysis.ui.controller.DataCollectionController$1.call(DataCollectionController.java:290)
+  at javafx.graphics/javafx.concurrent.Task$TaskCallable.call(Task.java:1399)
+  at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+  at java.base/java.lang.Thread.run(Thread.java:1583)
+
+[2026-06-14 00:20:13.470] [ERROR] Data collection failed - Exception: java.lang.RuntimeException: java.lang.RuntimeException: All configured platforms failed during execution.
+Stack trace:
+  at com.disaster.analysis.application.service.DataCollectionService.collectData(DataCollectionService.java:204)
+  at com.disaster.analysis.ui.controller.DataCollectionController$1.call(DataCollectionController.java:298)
+  at com.disaster.analysis.ui.controller.DataCollectionController$1.call(DataCollectionController.java:290)
+  at javafx.graphics/javafx.concurrent.Task$TaskCallable.call(Task.java:1399)
+  at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+  at java.base/java.lang.Thread.run(Thread.java:1583)
+Caused by: java.lang.RuntimeException: All configured platforms failed during execution.
+  at com.disaster.analysis.application.service.DataCollectionService.collectData(DataCollectionService.java:129)
+  at com.disaster.analysis.ui.controller.DataCollectionController$1.call(DataCollectionController.java:298)
+  at com.disaster.analysis.ui.controller.DataCollectionController$1.call(DataCollectionController.java:290)
+  at javafx.graphics/javafx.concurrent.Task$TaskCallable.call(Task.java:1399)
+  at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+  at java.base/java.lang.Thread.run(Thread.java:1583)
+
+[2026-06-14 00:20:13.486] [ERROR] Collection Failed: Data collection failed: java.lang.RuntimeException: All configured platforms failed during execution.
+[2026-06-14 00:21:22.509] [ERROR] Uncaught exception in thread JavaFX Application Thread - Exception: java.lang.RuntimeException: java.lang.reflect.InvocationTargetException
+Stack trace:
+  at javafx.fxml/javafx.fxml.FXMLLoader$MethodHandler.invoke(FXMLLoader.java:1858)
+  at javafx.fxml/javafx.fxml.FXMLLoader$ControllerMethodEventHandler.handle(FXMLLoader.java:1726)
+  at javafx.base/com.sun.javafx.event.CompositeEventHandler.dispatchBubblingEvent(CompositeEventHandler.java:86)
+  at javafx.base/com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:232)
+  at javafx.base/com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:189)
+  at javafx.base/com.sun.javafx.event.CompositeEventDispatcher.dispatchBubblingEvent(CompositeEventDispatcher.java:59)
+  at javafx.base/com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:58)
+  at javafx.base/com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+  at javafx.base/com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+  at javafx.base/com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+  at javafx.base/com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+  at javafx.base/com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+  at javafx.base/com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+  at javafx.base/com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+  at javafx.base/com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+  at javafx.base/com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+  at javafx.base/com.sun.javafx.event.EventUtil.fireEventImpl(EventUtil.java:74)
+  at javafx.base/com.sun.javafx.event.EventUtil.fireEvent(EventUtil.java:49)
+  at javafx.base/javafx.event.Event.fireEvent(Event.java:198)
+  at javafx.graphics/javafx.scene.Node.fireEvent(Node.java:8875)
+  at javafx.controls/javafx.scene.control.Button.fire(Button.java:203)
+  at javafx.controls/com.sun.javafx.scene.control.behavior.ButtonBehavior.mouseReleased(ButtonBehavior.java:207)
+  at javafx.controls/com.sun.javafx.scene.control.inputmap.InputMap.handle(InputMap.java:274)
+  at javafx.base/com.sun.javafx.event.CompositeEventHandler$NormalEventHandlerRecord.handleBubblingEvent(CompositeEventHandler.java:247)
+  at javafx.base/com.sun.javafx.event.CompositeEventHandler.dispatchBubblingEvent(CompositeEventHandler.java:80)
+  at javafx.base/com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:232)
+  at javafx.base/com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:189)
+  at javafx.base/com.sun.javafx.event.CompositeEventDispatcher.dispatchBubblingEvent(CompositeEventDispatcher.java:59)
+  at javafx.base/com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:58)
+  at javafx.base/com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+  at javafx.base/com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+  at javafx.base/com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+  at javafx.base/com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+  at javafx.base/com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+  at javafx.base/com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+  at javafx.base/com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+  at javafx.base/com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+  at javafx.base/com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+  at javafx.base/com.sun.javafx.event.EventUtil.fireEventImpl(EventUtil.java:74)
+  at javafx.base/com.sun.javafx.event.EventUtil.fireEvent(EventUtil.java:54)
+  at javafx.base/javafx.event.Event.fireEvent(Event.java:198)
+  at javafx.graphics/javafx.scene.Scene$MouseHandler.process(Scene.java:3984)
+  at javafx.graphics/javafx.scene.Scene.processMouseEvent(Scene.java:1890)
+  at javafx.graphics/javafx.scene.Scene$ScenePeerListener.mouseEvent(Scene.java:2708)
+  at javafx.graphics/com.sun.javafx.tk.quantum.GlassViewEventHandler$MouseEventNotification.run(GlassViewEventHandler.java:411)
+  at javafx.graphics/com.sun.javafx.tk.quantum.GlassViewEventHandler$MouseEventNotification.run(GlassViewEventHandler.java:301)
+  at java.base/java.security.AccessController.doPrivileged(AccessController.java:400)
+  at javafx.graphics/com.sun.javafx.tk.quantum.GlassViewEventHandler.lambda$handleMouseEvent$2(GlassViewEventHandler.java:450)
+  at javafx.graphics/com.sun.javafx.tk.quantum.QuantumToolkit.runWithoutRenderLock(QuantumToolkit.java:424)
+  at javafx.graphics/com.sun.javafx.tk.quantum.GlassViewEventHandler.handleMouseEvent(GlassViewEventHandler.java:449)
+  at javafx.graphics/com.sun.glass.ui.View.handleMouseEvent(View.java:551)
+  at javafx.graphics/com.sun.glass.ui.View.notifyMouse(View.java:937)
+  at javafx.graphics/com.sun.glass.ui.win.WinApplication._runLoop(Native Method)
+  at javafx.graphics/com.sun.glass.ui.win.WinApplication.lambda$runLoop$3(WinApplication.java:190)
+  at java.base/java.lang.Thread.run(Thread.java:1583)
+Caused by: java.lang.reflect.InvocationTargetException: null
+  at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:118)
+  at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+  at com.sun.javafx.reflect.Trampoline.invoke(MethodUtil.java:72)
+  at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+  at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+  at javafx.base/com.sun.javafx.reflect.MethodUtil.invoke(MethodUtil.java:270)
+  at javafx.fxml/com.sun.javafx.fxml.MethodHelper.invoke(MethodHelper.java:84)
+  at javafx.fxml/javafx.fxml.FXMLLoader$MethodHandler.invoke(FXMLLoader.java:1855)
+  at javafx.fxml/javafx.fxml.FXMLLoader$ControllerMethodEventHandler.handle(FXMLLoader.java:1726)
+  at javafx.base/com.sun.javafx.event.CompositeEventHandler.dispatchBubblingEvent(CompositeEventHandler.java:86)
+  at javafx.base/com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:232)
+  at javafx.base/com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:189)
+  at javafx.base/com.sun.javafx.event.CompositeEventDispatcher.dispatchBubblingEvent(CompositeEventDispatcher.java:59)
+  at javafx.base/com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:58)
+  at javafx.base/com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+  at javafx.base/com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+  at javafx.base/com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+  at javafx.base/com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+  at javafx.base/com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+  at javafx.base/com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+  at javafx.base/com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+  at javafx.base/com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+  at javafx.base/com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+  at javafx.base/com.sun.javafx.event.EventUtil.fireEventImpl(EventUtil.java:74)
+  at javafx.base/com.sun.javafx.event.EventUtil.fireEvent(EventUtil.java:49)
+  at javafx.base/javafx.event.Event.fireEvent(Event.java:198)
+  at javafx.graphics/javafx.scene.Node.fireEvent(Node.java:8875)
+  at javafx.controls/javafx.scene.control.Button.fire(Button.java:203)
+  at javafx.controls/com.sun.javafx.scene.control.behavior.ButtonBehavior.mouseReleased(ButtonBehavior.java:207)
+  at javafx.controls/com.sun.javafx.scene.control.inputmap.InputMap.handle(InputMap.java:274)
+  at javafx.base/com.sun.javafx.event.CompositeEventHandler$NormalEventHandlerRecord.handleBubblingEvent(CompositeEventHandler.java:247)
+  at javafx.base/com.sun.javafx.event.CompositeEventHandler.dispatchBubblingEvent(CompositeEventHandler.java:80)
+  at javafx.base/com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:232)
+  at javafx.base/com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:189)
+  at javafx.base/com.sun.javafx.event.CompositeEventDispatcher.dispatchBubblingEvent(CompositeEventDispatcher.java:59)
+  at javafx.base/com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:58)
+  at javafx.base/com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+  at javafx.base/com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+  at javafx.base/com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+  at javafx.base/com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+  at javafx.base/com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+  at javafx.base/com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+  at javafx.base/com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+  at javafx.base/com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+  at javafx.base/com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+  at javafx.base/com.sun.javafx.event.EventUtil.fireEventImpl(EventUtil.java:74)
+  at javafx.base/com.sun.javafx.event.EventUtil.fireEvent(EventUtil.java:54)
+  at javafx.base/javafx.event.Event.fireEvent(Event.java:198)
+  at javafx.graphics/javafx.scene.Scene$MouseHandler.process(Scene.java:3984)
+  at javafx.graphics/javafx.scene.Scene.processMouseEvent(Scene.java:1890)
+  at javafx.graphics/javafx.scene.Scene$ScenePeerListener.mouseEvent(Scene.java:2708)
+  at javafx.graphics/com.sun.javafx.tk.quantum.GlassViewEventHandler$MouseEventNotification.run(GlassViewEventHandler.java:411)
+  at javafx.graphics/com.sun.javafx.tk.quantum.GlassViewEventHandler$MouseEventNotification.run(GlassViewEventHandler.java:301)
+  at java.base/java.security.AccessController.doPrivileged(AccessController.java:400)
+  at javafx.graphics/com.sun.javafx.tk.quantum.GlassViewEventHandler.lambda$handleMouseEvent$2(GlassViewEventHandler.java:450)
+  at javafx.graphics/com.sun.javafx.tk.quantum.QuantumToolkit.runWithoutRenderLock(QuantumToolkit.java:424)
+  at javafx.graphics/com.sun.javafx.tk.quantum.GlassViewEventHandler.handleMouseEvent(GlassViewEventHandler.java:449)
+  at javafx.graphics/com.sun.glass.ui.View.handleMouseEvent(View.java:551)
+  at javafx.graphics/com.sun.glass.ui.View.notifyMouse(View.java:937)
+  at javafx.graphics/com.sun.glass.ui.win.WinApplication._runLoop(Native Method)
+  at javafx.graphics/com.sun.glass.ui.win.WinApplication.lambda$runLoop$3(WinApplication.java:190)
+  at java.base/java.lang.Thread.run(Thread.java:1583)
+
+[2026-06-14 00:22:01.114] [INFO] Hệ thống ghi nhật ký (Logging System) đã được khởi động.
+[2026-06-14 00:22:01.124] [INFO] === Disaster Social Media Analysis Application ===
+[2026-06-14 00:22:01.125] [INFO] Starting application with Java version: 21.0.11
+[2026-06-14 00:22:01.135] [INFO] Initializing application...
+[2026-06-14 00:22:01.169] [INFO] Starting application...
+[2026-06-14 00:22:01.648] [INFO] Starting ApplicationContext initialization pipeline...
+[2026-06-14 00:22:01.653] [INFO] Database startup and verification sequence initiated.
+[2026-06-14 00:22:03.725] [INFO] Database [Disasters] already exists. Skipping database creation step.
+[2026-06-14 00:22:03.887] [INFO] Reading schema.sql from system resources to verify entity tables...
+[2026-06-14 00:22:03.927] [ERROR] Critical failure encountered during target database initialization flow! - Exception: com.microsoft.sqlserver.jdbc.SQLServerException: There is already an object named 'projects' in the database.
+Stack trace:
+  at com.microsoft.sqlserver.jdbc.SQLServerException.makeFromDatabaseError(SQLServerException.java:259)
+  at com.microsoft.sqlserver.jdbc.SQLServerStatement.getNextResult(SQLServerStatement.java:1695)
+  at com.microsoft.sqlserver.jdbc.SQLServerStatement.doExecuteStatement(SQLServerStatement.java:920)
+  at com.microsoft.sqlserver.jdbc.SQLServerStatement$StmtExecCmd.doExecute(SQLServerStatement.java:814)
+  at com.microsoft.sqlserver.jdbc.TDSCommand.execute(IOBuffer.java:7675)
+  at com.microsoft.sqlserver.jdbc.SQLServerConnection.executeCommand(SQLServerConnection.java:4137)
+  at com.microsoft.sqlserver.jdbc.SQLServerStatement.executeCommand(SQLServerStatement.java:272)
+  at com.microsoft.sqlserver.jdbc.SQLServerStatement.executeStatement(SQLServerStatement.java:246)
+  at com.microsoft.sqlserver.jdbc.SQLServerStatement.execute(SQLServerStatement.java:787)
+  at com.disaster.analysis.infrastructure.repository.SqlServerDatabaseInitializerImpl.initialize(SqlServerDatabaseInitializerImpl.java:70)
+  at com.disaster.analysis.config.ApplicationContext.initialize(ApplicationContext.java:88)
+  at com.disaster.analysis.ui.controller.MainController.initialize(MainController.java:27)
+  at javafx.fxml/javafx.fxml.FXMLLoader.loadImpl(FXMLLoader.java:2670)
+  at javafx.fxml/javafx.fxml.FXMLLoader.loadImpl(FXMLLoader.java:2563)
+  at javafx.fxml/javafx.fxml.FXMLLoader.load(FXMLLoader.java:2531)
+  at com.disaster.analysis.Main.start(Main.java:29)
+  at javafx.graphics/com.sun.javafx.application.LauncherImpl.lambda$launchApplication1$9(LauncherImpl.java:839)
+  at javafx.graphics/com.sun.javafx.application.PlatformImpl.lambda$runAndWait$12(PlatformImpl.java:483)
+  at javafx.graphics/com.sun.javafx.application.PlatformImpl.lambda$runLater$10(PlatformImpl.java:456)
+  at java.base/java.security.AccessController.doPrivileged(AccessController.java:400)
+  at javafx.graphics/com.sun.javafx.application.PlatformImpl.lambda$runLater$11(PlatformImpl.java:455)
+  at javafx.graphics/com.sun.glass.ui.InvokeLaterDispatcher$Future.run$$$capture(InvokeLaterDispatcher.java:95)
+  at javafx.graphics/com.sun.glass.ui.InvokeLaterDispatcher$Future.run(InvokeLaterDispatcher.java)
+  at javafx.graphics/com.sun.glass.ui.win.WinApplication._runLoop(Native Method)
+  at javafx.graphics/com.sun.glass.ui.win.WinApplication.lambda$runLoop$3(WinApplication.java:190)
+  at java.base/java.lang.Thread.run(Thread.java:1583)
+
+[2026-06-14 00:22:04.336] [INFO] HikariCP Connection Pool initialized successfully.
+[2026-06-14 00:22:04.350] [INFO] PreprocessingService initialized.
+[2026-06-14 00:22:04.356] [WARN] YouTube API Key missing. Falling back to MockDataSource.
+[2026-06-14 00:22:04.359] [INFO] NewsDataSource initialized with Two-Step Scraping Strategy for 4 sources.
+[2026-06-14 00:22:04.362] [INFO] Initialized API clients for 2 platforms
+[2026-06-14 00:22:05.927] [INFO] SentimentAnalysisService initialized.
+[2026-06-14 00:22:05.930] [INFO] DamageClassificationService initialized.
+[2026-06-14 00:22:05.938] [INFO] Initialized API clients for mock-ai-offline successfully
+[2026-06-14 00:22:05.941] [INFO] ExportService initialized successfully.
+[2026-06-14 00:22:05.942] [INFO] ApplicationContext initialized successfully. All dependencies wired up.
+[2026-06-14 00:22:07.126] [INFO] Application started successfully
+[2026-06-14 00:22:10.935] [INFO] DataCollectionController initialize ...
+[2026-06-14 00:22:10.945] [INFO] Loading collected posts and comments for project ID: 2
+[2026-06-14 00:22:38.872] [INFO] Starting data collection for project: Test
+[2026-06-14 00:22:38.874] [INFO] Search query constructed: Damage #Damage
+[2026-06-14 00:22:38.877] [INFO] Async thread started collection from: YOUTUBE
+[2026-06-14 00:22:38.877] [INFO] Async thread started collection from: NEWS
+[2026-06-14 00:22:38.879] [INFO] Fetching detailed news articles for query: 'Damage #Damage'
+[2026-06-14 00:22:38.887] [INFO] --------------------------------------------------
+[2026-06-14 00:22:38.888] [INFO] Source [VnExpress]: Starting extraction...
+[2026-06-14 00:22:38.893] [INFO] Collected 28 posts from YOUTUBE
+[2026-06-14 00:22:39.761] [INFO]    -> Fetching detail: https://timkiem.vnexpress.net/akali-true-damage-duong-thi-hoai-an-4934495.html
+[2026-06-14 00:22:39.944] [WARN]       ✗ Error loading article details: HTTP error fetching URL. Status=404, URL=[https://vnexpress.net/error.html]
+[2026-06-14 00:22:39.944] [INFO]    -> Fetching detail: https://timkiem.vnexpress.net/senna-true-damage-tran-hai-anh-4934484.html
+[2026-06-14 00:22:40.136] [WARN]       ✗ Error loading article details: HTTP error fetching URL. Status=404, URL=[https://vnexpress.net/error.html]
+[2026-06-14 00:22:40.137] [INFO]    -> Fetching detail: https://vnexpress.net/ezin-car-physical-damage-inspection-solution-4498874.html
+[2026-06-14 00:22:40.833] [WARN]       ✗ Skipped: Failed to extract publication date.
+[2026-06-14 00:22:40.834] [INFO] Source [VnExpress]: Finished. Extracted 0 full articles.
+[2026-06-14 00:22:40.835] [INFO] --------------------------------------------------
+[2026-06-14 00:22:40.835] [INFO] Source [Tuổi Trẻ]: Starting extraction...
+[2026-06-14 00:22:41.313] [WARN]    -> Warning: No article links found on the search page.
+[2026-06-14 00:22:41.314] [INFO] Source [Tuổi Trẻ]: Finished. Extracted 0 full articles.
+[2026-06-14 00:22:41.314] [INFO] --------------------------------------------------
+[2026-06-14 00:22:41.315] [INFO] Source [Thanh Niên]: Starting extraction...
+[2026-06-14 00:22:41.690] [INFO]    -> Fetching detail: https://thanhnien.vn/call-of-duty-cho-phep-nguoi-dung-tieu-diet-ke-gian-lan-voi-tinh-nang-moi-1851431299.htm
+[2026-06-14 00:22:42.107] [WARN]       ✗ Skipped: Article is older than the start date.
+[2026-06-14 00:22:42.108] [INFO]    -> Fetching detail: https://thanhnien.vn/lmht-fan-ham-mo-sang-tac-ban-mashup-giua-2-nhom-nhac-kda-va-true-damage-1851146050.htm
+[2026-06-14 00:22:42.520] [WARN]       ✗ Skipped: Article is older than the start date.
+[2026-06-14 00:22:42.521] [INFO]    -> Fetching detail: https://thanhnien.vn/lmht-bai-hat-giants-cua-nhom-nhac-true-damage-can-moc-69-trieu-nguoi-xem-1851146033.htm
+[2026-06-14 00:22:42.840] [WARN]       ✗ Skipped: Article is older than the start date.
+[2026-06-14 00:22:42.841] [INFO]    -> Fetching detail: https://thanhnien.vn/cktg-2019-riot-games-gioi-thieu-ban-nhac-moi-true-damage-tai-tran-chung-ket-1851146020.htm
+[2026-06-14 00:22:43.210] [WARN]       ✗ Skipped: Article is older than the start date.
+[2026-06-14 00:22:43.211] [INFO]    -> Fetching detail: https://thanhnien.vn/lmht-nhom-nhac-ao-true-damage-xuat-hien-them-soyeon-becky-g-keke-palmer-duckwrth-va-thutmost-1851145940.htm
+[2026-06-14 00:22:43.291] [WARN]       ✗ Skipped: Article is older than the start date.
+[2026-06-14 00:22:43.292] [INFO]    -> Fetching detail: https://thanhnien.vn/lmht-lo-nhom-trang-phuc-am-nhac-moi-bao-gom-akali-yasuo-ekko-qiyana-va-senna-1851145878.htm
+[2026-06-14 00:22:43.679] [WARN]       ✗ Skipped: Article is older than the start date.
+[2026-06-14 00:22:43.680] [INFO]    -> Fetching detail: https://thanhnien.vn/epic-games-len-ke-hoach-sua-loi-damage-trap-trong-phien-ban-toi-cua-fornite-1851142732.htm
+[2026-06-14 00:22:44.117] [WARN]       ✗ Skipped: Article is older than the start date.
+[2026-06-14 00:22:44.118] [INFO]    -> Fetching detail: https://thanhnien.vn/cktg-2017-sneaky-pha-vo-ki-luc-the-gioi-voi-luong-sat-thuong-gay-ra-sieu-khung-1851140385.htm
+[2026-06-14 00:22:44.188] [WARN]       ✗ Skipped: Article is older than the start date.
+[2026-06-14 00:22:44.189] [INFO]    -> Fetching detail: https://thanhnien.vn/video-lmht-giap-gai-co-phan-damage-voi-rong-baron-va-quai-rung-hay-khong-1851133667.htm
+[2026-06-14 00:22:44.628] [WARN]       ✗ Skipped: Article is older than the start date.
+[2026-06-14 00:22:44.629] [INFO]    -> Fetching detail: https://thanhnien.vn/tieu-ly-phi-dao-3d-chua-thoat-khoi-giat-lag-da-bi-hacker-hoanh-hanh-1851133459.htm
+[2026-06-14 00:22:45.093] [WARN]       ✗ Skipped: Article is older than the start date.
+[2026-06-14 00:22:45.095] [INFO]    -> Fetching detail: https://thanhnien.vn/video-lmht-het-hon-voi-phan-damage-tu-giap-gai-va-kiem-sung-hextech-1851132155.htm
+[2026-06-14 00:22:45.555] [WARN]       ✗ Skipped: Article is older than the start date.
+[2026-06-14 00:22:45.556] [INFO]    -> Fetching detail: https://thanhnien.vn/video-lmht-keo-solo-kinh-dien-39garen-full-tank39-va-39garen-full-damage39-1851131710.htm
+[2026-06-14 00:22:45.851] [WARN]       ✗ Skipped: Article is older than the start date.
+[2026-06-14 00:22:45.851] [INFO]    -> Fetching detail: https://thanhnien.vn/video-lmht-tro-mat-truoc-kha-nang-soc-damage-khung-khiep-cua-ap-aatrox-1851136319.htm
+[2026-06-14 00:22:46.192] [WARN]       ✗ Skipped: Article is older than the start date.
+[2026-06-14 00:22:46.193] [INFO]    -> Fetching detail: https://thanhnien.vn/video-lmht-thanh-alistar-dame-sieu-to-hien-linh-1851135611.htm
+[2026-06-14 00:22:46.522] [WARN]       ✗ Skipped: Article is older than the start date.
+[2026-06-14 00:22:46.522] [INFO]    -> Fetching detail: https://thanhnien.vn/dirty-bomb-pho-dien-loi-choi-ban-sung-pha-lan-chien-thuat-tai-e3-2015-1851124751.htm
+[2026-06-14 00:22:46.990] [WARN]       ✗ Skipped: Article is older than the start date.
+[2026-06-14 00:22:46.991] [INFO]    -> Fetching detail: https://thanhnien.vn/hearthstone-phan-tich-goblins-vs-gnomes-shaman-1851122462.htm
+[2026-06-14 00:22:47.354] [WARN]       ✗ Skipped: Article is older than the start date.
+[2026-06-14 00:22:47.354] [INFO]    -> Fetching detail: https://thanhnien.vn/tranh-cai-ve-lop-nhan-vat-gladiator-trong-cabal-1851121885.htm
+[2026-06-14 00:22:47.420] [WARN]       ✗ Skipped: Article is older than the start date.
+[2026-06-14 00:22:47.421] [INFO]    -> Fetching detail: https://thanhnien.vn/cach-san-boss-moi-18594670.htm
+[2026-06-14 00:22:47.839] [WARN]       ✗ Skipped: Article is older than the start date.
+[2026-06-14 00:22:47.839] [INFO]    -> Fetching detail: https://thanhnien.vn/3-sieu-nhan-moi-trong-dota-2-185111814.htm
+[2026-06-14 00:22:48.235] [WARN]       ✗ Skipped: Article is older than the start date.
+[2026-06-14 00:22:48.235] [INFO] Source [Thanh Niên]: Finished. Extracted 0 full articles.
+[2026-06-14 00:22:48.235] [INFO] --------------------------------------------------
+[2026-06-14 00:22:48.236] [INFO] Source [Dân Trí]: Starting extraction...
+[2026-06-14 00:22:48.324] [INFO]    -> Fetching detail: https://dantri.com.vn/suc-khoe/cong-ty-phan-phoi-my-pham-han-quoc-bi-phat-gan-150-trieu-dong-20260603165659847.htm
+[2026-06-14 00:22:48.349] [WARN]       ✗ Skipped: Failed to extract publication date.
+[2026-06-14 00:22:48.350] [INFO]    -> Fetching detail: https://dantri.com.vn/cong-nghe/lenovo-ra-mat-laptop-yoga-slim-7-pro-20210922144053251.htm
+[2026-06-14 00:22:48.375] [WARN]       ✗ Skipped: Failed to extract publication date.
+[2026-06-14 00:22:48.375] [INFO]    -> Fetching detail: https://dantri.com.vn/giai-tri/soobin-nhan-loi-khi-nhom-tan-binh-viet-de-thua-doi-nhat-ban-20251026111616132.htm
+[2026-06-14 00:22:48.400] [WARN]       ✗ Skipped: Failed to extract publication date.
+[2026-06-14 00:22:48.401] [INFO]    -> Fetching detail: https://dantri.com.vn/giao-duc/tuyen-sinh-lop-10-tphcm-nam-2019-huong-dan-giai-de-tieng-anh-20190602172957286.htm
+[2026-06-14 00:22:48.426] [WARN]       ✗ Skipped: Failed to extract publication date.
+[2026-06-14 00:22:48.427] [INFO]    -> Fetching detail: https://dantri.com.vn/cong-nghe/asus-tiet-lo-thong-tin-ve-zenbook-infinity-ultrabook-moi-1370334949.htm
+[2026-06-14 00:22:48.459] [WARN]       ✗ Skipped: Failed to extract publication date.
+[2026-06-14 00:22:48.460] [INFO]    -> Fetching detail: https://dantri.com.vn/giai-tri/baby-spice-dang-co-bau-1169948630.htm
+[2026-06-14 00:22:48.496] [WARN]       ✗ Skipped: Failed to extract publication date.
+[2026-06-14 00:22:48.498] [INFO]    -> Fetching detail: https://dantri.com.vn/giao-duc/de-va-dap-an-mon-tieng-anh-thi-lop-10-cua-tphcm-nam-2026-20260601144032938.htm
+[2026-06-14 00:22:48.533] [WARN]       ✗ Skipped: Failed to extract publication date.
+[2026-06-14 00:22:48.534] [INFO]    -> Fetching detail: https://dantri.com.vn/cong-nghe/anh-thuc-te-zenbook-infinity-tai-trien-lam-computex-2013-1370703037.htm
+[2026-06-14 00:22:48.553] [WARN]       ✗ Skipped: Failed to extract publication date.
+[2026-06-14 00:22:48.554] [INFO]    -> Fetching detail: https://dantri.com.vn/giai-tri/cuu-thanh-vien-nhom-spice-girls-len-xe-hoa-1160518673.htm
+[2026-06-14 00:22:48.577] [WARN]       ✗ Skipped: Failed to extract publication date.
+[2026-06-14 00:22:48.577] [INFO] Source [Dân Trí]: Finished. Extracted 0 full articles.
+[2026-06-14 00:22:48.578] [INFO] News scraping completed. Total full articles retrieved: 0
+[2026-06-14 00:22:48.578] [INFO] Collected 0 posts from NEWS
+[2026-06-14 00:22:48.579] [INFO] Total raw posts collected: 28
+[2026-06-14 00:22:48.580] [INFO] Preprocessing 28 posts...
+[2026-06-14 00:22:48.585] [INFO] Preprocessing completed. Yielded 28 valid posts.
+[2026-06-14 00:22:48.587] [INFO] Valid posts available after preprocessing: 28
+[2026-06-14 00:22:48.676] [INFO] Saved 28 posts to database
+[2026-06-14 00:22:48.693] [INFO] Reloaded 76 posts equipped with database IDs
+[2026-06-14 00:22:48.698] [INFO] Collected 29 comments for post ID: 122
+[2026-06-14 00:22:48.701] [INFO] Collected 41 comments for post ID: 124
+[2026-06-14 00:22:48.704] [INFO] Collected 42 comments for post ID: 110
+[2026-06-14 00:22:48.706] [INFO] Collected 16 comments for post ID: 99
+[2026-06-14 00:22:48.709] [INFO] Collected 36 comments for post ID: 114
+[2026-06-14 00:22:48.712] [INFO] Collected 32 comments for post ID: 108
+[2026-06-14 00:22:48.715] [INFO] Collected 42 comments for post ID: 130
+[2026-06-14 00:22:48.718] [INFO] Collected 35 comments for post ID: 103
+[2026-06-14 00:22:48.720] [INFO] Collected 29 comments for post ID: 135
+[2026-06-14 00:22:48.723] [INFO] Collected 18 comments for post ID: 137
+[2026-06-14 00:22:48.725] [INFO] Collected 46 comments for post ID: 85
+[2026-06-14 00:22:48.728] [INFO] Collected 42 comments for post ID: 88
+[2026-06-14 00:22:48.732] [INFO] Collected 23 comments for post ID: 139
+[2026-06-14 00:22:48.735] [INFO] Collected 39 comments for post ID: 100
+[2026-06-14 00:22:48.738] [INFO] Collected 21 comments for post ID: 121
+[2026-06-14 00:22:48.741] [INFO] Collected 34 comments for post ID: 129
+[2026-06-14 00:22:48.744] [INFO] Collected 40 comments for post ID: 102
+[2026-06-14 00:22:48.747] [INFO] Collected 46 comments for post ID: 93
+[2026-06-14 00:22:48.750] [INFO] Collected 38 comments for post ID: 152
+[2026-06-14 00:22:48.752] [INFO] Collected 20 comments for post ID: 120
+[2026-06-14 00:22:48.755] [INFO] Collected 18 comments for post ID: 101
+[2026-06-14 00:22:48.757] [INFO] Collected 19 comments for post ID: 104
+[2026-06-14 00:22:48.759] [INFO] Collected 45 comments for post ID: 95
+[2026-06-14 00:22:48.762] [INFO] Collected 34 comments for post ID: 98
+[2026-06-14 00:22:48.764] [INFO] Collected 29 comments for post ID: 116
+[2026-06-14 00:22:48.766] [INFO] Collected 21 comments for post ID: 140
+[2026-06-14 00:22:48.767] [INFO] Collected 19 comments for post ID: 97
+[2026-06-14 00:22:48.769] [INFO] Collected 22 comments for post ID: 136
+[2026-06-14 00:22:48.772] [INFO] Collected 29 comments for post ID: 111
+[2026-06-14 00:22:48.774] [INFO] Collected 21 comments for post ID: 106
+[2026-06-14 00:22:48.776] [INFO] Collected 45 comments for post ID: 154
+[2026-06-14 00:22:48.779] [INFO] Collected 45 comments for post ID: 134
+[2026-06-14 00:22:48.781] [INFO] Collected 23 comments for post ID: 138
+[2026-06-14 00:22:48.783] [INFO] Collected 18 comments for post ID: 123
+[2026-06-14 00:22:48.785] [INFO] Collected 31 comments for post ID: 107
+[2026-06-14 00:22:48.787] [INFO] Collected 41 comments for post ID: 115
+[2026-06-14 00:22:48.788] [INFO] Collected 23 comments for post ID: 126
+[2026-06-14 00:22:48.789] [INFO] Collected 27 comments for post ID: 133
+[2026-06-14 00:22:48.791] [INFO] Collected 20 comments for post ID: 144
+[2026-06-14 00:22:48.792] [INFO] Collected 24 comments for post ID: 86
+[2026-06-14 00:22:48.794] [INFO] Collected 43 comments for post ID: 92
+[2026-06-14 00:22:48.795] [INFO] Collected 19 comments for post ID: 155
+[2026-06-14 00:22:48.797] [INFO] Collected 42 comments for post ID: 142
+[2026-06-14 00:22:48.799] [INFO] Collected 49 comments for post ID: 112
+[2026-06-14 00:22:48.800] [INFO] Collected 44 comments for post ID: 125
+[2026-06-14 00:22:48.801] [INFO] Collected 43 comments for post ID: 131
+[2026-06-14 00:22:48.802] [INFO] Collected 35 comments for post ID: 132
+[2026-06-14 00:22:48.803] [INFO] Collected 38 comments for post ID: 117
+[2026-06-14 00:22:48.804] [INFO] Collected 21 comments for post ID: 105
+[2026-06-14 00:22:48.805] [INFO] Collected 46 comments for post ID: 90
+[2026-06-14 00:22:48.807] [INFO] Collected 44 comments for post ID: 94
+[2026-06-14 00:22:48.807] [INFO] Collected 19 comments for post ID: 148
+[2026-06-14 00:22:48.808] [INFO] Collected 48 comments for post ID: 146
+[2026-06-14 00:22:48.809] [INFO] Collected 17 comments for post ID: 96
+[2026-06-14 00:22:48.810] [INFO] Collected 29 comments for post ID: 143
+[2026-06-14 00:22:48.811] [INFO] Collected 29 comments for post ID: 119
+[2026-06-14 00:22:48.812] [INFO] Collected 38 comments for post ID: 158
+[2026-06-14 00:22:48.813] [INFO] Collected 23 comments for post ID: 127
+[2026-06-14 00:22:48.814] [INFO] Collected 44 comments for post ID: 151
+[2026-06-14 00:22:48.815] [INFO] Collected 25 comments for post ID: 147
+[2026-06-14 00:22:48.816] [INFO] Collected 35 comments for post ID: 84
+[2026-06-14 00:22:48.817] [INFO] Collected 50 comments for post ID: 128
+[2026-06-14 00:22:48.819] [INFO] Collected 47 comments for post ID: 118
+[2026-06-14 00:22:48.820] [INFO] Collected 44 comments for post ID: 156
+[2026-06-14 00:22:48.821] [INFO] Collected 18 comments for post ID: 145
+[2026-06-14 00:22:48.822] [INFO] Collected 34 comments for post ID: 150
+[2026-06-14 00:22:48.824] [INFO] Collected 24 comments for post ID: 157
+[2026-06-14 00:22:48.826] [INFO] Collected 19 comments for post ID: 109
+[2026-06-14 00:22:48.827] [INFO] Collected 40 comments for post ID: 91
+[2026-06-14 00:22:48.828] [INFO] Collected 27 comments for post ID: 153
+[2026-06-14 00:22:48.829] [INFO] Collected 17 comments for post ID: 83
+[2026-06-14 00:22:48.830] [INFO] Collected 36 comments for post ID: 149
+[2026-06-14 00:22:48.831] [INFO] Collected 18 comments for post ID: 89
+[2026-06-14 00:22:48.833] [INFO] Collected 47 comments for post ID: 87
+[2026-06-14 00:22:48.834] [INFO] Collected 35 comments for post ID: 141
+[2026-06-14 00:22:48.835] [INFO] Collected 42 comments for post ID: 113
+[2026-06-14 00:22:48.835] [INFO] Total raw comments collected: 2452
+[2026-06-14 00:22:48.836] [INFO] Preprocessing 2452 comments...
+[2026-06-14 00:22:48.874] [INFO] Preprocessing completed. Yielded 2452 valid comments.
+[2026-06-14 00:22:48.875] [INFO] Valid comments available after preprocessing: 2452
+[2026-06-14 00:22:49.382] [INFO] Saved 2452 comments to database
+[2026-06-14 00:22:49.385] [INFO] Loading collected posts and comments for project ID: 2
+[2026-06-14 00:24:00.829] [INFO] Collection Complete: Data collection finished. Check the collected posts below.
+[2026-06-14 00:47:04.639] [INFO] Hệ thống ghi nhật ký (Logging System) đã được khởi động.
+[2026-06-14 00:47:04.641] [INFO] === Disaster Social Media Analysis Application ===
+[2026-06-14 00:47:04.642] [INFO] Starting application with Java version: 21.0.11
+[2026-06-14 00:47:04.656] [INFO] Initializing application...
+[2026-06-14 00:47:04.673] [INFO] Starting application...
+[2026-06-14 00:47:04.938] [INFO] Starting ApplicationContext initialization pipeline...
+[2026-06-14 00:47:04.942] [INFO] Database startup and verification sequence initiated.
+[2026-06-14 00:47:06.311] [INFO] Database [Disasters] already exists. Skipping database creation step.
+[2026-06-14 00:47:06.512] [INFO] Reading schema.sql from system resources to verify entity tables...
+[2026-06-14 00:47:06.548] [ERROR] Critical failure encountered during target database initialization flow! - Exception: com.microsoft.sqlserver.jdbc.SQLServerException: There is already an object named 'projects' in the database.
+Stack trace:
+  at com.microsoft.sqlserver.jdbc.SQLServerException.makeFromDatabaseError(SQLServerException.java:259)
+  at com.microsoft.sqlserver.jdbc.SQLServerStatement.getNextResult(SQLServerStatement.java:1695)
+  at com.microsoft.sqlserver.jdbc.SQLServerStatement.doExecuteStatement(SQLServerStatement.java:920)
+  at com.microsoft.sqlserver.jdbc.SQLServerStatement$StmtExecCmd.doExecute(SQLServerStatement.java:814)
+  at com.microsoft.sqlserver.jdbc.TDSCommand.execute(IOBuffer.java:7675)
+  at com.microsoft.sqlserver.jdbc.SQLServerConnection.executeCommand(SQLServerConnection.java:4137)
+  at com.microsoft.sqlserver.jdbc.SQLServerStatement.executeCommand(SQLServerStatement.java:272)
+  at com.microsoft.sqlserver.jdbc.SQLServerStatement.executeStatement(SQLServerStatement.java:246)
+  at com.microsoft.sqlserver.jdbc.SQLServerStatement.execute(SQLServerStatement.java:787)
+  at com.disaster.analysis.infrastructure.repository.SqlServerDatabaseInitializerImpl.initialize(SqlServerDatabaseInitializerImpl.java:70)
+  at com.disaster.analysis.config.ApplicationContext.initialize(ApplicationContext.java:88)
+  at com.disaster.analysis.ui.controller.MainController.initialize(MainController.java:27)
+  at javafx.fxml/javafx.fxml.FXMLLoader.loadImpl(FXMLLoader.java:2670)
+  at javafx.fxml/javafx.fxml.FXMLLoader.loadImpl(FXMLLoader.java:2563)
+  at javafx.fxml/javafx.fxml.FXMLLoader.load(FXMLLoader.java:2531)
+  at com.disaster.analysis.Main.start(Main.java:29)
+  at javafx.graphics/com.sun.javafx.application.LauncherImpl.lambda$launchApplication1$9(LauncherImpl.java:839)
+  at javafx.graphics/com.sun.javafx.application.PlatformImpl.lambda$runAndWait$12(PlatformImpl.java:483)
+  at javafx.graphics/com.sun.javafx.application.PlatformImpl.lambda$runLater$10(PlatformImpl.java:456)
+  at java.base/java.security.AccessController.doPrivileged(AccessController.java:400)
+  at javafx.graphics/com.sun.javafx.application.PlatformImpl.lambda$runLater$11(PlatformImpl.java:455)
+  at javafx.graphics/com.sun.glass.ui.InvokeLaterDispatcher$Future.run(InvokeLaterDispatcher.java:95)
+  at javafx.graphics/com.sun.glass.ui.win.WinApplication._runLoop(Native Method)
+  at javafx.graphics/com.sun.glass.ui.win.WinApplication.lambda$runLoop$3(WinApplication.java:190)
+  at java.base/java.lang.Thread.run(Thread.java:1583)
+
+[2026-06-14 00:47:06.943] [INFO] HikariCP Connection Pool initialized successfully.
+[2026-06-14 00:47:06.962] [INFO] PreprocessingService initialized.
+[2026-06-14 00:47:06.967] [WARN] YouTube API Key missing. Falling back to MockDataSource.
+[2026-06-14 00:47:06.969] [INFO] NewsDataSource initialized with Two-Step Scraping Strategy for 4 sources.
+[2026-06-14 00:47:06.971] [INFO] Initialized API clients for 2 platforms
+[2026-06-14 00:47:07.890] [INFO] SentimentAnalysisService initialized.
+[2026-06-14 00:47:07.892] [INFO] DamageClassificationService initialized.
+[2026-06-14 00:47:07.903] [INFO] Initialized API clients for mock-ai-offline successfully
+[2026-06-14 00:47:07.906] [INFO] ExportService initialized successfully.
+[2026-06-14 00:47:07.907] [INFO] ApplicationContext initialized successfully. All dependencies wired up.
+[2026-06-14 00:47:08.684] [INFO] Application started successfully
+[2026-06-14 00:47:23.933] [INFO] DataCollectionController initialize ...
+[2026-06-14 00:47:23.940] [INFO] Loading collected posts and comments for project ID: 2
+[2026-06-14 00:47:28.589] [INFO] Starting data collection for project: Test
+[2026-06-14 00:47:28.591] [INFO] Search query constructed: Damage #Damage
+[2026-06-14 00:47:28.593] [INFO] Async thread started collection from: NEWS
+[2026-06-14 00:47:28.593] [INFO] Async thread started collection from: YOUTUBE
+[2026-06-14 00:47:28.595] [INFO] Fetching detailed news articles for query: 'Damage #Damage'
+[2026-06-14 00:47:28.598] [INFO] --------------------------------------------------
+[2026-06-14 00:47:28.599] [INFO] Source [VnExpress]: Starting extraction...
+[2026-06-14 00:47:29.378] [INFO]    -> Fetching detail: https://timkiem.vnexpress.net/akali-true-damage-duong-thi-hoai-an-4934495.html
+[2026-06-14 00:47:29.582] [WARN]       ✗ Error loading article details: HTTP error fetching URL. Status=404, URL=[https://vnexpress.net/error.html]
+[2026-06-14 00:47:29.583] [INFO]    -> Fetching detail: https://timkiem.vnexpress.net/senna-true-damage-tran-hai-anh-4934484.html
+[2026-06-14 00:47:29.740] [WARN]       ✗ Error loading article details: HTTP error fetching URL. Status=404, URL=[https://vnexpress.net/error.html]
+[2026-06-14 00:47:29.740] [INFO]    -> Fetching detail: https://vnexpress.net/ezin-car-physical-damage-inspection-solution-4498874.html
+[2026-06-14 00:47:29.814] [WARN]       ✗ Skipped: Failed to extract publication date.
+[2026-06-14 00:47:29.815] [INFO] Source [VnExpress]: Finished. Extracted 0 full articles.
+[2026-06-14 00:47:29.815] [INFO] --------------------------------------------------
+[2026-06-14 00:47:29.816] [INFO] Source [Tuổi Trẻ]: Starting extraction...
+[2026-06-14 00:47:30.152] [WARN]    -> Warning: No article links found on the search page.
+[2026-06-14 00:47:30.153] [INFO] Source [Tuổi Trẻ]: Finished. Extracted 0 full articles.
+[2026-06-14 00:47:30.154] [INFO] --------------------------------------------------
+[2026-06-14 00:47:30.156] [INFO] Source [Thanh Niên]: Starting extraction...
+[2026-06-14 00:47:30.351] [INFO]    -> Fetching detail: https://thanhnien.vn/call-of-duty-cho-phep-nguoi-dung-tieu-diet-ke-gian-lan-voi-tinh-nang-moi-1851431299.htm
+[2026-06-14 00:47:30.490] [WARN]       ✗ Skipped: Article is older than the start date.
+[2026-06-14 00:47:30.491] [INFO]    -> Fetching detail: https://thanhnien.vn/lmht-fan-ham-mo-sang-tac-ban-mashup-giua-2-nhom-nhac-kda-va-true-damage-1851146050.htm
+[2026-06-14 00:47:30.623] [WARN]       ✗ Skipped: Article is older than the start date.
+[2026-06-14 00:47:30.624] [INFO]    -> Fetching detail: https://thanhnien.vn/lmht-bai-hat-giants-cua-nhom-nhac-true-damage-can-moc-69-trieu-nguoi-xem-1851146033.htm
+[2026-06-14 00:47:30.763] [WARN]       ✗ Skipped: Article is older than the start date.
+[2026-06-14 00:47:30.763] [INFO]    -> Fetching detail: https://thanhnien.vn/cktg-2019-riot-games-gioi-thieu-ban-nhac-moi-true-damage-tai-tran-chung-ket-1851146020.htm
+[2026-06-14 00:47:30.891] [WARN]       ✗ Skipped: Article is older than the start date.
+[2026-06-14 00:47:30.891] [INFO]    -> Fetching detail: https://thanhnien.vn/lmht-nhom-nhac-ao-true-damage-xuat-hien-them-soyeon-becky-g-keke-palmer-duckwrth-va-thutmost-1851145940.htm
+[2026-06-14 00:47:31.037] [WARN]       ✗ Skipped: Article is older than the start date.
+[2026-06-14 00:47:31.038] [INFO]    -> Fetching detail: https://thanhnien.vn/lmht-lo-nhom-trang-phuc-am-nhac-moi-bao-gom-akali-yasuo-ekko-qiyana-va-senna-1851145878.htm
+[2026-06-14 00:47:31.167] [WARN]       ✗ Skipped: Article is older than the start date.
+[2026-06-14 00:47:31.167] [INFO]    -> Fetching detail: https://thanhnien.vn/epic-games-len-ke-hoach-sua-loi-damage-trap-trong-phien-ban-toi-cua-fornite-1851142732.htm
+[2026-06-14 00:47:31.301] [WARN]       ✗ Skipped: Article is older than the start date.
+[2026-06-14 00:47:31.302] [INFO]    -> Fetching detail: https://thanhnien.vn/cktg-2017-sneaky-pha-vo-ki-luc-the-gioi-voi-luong-sat-thuong-gay-ra-sieu-khung-1851140385.htm
+[2026-06-14 00:47:31.346] [WARN]       ✗ Skipped: Article is older than the start date.
+[2026-06-14 00:47:31.347] [INFO]    -> Fetching detail: https://thanhnien.vn/video-lmht-giap-gai-co-phan-damage-voi-rong-baron-va-quai-rung-hay-khong-1851133667.htm
+[2026-06-14 00:47:31.469] [WARN]       ✗ Skipped: Article is older than the start date.
+[2026-06-14 00:47:31.470] [INFO]    -> Fetching detail: https://thanhnien.vn/tieu-ly-phi-dao-3d-chua-thoat-khoi-giat-lag-da-bi-hacker-hoanh-hanh-1851133459.htm
+[2026-06-14 00:47:31.616] [WARN]       ✗ Skipped: Article is older than the start date.
+[2026-06-14 00:47:31.617] [INFO]    -> Fetching detail: https://thanhnien.vn/video-lmht-het-hon-voi-phan-damage-tu-giap-gai-va-kiem-sung-hextech-1851132155.htm
+[2026-06-14 00:47:31.765] [WARN]       ✗ Skipped: Article is older than the start date.
+[2026-06-14 00:47:31.765] [INFO]    -> Fetching detail: https://thanhnien.vn/video-lmht-keo-solo-kinh-dien-39garen-full-tank39-va-39garen-full-damage39-1851131710.htm
+[2026-06-14 00:47:31.881] [WARN]       ✗ Skipped: Article is older than the start date.
+[2026-06-14 00:47:31.881] [INFO]    -> Fetching detail: https://thanhnien.vn/video-lmht-tro-mat-truoc-kha-nang-soc-damage-khung-khiep-cua-ap-aatrox-1851136319.htm
+[2026-06-14 00:47:31.996] [WARN]       ✗ Skipped: Article is older than the start date.
+[2026-06-14 00:47:31.996] [INFO]    -> Fetching detail: https://thanhnien.vn/video-lmht-thanh-alistar-dame-sieu-to-hien-linh-1851135611.htm
+[2026-06-14 00:47:32.126] [WARN]       ✗ Skipped: Article is older than the start date.
+[2026-06-14 00:47:32.127] [INFO]    -> Fetching detail: https://thanhnien.vn/dirty-bomb-pho-dien-loi-choi-ban-sung-pha-lan-chien-thuat-tai-e3-2015-1851124751.htm
+[2026-06-14 00:47:32.247] [WARN]       ✗ Skipped: Article is older than the start date.
+[2026-06-14 00:47:32.248] [INFO]    -> Fetching detail: https://thanhnien.vn/hearthstone-phan-tich-goblins-vs-gnomes-shaman-1851122462.htm
+[2026-06-14 00:47:32.376] [WARN]       ✗ Skipped: Article is older than the start date.
+[2026-06-14 00:47:32.377] [INFO]    -> Fetching detail: https://thanhnien.vn/tranh-cai-ve-lop-nhan-vat-gladiator-trong-cabal-1851121885.htm
+[2026-06-14 00:47:32.506] [WARN]       ✗ Skipped: Article is older than the start date.
+[2026-06-14 00:47:32.507] [INFO]    -> Fetching detail: https://thanhnien.vn/cach-san-boss-moi-18594670.htm
+[2026-06-14 00:47:32.611] [WARN]       ✗ Skipped: Article is older than the start date.
+[2026-06-14 00:47:32.613] [INFO]    -> Fetching detail: https://thanhnien.vn/3-sieu-nhan-moi-trong-dota-2-185111814.htm
+[2026-06-14 00:47:32.731] [WARN]       ✗ Skipped: Article is older than the start date.
+[2026-06-14 00:47:32.732] [INFO] Source [Thanh Niên]: Finished. Extracted 0 full articles.
+[2026-06-14 00:47:32.732] [INFO] --------------------------------------------------
+[2026-06-14 00:47:32.732] [INFO] Source [Dân Trí]: Starting extraction...
+[2026-06-14 00:47:32.815] [INFO]    -> Fetching detail: https://dantri.com.vn/suc-khoe/cong-ty-phan-phoi-my-pham-han-quoc-bi-phat-gan-150-trieu-dong-20260603165659847.htm
+[2026-06-14 00:47:32.834] [WARN]       ✗ Skipped: Failed to extract publication date.
+[2026-06-14 00:47:32.835] [INFO]    -> Fetching detail: https://dantri.com.vn/cong-nghe/lenovo-ra-mat-laptop-yoga-slim-7-pro-20210922144053251.htm
+[2026-06-14 00:47:32.850] [WARN]       ✗ Skipped: Failed to extract publication date.
+[2026-06-14 00:47:32.851] [INFO]    -> Fetching detail: https://dantri.com.vn/giai-tri/soobin-nhan-loi-khi-nhom-tan-binh-viet-de-thua-doi-nhat-ban-20251026111616132.htm
+[2026-06-14 00:47:32.868] [WARN]       ✗ Skipped: Failed to extract publication date.
+[2026-06-14 00:47:32.869] [INFO]    -> Fetching detail: https://dantri.com.vn/giao-duc/tuyen-sinh-lop-10-tphcm-nam-2019-huong-dan-giai-de-tieng-anh-20190602172957286.htm
+[2026-06-14 00:47:33.115] [WARN]       ✗ Skipped: Failed to extract publication date.
+[2026-06-14 00:47:33.116] [INFO]    -> Fetching detail: https://dantri.com.vn/cong-nghe/asus-tiet-lo-thong-tin-ve-zenbook-infinity-ultrabook-moi-1370334949.htm
+[2026-06-14 00:47:33.136] [WARN]       ✗ Skipped: Failed to extract publication date.
+[2026-06-14 00:47:33.136] [INFO]    -> Fetching detail: https://dantri.com.vn/giai-tri/baby-spice-dang-co-bau-1169948630.htm
+[2026-06-14 00:47:33.155] [WARN]       ✗ Skipped: Failed to extract publication date.
+[2026-06-14 00:47:33.156] [INFO]    -> Fetching detail: https://dantri.com.vn/giao-duc/de-va-dap-an-mon-tieng-anh-thi-lop-10-cua-tphcm-nam-2026-20260601144032938.htm
+[2026-06-14 00:47:33.175] [WARN]       ✗ Skipped: Failed to extract publication date.
+[2026-06-14 00:47:33.176] [INFO]    -> Fetching detail: https://dantri.com.vn/cong-nghe/anh-thuc-te-zenbook-infinity-tai-trien-lam-computex-2013-1370703037.htm
+[2026-06-14 00:47:33.210] [WARN]       ✗ Skipped: Failed to extract publication date.
+[2026-06-14 00:47:33.210] [INFO]    -> Fetching detail: https://dantri.com.vn/giai-tri/cuu-thanh-vien-nhom-spice-girls-len-xe-hoa-1160518673.htm
+[2026-06-14 00:47:33.228] [WARN]       ✗ Skipped: Failed to extract publication date.
+[2026-06-14 00:47:33.229] [INFO] Source [Dân Trí]: Finished. Extracted 0 full articles.
+[2026-06-14 00:47:33.229] [INFO] News scraping completed. Total full articles retrieved: 0
+[2026-06-14 00:47:33.230] [INFO] Collected 0 posts from NEWS
+[2026-06-14 00:47:33.231] [INFO] Collected 36 posts from YOUTUBE
+[2026-06-14 00:47:33.232] [INFO] Total raw posts collected: 36
+[2026-06-14 00:47:33.233] [INFO] Preprocessing 36 posts...
+[2026-06-14 00:47:33.238] [INFO] Preprocessing completed. Yielded 36 valid posts.
+[2026-06-14 00:47:33.240] [INFO] Valid posts available after preprocessing: 36
+[2026-06-14 00:47:33.325] [INFO] Saved 36 posts to database
+[2026-06-14 00:47:33.338] [INFO] Reloaded 112 posts equipped with database IDs
+[2026-06-14 00:47:33.342] [INFO] Collected 31 comments for post ID: 177
+[2026-06-14 00:47:33.344] [INFO] Collected 17 comments for post ID: 122
+[2026-06-14 00:47:33.345] [INFO] Collected 44 comments for post ID: 124
+[2026-06-14 00:47:33.347] [INFO] Collected 25 comments for post ID: 110
+[2026-06-14 00:47:33.349] [INFO] Collected 36 comments for post ID: 167
+[2026-06-14 00:47:33.352] [INFO] Collected 36 comments for post ID: 191
+[2026-06-14 00:47:33.354] [INFO] Collected 25 comments for post ID: 99
+[2026-06-14 00:47:33.357] [INFO] Collected 49 comments for post ID: 114
+[2026-06-14 00:47:33.358] [INFO] Collected 47 comments for post ID: 108
+[2026-06-14 00:47:33.360] [INFO] Collected 31 comments for post ID: 130
+[2026-06-14 00:47:33.361] [INFO] Collected 19 comments for post ID: 103
+[2026-06-14 00:47:33.364] [INFO] Collected 41 comments for post ID: 135
+[2026-06-14 00:47:33.366] [INFO] Collected 19 comments for post ID: 137
+[2026-06-14 00:47:33.368] [INFO] Collected 50 comments for post ID: 85
+[2026-06-14 00:47:33.371] [INFO] Collected 49 comments for post ID: 88
+[2026-06-14 00:47:33.373] [INFO] Collected 44 comments for post ID: 139
+[2026-06-14 00:47:33.374] [INFO] Collected 23 comments for post ID: 100
+[2026-06-14 00:47:33.376] [INFO] Collected 31 comments for post ID: 121
+[2026-06-14 00:47:33.378] [INFO] Collected 18 comments for post ID: 129
+[2026-06-14 00:47:33.380] [INFO] Collected 34 comments for post ID: 102
+[2026-06-14 00:47:33.383] [INFO] Collected 40 comments for post ID: 93
+[2026-06-14 00:47:33.384] [INFO] Collected 27 comments for post ID: 152
+[2026-06-14 00:47:33.385] [INFO] Collected 23 comments for post ID: 120
+[2026-06-14 00:47:33.386] [INFO] Collected 48 comments for post ID: 178
+[2026-06-14 00:47:33.387] [INFO] Collected 43 comments for post ID: 101
+[2026-06-14 00:47:33.389] [INFO] Collected 31 comments for post ID: 104
+[2026-06-14 00:47:33.390] [INFO] Collected 25 comments for post ID: 95
+[2026-06-14 00:47:33.391] [INFO] Collected 38 comments for post ID: 175
+[2026-06-14 00:47:33.393] [INFO] Collected 18 comments for post ID: 98
+[2026-06-14 00:47:33.395] [INFO] Collected 46 comments for post ID: 116
+[2026-06-14 00:47:33.397] [INFO] Collected 43 comments for post ID: 183
+[2026-06-14 00:47:33.399] [INFO] Collected 25 comments for post ID: 140
+[2026-06-14 00:47:33.401] [INFO] Collected 31 comments for post ID: 97
+[2026-06-14 00:47:33.402] [INFO] Collected 24 comments for post ID: 136
+[2026-06-14 00:47:33.403] [INFO] Collected 50 comments for post ID: 180
+[2026-06-14 00:47:33.405] [INFO] Collected 20 comments for post ID: 111
+[2026-06-14 00:47:33.407] [INFO] Collected 43 comments for post ID: 189
+[2026-06-14 00:47:33.408] [INFO] Collected 50 comments for post ID: 185
+[2026-06-14 00:47:33.409] [INFO] Collected 16 comments for post ID: 106
+[2026-06-14 00:47:33.411] [INFO] Collected 23 comments for post ID: 169
+[2026-06-14 00:47:33.414] [INFO] Collected 45 comments for post ID: 192
+[2026-06-14 00:47:33.415] [INFO] Collected 39 comments for post ID: 154
+[2026-06-14 00:47:33.416] [INFO] Collected 37 comments for post ID: 134
+[2026-06-14 00:47:33.418] [INFO] Collected 46 comments for post ID: 138
+[2026-06-14 00:47:33.420] [INFO] Collected 32 comments for post ID: 190
+[2026-06-14 00:47:33.422] [INFO] Collected 38 comments for post ID: 181
+[2026-06-14 00:47:33.424] [INFO] Collected 48 comments for post ID: 123
+[2026-06-14 00:47:33.426] [INFO] Collected 47 comments for post ID: 165
+[2026-06-14 00:47:33.428] [INFO] Collected 47 comments for post ID: 172
+[2026-06-14 00:47:33.429] [INFO] Collected 28 comments for post ID: 179
+[2026-06-14 00:47:33.431] [INFO] Collected 42 comments for post ID: 107
+[2026-06-14 00:47:33.433] [INFO] Collected 31 comments for post ID: 115
+[2026-06-14 00:47:33.435] [INFO] Collected 41 comments for post ID: 126
+[2026-06-14 00:47:33.436] [INFO] Collected 34 comments for post ID: 133
+[2026-06-14 00:47:33.437] [INFO] Collected 49 comments for post ID: 144
+[2026-06-14 00:47:33.438] [INFO] Collected 41 comments for post ID: 86
+[2026-06-14 00:47:33.439] [INFO] Collected 27 comments for post ID: 92
+[2026-06-14 00:47:33.441] [INFO] Collected 42 comments for post ID: 155
+[2026-06-14 00:47:33.443] [INFO] Collected 32 comments for post ID: 171
+[2026-06-14 00:47:33.444] [INFO] Collected 29 comments for post ID: 142
+[2026-06-14 00:47:33.446] [INFO] Collected 23 comments for post ID: 112
+[2026-06-14 00:47:33.446] [INFO] Collected 15 comments for post ID: 125
+[2026-06-14 00:47:33.448] [INFO] Collected 28 comments for post ID: 170
+[2026-06-14 00:47:33.449] [INFO] Collected 48 comments for post ID: 194
+[2026-06-14 00:47:33.450] [INFO] Collected 26 comments for post ID: 163
+[2026-06-14 00:47:33.451] [INFO] Collected 38 comments for post ID: 184
+[2026-06-14 00:47:33.452] [INFO] Collected 32 comments for post ID: 131
+[2026-06-14 00:47:33.453] [INFO] Collected 41 comments for post ID: 166
+[2026-06-14 00:47:33.454] [INFO] Collected 21 comments for post ID: 173
+[2026-06-14 00:47:33.455] [INFO] Collected 28 comments for post ID: 132
+[2026-06-14 00:47:33.455] [INFO] Collected 23 comments for post ID: 188
+[2026-06-14 00:47:33.457] [INFO] Collected 50 comments for post ID: 117
+[2026-06-14 00:47:33.458] [INFO] Collected 30 comments for post ID: 159
+[2026-06-14 00:47:33.459] [INFO] Collected 31 comments for post ID: 105
+[2026-06-14 00:47:33.460] [INFO] Collected 45 comments for post ID: 182
+[2026-06-14 00:47:33.461] [INFO] Collected 36 comments for post ID: 90
+[2026-06-14 00:47:33.462] [INFO] Collected 50 comments for post ID: 193
+[2026-06-14 00:47:33.463] [INFO] Collected 38 comments for post ID: 94
+[2026-06-14 00:47:33.464] [INFO] Collected 32 comments for post ID: 148
+[2026-06-14 00:47:33.465] [INFO] Collected 33 comments for post ID: 146
+[2026-06-14 00:47:33.466] [INFO] Collected 22 comments for post ID: 96
+[2026-06-14 00:47:33.467] [INFO] Collected 16 comments for post ID: 143
+[2026-06-14 00:47:33.469] [INFO] Collected 45 comments for post ID: 119
+[2026-06-14 00:47:33.469] [INFO] Collected 28 comments for post ID: 176
+[2026-06-14 00:47:33.470] [INFO] Collected 37 comments for post ID: 158
+[2026-06-14 00:47:33.471] [INFO] Collected 49 comments for post ID: 127
+[2026-06-14 00:47:33.471] [INFO] Collected 21 comments for post ID: 162
+[2026-06-14 00:47:33.472] [INFO] Collected 16 comments for post ID: 151
+[2026-06-14 00:47:33.473] [INFO] Collected 33 comments for post ID: 174
+[2026-06-14 00:47:33.474] [INFO] Collected 26 comments for post ID: 147
+[2026-06-14 00:47:33.475] [INFO] Collected 33 comments for post ID: 84
+[2026-06-14 00:47:33.475] [INFO] Collected 42 comments for post ID: 128
+[2026-06-14 00:47:33.476] [INFO] Collected 45 comments for post ID: 160
+[2026-06-14 00:47:33.477] [INFO] Collected 18 comments for post ID: 118
+[2026-06-14 00:47:33.477] [INFO] Collected 21 comments for post ID: 186
+[2026-06-14 00:47:33.478] [INFO] Collected 47 comments for post ID: 164
+[2026-06-14 00:47:33.478] [INFO] Collected 40 comments for post ID: 156
+[2026-06-14 00:47:33.479] [INFO] Collected 41 comments for post ID: 145
+[2026-06-14 00:47:33.480] [INFO] Collected 33 comments for post ID: 150
+[2026-06-14 00:47:33.481] [INFO] Collected 33 comments for post ID: 157
+[2026-06-14 00:47:33.481] [INFO] Collected 31 comments for post ID: 187
+[2026-06-14 00:47:33.482] [INFO] Collected 48 comments for post ID: 109
+[2026-06-14 00:47:33.483] [INFO] Collected 25 comments for post ID: 161
+[2026-06-14 00:47:33.484] [INFO] Collected 44 comments for post ID: 168
+[2026-06-14 00:47:33.484] [INFO] Collected 18 comments for post ID: 91
+[2026-06-14 00:47:33.485] [INFO] Collected 47 comments for post ID: 153
+[2026-06-14 00:47:33.485] [INFO] Collected 19 comments for post ID: 83
+[2026-06-14 00:47:33.486] [INFO] Collected 45 comments for post ID: 149
+[2026-06-14 00:47:33.488] [INFO] Collected 48 comments for post ID: 89
+[2026-06-14 00:47:33.489] [INFO] Collected 41 comments for post ID: 87
+[2026-06-14 00:47:33.490] [INFO] Collected 18 comments for post ID: 141
+[2026-06-14 00:47:33.490] [INFO] Collected 19 comments for post ID: 113
+[2026-06-14 00:47:33.490] [INFO] Total raw comments collected: 3825
+[2026-06-14 00:47:33.491] [INFO] Preprocessing 3825 comments...
+[2026-06-14 00:47:33.531] [INFO] Preprocessing completed. Yielded 3825 valid comments.
+[2026-06-14 00:47:33.532] [INFO] Valid comments available after preprocessing: 3825
+[2026-06-14 00:47:34.259] [INFO] Saved 3825 comments to database
+[2026-06-14 00:47:34.261] [INFO] Loading collected posts and comments for project ID: 2
+[2026-06-14 00:48:00.530] [INFO] Collection Complete: Data collection finished. Check the collected posts below.
+[2026-06-14 00:52:41.249] [INFO] Starting sentiment analysis for 112 posts in project 2
+[2026-06-14 00:52:52.186] [INFO] DataCollectionController initialize ...
+[2026-06-14 00:52:52.188] [INFO] Loading collected posts and comments for project ID: 2
+[2026-06-14 00:53:06.055] [INFO] Hệ thống ghi nhật ký (Logging System) đã được khởi động.
+[2026-06-14 00:53:06.062] [INFO] === Disaster Social Media Analysis Application ===
+[2026-06-14 00:53:06.063] [INFO] Starting application with Java version: 21.0.11
+[2026-06-14 00:53:06.069] [INFO] Initializing application...
+[2026-06-14 00:53:06.089] [INFO] Starting application...
+[2026-06-14 00:53:06.417] [INFO] Starting ApplicationContext initialization pipeline...
+[2026-06-14 00:53:06.420] [INFO] Database startup and verification sequence initiated.
+[2026-06-14 00:53:07.630] [INFO] Database [Disasters] already exists. Skipping database creation step.
+[2026-06-14 00:53:07.790] [INFO] Reading schema.sql from system resources to verify entity tables...
+[2026-06-14 00:53:07.820] [ERROR] Critical failure encountered during target database initialization flow! - Exception: com.microsoft.sqlserver.jdbc.SQLServerException: There is already an object named 'projects' in the database.
+Stack trace:
+  at com.microsoft.sqlserver.jdbc.SQLServerException.makeFromDatabaseError(SQLServerException.java:259)
+  at com.microsoft.sqlserver.jdbc.SQLServerStatement.getNextResult(SQLServerStatement.java:1695)
+  at com.microsoft.sqlserver.jdbc.SQLServerStatement.doExecuteStatement(SQLServerStatement.java:920)
+  at com.microsoft.sqlserver.jdbc.SQLServerStatement$StmtExecCmd.doExecute(SQLServerStatement.java:814)
+  at com.microsoft.sqlserver.jdbc.TDSCommand.execute(IOBuffer.java:7675)
+  at com.microsoft.sqlserver.jdbc.SQLServerConnection.executeCommand(SQLServerConnection.java:4137)
+  at com.microsoft.sqlserver.jdbc.SQLServerStatement.executeCommand(SQLServerStatement.java:272)
+  at com.microsoft.sqlserver.jdbc.SQLServerStatement.executeStatement(SQLServerStatement.java:246)
+  at com.microsoft.sqlserver.jdbc.SQLServerStatement.execute(SQLServerStatement.java:787)
+  at com.disaster.analysis.infrastructure.repository.SqlServerDatabaseInitializerImpl.initialize(SqlServerDatabaseInitializerImpl.java:70)
+  at com.disaster.analysis.config.ApplicationContext.initialize(ApplicationContext.java:88)
+  at com.disaster.analysis.ui.controller.MainController.initialize(MainController.java:27)
+  at javafx.fxml/javafx.fxml.FXMLLoader.loadImpl(FXMLLoader.java:2670)
+  at javafx.fxml/javafx.fxml.FXMLLoader.loadImpl(FXMLLoader.java:2563)
+  at javafx.fxml/javafx.fxml.FXMLLoader.load(FXMLLoader.java:2531)
+  at com.disaster.analysis.Main.start(Main.java:29)
+  at javafx.graphics/com.sun.javafx.application.LauncherImpl.lambda$launchApplication1$9(LauncherImpl.java:839)
+  at javafx.graphics/com.sun.javafx.application.PlatformImpl.lambda$runAndWait$12(PlatformImpl.java:483)
+  at javafx.graphics/com.sun.javafx.application.PlatformImpl.lambda$runLater$10(PlatformImpl.java:456)
+  at java.base/java.security.AccessController.doPrivileged(AccessController.java:400)
+  at javafx.graphics/com.sun.javafx.application.PlatformImpl.lambda$runLater$11(PlatformImpl.java:455)
+  at javafx.graphics/com.sun.glass.ui.InvokeLaterDispatcher$Future.run$$$capture(InvokeLaterDispatcher.java:95)
+  at javafx.graphics/com.sun.glass.ui.InvokeLaterDispatcher$Future.run(InvokeLaterDispatcher.java)
+  at javafx.graphics/com.sun.glass.ui.win.WinApplication._runLoop(Native Method)
+  at javafx.graphics/com.sun.glass.ui.win.WinApplication.lambda$runLoop$3(WinApplication.java:190)
+  at java.base/java.lang.Thread.run(Thread.java:1583)
+
+[2026-06-14 00:53:08.259] [INFO] HikariCP Connection Pool initialized successfully.
+[2026-06-14 00:53:08.271] [INFO] PreprocessingService initialized.
+[2026-06-14 00:53:08.277] [WARN] YouTube API Key missing. Falling back to MockDataSource.
+[2026-06-14 00:53:08.278] [INFO] NewsDataSource initialized with Two-Step Scraping Strategy for 4 sources.
+[2026-06-14 00:53:08.281] [INFO] Initialized API clients for 2 platforms
+[2026-06-14 00:53:09.130] [INFO] SentimentAnalysisService initialized.
+[2026-06-14 00:53:09.132] [INFO] DamageClassificationService initialized.
+[2026-06-14 00:53:09.138] [INFO] Initialized API clients for mock-ai-offline successfully
+[2026-06-14 00:53:09.141] [INFO] ExportService initialized successfully.
+[2026-06-14 00:53:09.141] [INFO] ApplicationContext initialized successfully. All dependencies wired up.
+[2026-06-14 00:53:09.906] [INFO] Application started successfully
+[2026-06-14 01:00:03.062] [INFO] Project Created: Project 'Yagi' has been created successfully.
+[2026-06-14 01:00:13.813] [INFO] DataCollectionController initialize ...
+[2026-06-14 01:00:13.816] [INFO] Loading collected posts and comments for project ID: 3
+[2026-06-14 01:00:15.318] [INFO] Starting data collection for project: Yagi
+[2026-06-14 01:00:15.321] [INFO] Search query constructed: typhoon #typhoon
+[2026-06-14 01:00:15.325] [INFO] Async thread started collection from: YOUTUBE
+[2026-06-14 01:00:15.328] [INFO] Async thread started collection from: NEWS
+[2026-06-14 01:00:15.329] [INFO] Fetching detailed news articles for query: 'typhoon #typhoon'
+[2026-06-14 01:00:15.330] [INFO] --------------------------------------------------
+[2026-06-14 01:00:15.331] [INFO] Source [VnExpress]: Starting extraction...
+[2026-06-14 01:00:15.333] [INFO] Collected 42 posts from YOUTUBE
+[2026-06-14 01:00:16.267] [INFO]    -> Fetching detail: https://vnexpress.net/khoanh-khac-tiem-kich-typhoon-va-vao-chim-vo-kinh-buong-lai-4916288.html
+[2026-06-14 01:00:17.301] [WARN]       ✗ Skipped: Article is newer than the end date.
+[2026-06-14 01:00:17.302] [INFO]    -> Fetching detail: https://vnexpress.net/anh-co-the-dieu-tiem-kich-typhoon-tuan-tra-khong-phan-ukraine-4851726.html
+[2026-06-14 01:00:18.335] [WARN]       ✗ Skipped: Article is newer than the end date.
+[2026-06-14 01:00:18.336] [INFO]    -> Fetching detail: https://vnexpress.net/ao-dieu-tiem-kich-chan-trinh-sat-co-my-xam-pham-khong-phan-5073510.html
+[2026-06-14 01:00:19.029] [WARN]       ✗ Skipped: Article is newer than the end date.
+[2026-06-14 01:00:19.030] [INFO]    -> Fetching detail: https://video.vnexpress.net/video/giai-tri/typhoon-julian-calor-3372468.html
+[2026-06-14 01:00:19.744] [WARN]       ✗ Skipped: Failed to extract publication date.
+[2026-06-14 01:00:19.744] [INFO]    -> Fetching detail: https://vnexpress.net/thuong-vu-tiem-kich-giup-tho-nhi-ky-giam-phu-thuoc-my-4956889.html
+[2026-06-14 01:00:20.541] [WARN]       ✗ Skipped: Article is newer than the end date.
+[2026-06-14 01:00:20.542] [INFO] Source [VnExpress]: Finished. Extracted 0 full articles.
+[2026-06-14 01:00:20.542] [INFO] --------------------------------------------------
+[2026-06-14 01:00:20.543] [INFO] Source [Tuổi Trẻ]: Starting extraction...
+[2026-06-14 01:00:20.866] [WARN]    -> Warning: No article links found on the search page.
+[2026-06-14 01:00:20.867] [INFO] Source [Tuổi Trẻ]: Finished. Extracted 0 full articles.
+[2026-06-14 01:00:20.867] [INFO] --------------------------------------------------
+[2026-06-14 01:00:20.868] [INFO] Source [Thanh Niên]: Starting extraction...
+[2026-06-14 01:00:21.147] [INFO]    -> Fetching detail: https://thanhnien.vn/goi-mua-20-tiem-kich-typhoon-cua-tho-nhi-ky-bi-che-qua-dat-185251028161343693.htm
+[2026-06-14 01:00:21.313] [WARN]       ✗ Skipped: Article is newer than the end date.
+[2026-06-14 01:00:21.314] [INFO]    -> Fetching detail: https://thanhnien.vn/tho-nhi-ky-mua-20-tiem-kich-typhoon-gia-gan-11-ti-usd-bi-che-mac-185251028072138554.htm
+[2026-06-14 01:00:21.479] [WARN]       ✗ Skipped: Article is newer than the end date.
+[2026-06-14 01:00:21.480] [INFO]    -> Fetching detail: https://thanhnien.vn/xem-chien-dau-co-typhoon-anh-xuat-kich-tuan-tra-khong-phan-ba-lan-185250921220631986.htm
+[2026-06-14 01:00:21.651] [WARN]       ✗ Skipped: Article is newer than the end date.
+[2026-06-14 01:00:21.652] [INFO]    -> Fetching detail: https://thanhnien.vn/anh-dieu-chien-dau-co-typhoon-tuan-tra-khong-phan-ba-lan-185250921084320633.htm
+[2026-06-14 01:00:21.776] [WARN]       ✗ Skipped: Article is newer than the end date.
+[2026-06-14 01:00:21.777] [INFO]    -> Fetching detail: https://thanhnien.vn/tiem-kich-eurofighter-typhoon-them-nguy-hiem-voi-ai-185250710115901925.htm
+[2026-06-14 01:00:21.907] [WARN]       ✗ Skipped: Article is newer than the end date.
+[2026-06-14 01:00:21.908] [INFO]    -> Fetching detail: https://thanhnien.vn/anh-nhat-y-hop-tac-phat-trien-tiem-kich-the-he-thu-sau-185241213210316285.htm
+[2026-06-14 01:00:22.028] [WARN]       ✗ Skipped: Article is newer than the end date.
+[2026-06-14 01:00:22.029] [INFO]    -> Fetching detail: https://thanhnien.vn/my-dieu-tra-am-muu-pha-hoai-cua-nhom-tin-tac-trung-quoc-khet-tieng-185240209073250468.htm
+[2026-06-14 01:00:22.189] [WARN]       ✗ Skipped: Article is older than the start date.
+[2026-06-14 01:00:22.190] [INFO]    -> Fetching detail: https://thanhnien.vn/my-triet-pha-mang-luoi-tin-tac-cao-buoc-trung-quoc-bao-tro-185240201114823281.htm
+[2026-06-14 01:00:22.337] [WARN]       ✗ Skipped: Article is older than the start date.
+[2026-06-14 01:00:22.338] [INFO]    -> Fetching detail: https://thanhnien.vn/dan-mang-trung-quoc-soi-suc-vi-man-ti-thi-chien-dau-co-j-10c-eurofighter-typhoon-185240131102458784.htm
+[2026-06-14 01:00:22.461] [WARN]       ✗ Skipped: Article is older than the start date.
+[2026-06-14 01:00:22.462] [INFO]    -> Fetching detail: https://thanhnien.vn/chien-dau-co-trung-quoc-khong-chien-voi-may-bay-chau-au-9-lan-trong-tap-tran-185240130092607486.htm
+[2026-06-14 01:00:23.178] [WARN]       ✗ Skipped: Article is older than the start date.
+[2026-06-14 01:00:23.179] [INFO]    -> Fetching detail: https://thanhnien.vn/thoi-trang-tre/thanh-pho-katy-dia-diem-thich-hop-du-lich-gia-dinh-185240115213811916.htm
+[2026-06-14 01:00:23.285] [WARN]       ✗ Skipped: Article is older than the start date.
+[2026-06-14 01:00:23.286] [INFO]    -> Fetching detail: https://thanhnien.vn/my-anh-da-dung-vu-khi-gi-de-danh-houthi-185240112165523847.htm
+[2026-06-14 01:00:23.428] [WARN]       ✗ Skipped: Article is older than the start date.
+[2026-06-14 01:00:23.428] [INFO]    -> Fetching detail: https://thanhnien.vn/chien-dau-co-anh-ngan-chan-6-may-bay-nga-gan-ranh-gioi-nato-185230610105129238.htm
+[2026-06-14 01:00:23.548] [WARN]       ✗ Skipped: Article is older than the start date.
+[2026-06-14 01:00:23.549] [INFO]    -> Fetching detail: https://thanhnien.vn/co-van-dong-ngam-o-lau-nam-goc-de-chuyen-chien-dau-co-f-16-den-ukraine-185230131151639873.htm
+[2026-06-14 01:00:23.732] [WARN]       ✗ Skipped: Article is older than the start date.
+[2026-06-14 01:00:23.733] [INFO]    -> Fetching detail: https://thanhnien.vn/anh-chua-muon-cung-cap-chien-dau-co-typhoon-cho-ukraine-lockheed-noi-san-sang-giao-f-16-1851545095.htm
+[2026-06-14 01:00:23.889] [WARN]       ✗ Skipped: Article is older than the start date.
+[2026-06-14 01:00:23.891] [INFO]    -> Fetching detail: https://thanhnien.vn/xem-tiem-kich-typhoon-ho-tong-may-bay-nem-bom-tu-95-cua-nga-1851426833.htm
+[2026-06-14 01:00:24.023] [WARN]       ✗ Skipped: Article is older than the start date.
+[2026-06-14 01:00:24.024] [INFO]    -> Fetching detail: https://thanhnien.vn/chien-dau-co-typhoon-anh-se-tuan-tra-bien-den-giua-cang-thang-nga-ukraine-1851254749.htm
+[2026-06-14 01:00:24.074] [WARN]       ✗ Skipped: Article is older than the start date.
+[2026-06-14 01:00:24.074] [INFO]    -> Fetching detail: https://thanhnien.vn/anh-dieu-chien-dau-co-den-bien-den-giua-cang-thang-ukraine-nga-1851055861.htm
+[2026-06-14 01:00:24.180] [WARN]       ✗ Skipped: Article is older than the start date.
+[2026-06-14 01:00:24.181] [INFO]    -> Fetching detail: https://thanhnien.vn/tham-vong-bay-chien-dau-co-len-ria-khong-gian-ban-ha-ve-tinh-1851040702.htm
+[2026-06-14 01:00:24.304] [WARN]       ✗ Skipped: Article is older than the start date.
+[2026-06-14 01:00:24.305] [INFO]    -> Fetching detail: https://thanhnien.vn/dan-anh-soc-khi-2-tiem-kich-tao-tieng-no-lon-ap-sat-may-bay-dan-su-1851028560.htm
+[2026-06-14 01:00:24.425] [WARN]       ✗ Skipped: Article is older than the start date.
+[2026-06-14 01:00:24.426] [INFO] Source [Thanh Niên]: Finished. Extracted 0 full articles.
+[2026-06-14 01:00:24.426] [INFO] --------------------------------------------------
+[2026-06-14 01:00:24.426] [INFO] Source [Dân Trí]: Starting extraction...
+[2026-06-14 01:00:25.012] [INFO]    -> Fetching detail: https://dantri.com.vn/the-gioi/chien-su-ukraine-264-nga-tap-kich-ukraine-nato-bao-dong-khan-20260426112004039.htm
+[2026-06-14 01:00:25.589] [WARN]       ✗ Skipped: Failed to extract publication date.
+[2026-06-14 01:00:25.590] [INFO]    -> Fetching detail: https://dantri.com.vn/the-gioi/bangladesh-chot-thuong-vu-tiem-kich-eurofighter-20251211140534406.htm
+[2026-06-14 01:00:25.926] [WARN]       ✗ Skipped: Failed to extract publication date.
+[2026-06-14 01:00:25.927] [INFO]    -> Fetching detail: https://dantri.com.vn/the-gioi/anh-loai-bien-tiem-kich-eurofighter-f-35-thong-tri-san-choi-20260108140358198.htm
+[2026-06-14 01:00:26.362] [WARN]       ✗ Skipped: Failed to extract publication date.
+[2026-06-14 01:00:26.379] [INFO]    -> Fetching detail: https://dantri.com.vn/cong-nghe/fbi-treo-giai-10-trieu-usd-truy-lung-nhom-tin-tac-nguy-hiem-20250502025307917.htm
+[2026-06-14 01:00:26.735] [WARN]       ✗ Skipped: Failed to extract publication date.
+[2026-06-14 01:00:26.736] [INFO]    -> Fetching detail: https://dantri.com.vn/the-gioi/ukraine-tuyen-bo-pha-huy-may-bay-chien-dau-40-trieu-usd-cua-nga-20260517164748135.htm
+[2026-06-14 01:00:26.751] [WARN]       ✗ Skipped: Failed to extract publication date.
+[2026-06-14 01:00:26.752] [INFO]    -> Fetching detail: https://dantri.com.vn/the-gioi/ben-trong-nhiem-vu-tiep-lieu-chien-dau-co-phuong-tay-truoc-cua-ngo-cua-nga-20251201141438288.htm
+[2026-06-14 01:00:27.249] [WARN]       ✗ Skipped: Failed to extract publication date.
+[2026-06-14 01:00:27.250] [INFO]    -> Fetching detail: https://dantri.com.vn/giai-tri/vu-an-bi-an-cua-vu-mong-lung-hon-nua-trieu-nguoi-doi-truy-tim-su-that-20251023221507765.htm
+[2026-06-14 01:00:27.573] [WARN]       ✗ Skipped: Failed to extract publication date.
+[2026-06-14 01:00:27.574] [INFO]    -> Fetching detail: https://dantri.com.vn/the-gioi/khoanh-khac-tiem-kich-cuong-phong-anh-chan-ho-mang-chua-su-30-cua-nga-20190618114357662.htm
+[2026-06-14 01:00:28.136] [WARN]       ✗ Skipped: Failed to extract publication date.
+[2026-06-14 01:00:28.137] [INFO]    -> Fetching detail: https://dantri.com.vn/the-gioi/anh-dieu-tiem-kich-chan-may-bay-do-tham-cua-nga-tai-bien-baltic-20230616111321510.htm
+[2026-06-14 01:00:28.670] [WARN]       ✗ Skipped: Failed to extract publication date.
+[2026-06-14 01:00:28.671] [INFO]    -> Fetching detail: https://dantri.com.vn/the-gioi/my-bay-binh-bo-tran-o-trung-dong-iran-tang-cuong-canh-giac-20260126150036502.htm
+[2026-06-14 01:00:28.968] [WARN]       ✗ Skipped: Failed to extract publication date.
+[2026-06-14 01:00:28.969] [INFO]    -> Fetching detail: https://dantri.com.vn/the-gioi/chien-dau-co-chu-luc-cua-nato-hit-khoi-mig-31-nga-20251015132203421.htm
+[2026-06-14 01:00:29.483] [WARN]       ✗ Skipped: Failed to extract publication date.
+[2026-06-14 01:00:29.485] [INFO]    -> Fetching detail: https://dantri.com.vn/the-gioi/tiem-kich-anh-san-sang-giam-sat-ngung-ban-o-ukraine-20250321113903455.htm
+[2026-06-14 01:00:30.112] [WARN]       ✗ Skipped: Failed to extract publication date.
+[2026-06-14 01:00:30.113] [INFO] Source [Dân Trí]: Finished. Extracted 0 full articles.
+[2026-06-14 01:00:30.114] [INFO] News scraping completed. Total full articles retrieved: 0
+[2026-06-14 01:00:30.114] [INFO] Collected 0 posts from NEWS
+[2026-06-14 01:00:30.114] [INFO] Total raw posts collected: 42
+[2026-06-14 01:00:30.116] [INFO] Preprocessing 42 posts...
+[2026-06-14 01:00:30.124] [INFO] Preprocessing completed. Yielded 42 valid posts.
+[2026-06-14 01:00:30.125] [INFO] Valid posts available after preprocessing: 42
+[2026-06-14 01:00:30.206] [INFO] Saved 42 posts to database
+[2026-06-14 01:00:30.244] [INFO] Reloaded 42 posts equipped with database IDs
+[2026-06-14 01:00:30.247] [INFO] Collected 18 comments for post ID: 205
+[2026-06-14 01:00:30.248] [INFO] Collected 19 comments for post ID: 226
+[2026-06-14 01:00:30.250] [INFO] Collected 37 comments for post ID: 220
+[2026-06-14 01:00:30.252] [INFO] Collected 39 comments for post ID: 203
+[2026-06-14 01:00:30.253] [INFO] Collected 37 comments for post ID: 224
+[2026-06-14 01:00:30.255] [INFO] Collected 19 comments for post ID: 204
+[2026-06-14 01:00:30.257] [INFO] Collected 28 comments for post ID: 236
+[2026-06-14 01:00:30.258] [INFO] Collected 41 comments for post ID: 232
+[2026-06-14 01:00:30.260] [INFO] Collected 48 comments for post ID: 200
+[2026-06-14 01:00:30.261] [INFO] Collected 15 comments for post ID: 230
+[2026-06-14 01:00:30.262] [INFO] Collected 50 comments for post ID: 218
+[2026-06-14 01:00:30.264] [INFO] Collected 40 comments for post ID: 214
+[2026-06-14 01:00:30.266] [INFO] Collected 44 comments for post ID: 209
+[2026-06-14 01:00:30.267] [INFO] Collected 48 comments for post ID: 198
+[2026-06-14 01:00:30.268] [INFO] Collected 23 comments for post ID: 211
+[2026-06-14 01:00:30.270] [INFO] Collected 29 comments for post ID: 208
+[2026-06-14 01:00:30.273] [INFO] Collected 49 comments for post ID: 206
+[2026-06-14 01:00:30.274] [INFO] Collected 15 comments for post ID: 202
+[2026-06-14 01:00:30.275] [INFO] Collected 49 comments for post ID: 195
+[2026-06-14 01:00:30.278] [INFO] Collected 33 comments for post ID: 215
+[2026-06-14 01:00:30.280] [INFO] Collected 46 comments for post ID: 223
+[2026-06-14 01:00:30.282] [INFO] Collected 47 comments for post ID: 217
+[2026-06-14 01:00:30.283] [INFO] Collected 42 comments for post ID: 231
+[2026-06-14 01:00:30.285] [INFO] Collected 43 comments for post ID: 227
+[2026-06-14 01:00:30.287] [INFO] Collected 23 comments for post ID: 235
+[2026-06-14 01:00:30.288] [INFO] Collected 34 comments for post ID: 197
+[2026-06-14 01:00:30.290] [INFO] Collected 45 comments for post ID: 212
+[2026-06-14 01:00:30.292] [INFO] Collected 38 comments for post ID: 199
+[2026-06-14 01:00:30.294] [INFO] Collected 49 comments for post ID: 229
+[2026-06-14 01:00:30.295] [INFO] Collected 16 comments for post ID: 207
+[2026-06-14 01:00:30.296] [INFO] Collected 25 comments for post ID: 233
+[2026-06-14 01:00:30.297] [INFO] Collected 44 comments for post ID: 213
+[2026-06-14 01:00:30.298] [INFO] Collected 24 comments for post ID: 225
+[2026-06-14 01:00:30.300] [INFO] Collected 48 comments for post ID: 210
+[2026-06-14 01:00:30.301] [INFO] Collected 15 comments for post ID: 219
+[2026-06-14 01:00:30.302] [INFO] Collected 27 comments for post ID: 221
+[2026-06-14 01:00:30.303] [INFO] Collected 50 comments for post ID: 234
+[2026-06-14 01:00:30.304] [INFO] Collected 47 comments for post ID: 201
+[2026-06-14 01:00:30.306] [INFO] Collected 31 comments for post ID: 196
+[2026-06-14 01:00:30.307] [INFO] Collected 31 comments for post ID: 222
+[2026-06-14 01:00:30.308] [INFO] Collected 17 comments for post ID: 216
+[2026-06-14 01:00:30.309] [INFO] Collected 27 comments for post ID: 228
+[2026-06-14 01:00:30.310] [INFO] Total raw comments collected: 1450
+[2026-06-14 01:00:30.311] [INFO] Preprocessing 1450 comments...
+[2026-06-14 01:00:30.336] [INFO] Preprocessing completed. Yielded 1450 valid comments.
+[2026-06-14 01:00:30.337] [INFO] Valid comments available after preprocessing: 1450
+[2026-06-14 01:00:30.731] [INFO] Saved 1450 comments to database
+[2026-06-14 01:00:30.734] [INFO] Loading collected posts and comments for project ID: 3
+[2026-06-14 01:00:30.846] [INFO] Collection Complete: Data collection finished. Check the collected posts below.
+[2026-06-14 01:00:59.963] [INFO] Starting sentiment analysis for 42 posts in project 3
+[2026-06-14 01:01:00.069] [INFO] Starting sentiment analysis for 1450 comments in project 3
+[2026-06-14 01:01:50.194] [INFO] Analysis Complete: Analysis completed for both posts and comments
+[2026-06-14 01:12:32.415] [INFO] Starting sentiment analysis for 42 posts in project 3
+[2026-06-14 01:12:32.566] [INFO] Starting sentiment analysis for 1450 comments in project 3
+[2026-06-14 01:12:33.796] [INFO] Analysis Complete: Analysis completed for both posts and comments
+[2026-06-14 01:13:29.033] [INFO] Starting damage classification for 42 posts in project 3
+[2026-06-14 01:13:29.972] [INFO] Analysis Complete: Damage classification completed! Classified 42 posts and 1450 comments
+[2026-06-14 01:14:31.638] [INFO] Starting damage classification for 42 posts in project 3
+[2026-06-14 01:14:34.945] [INFO] Analysis Complete: Damage classification completed! Classified 42 posts and 1450 comments
+[2026-06-14 01:19:10.008] [INFO] Start crawling data to generate AI summary for project with ID: 3
+[2026-06-14 01:19:10.440] [INFO] Waiting for AI analysing and summary generating...
+[2026-06-14 01:19:10.524] [INFO] Successfully generated AI summary for project: Yagi
+[2026-06-14 01:22:07.441] [INFO] Start crawling data to generate AI summary for project with ID: 3
+[2026-06-14 01:22:07.870] [INFO] Waiting for AI analysing and summary generating...
+[2026-06-14 01:22:07.955] [INFO] Successfully generated AI summary for project: Yagi
+[2026-06-14 01:22:13.497] [INFO] Starting damage classification for 42 posts in project 3
+[2026-06-14 01:22:17.320] [INFO] Analysis Complete: Damage classification completed! Classified 42 posts and 1450 comments
+[2026-06-14 02:39:12.631] [INFO] Hệ thống ghi nhật ký (Logging System) đã được khởi động.
+[2026-06-14 02:39:12.632] [INFO] === Disaster Social Media Analysis Application ===
+[2026-06-14 02:39:12.633] [INFO] Starting application with Java version: 21.0.11
+[2026-06-14 02:39:12.646] [INFO] Initializing application...
+[2026-06-14 02:39:12.662] [INFO] Starting application...
+[2026-06-14 02:39:13.052] [INFO] Starting ApplicationContext initialization pipeline...
+[2026-06-14 02:39:13.070] [INFO] Database startup and verification sequence initiated.
+[2026-06-14 02:39:14.216] [INFO] Database [Disasters] already exists. Skipping database creation step.
+[2026-06-14 02:39:14.564] [INFO] Reading schema.sql from system resources to verify entity tables...
+[2026-06-14 02:39:14.617] [ERROR] Critical failure encountered during target database initialization flow! - Exception: com.microsoft.sqlserver.jdbc.SQLServerException: There is already an object named 'projects' in the database.
+Stack trace:
+  at com.microsoft.sqlserver.jdbc.SQLServerException.makeFromDatabaseError(SQLServerException.java:259)
+  at com.microsoft.sqlserver.jdbc.SQLServerStatement.getNextResult(SQLServerStatement.java:1695)
+  at com.microsoft.sqlserver.jdbc.SQLServerStatement.doExecuteStatement(SQLServerStatement.java:920)
+  at com.microsoft.sqlserver.jdbc.SQLServerStatement$StmtExecCmd.doExecute(SQLServerStatement.java:814)
+  at com.microsoft.sqlserver.jdbc.TDSCommand.execute(IOBuffer.java:7675)
+  at com.microsoft.sqlserver.jdbc.SQLServerConnection.executeCommand(SQLServerConnection.java:4137)
+  at com.microsoft.sqlserver.jdbc.SQLServerStatement.executeCommand(SQLServerStatement.java:272)
+  at com.microsoft.sqlserver.jdbc.SQLServerStatement.executeStatement(SQLServerStatement.java:246)
+  at com.microsoft.sqlserver.jdbc.SQLServerStatement.execute(SQLServerStatement.java:787)
+  at com.disaster.analysis.infrastructure.repository.SqlServerDatabaseInitializerImpl.initialize(SqlServerDatabaseInitializerImpl.java:70)
+  at com.disaster.analysis.config.ApplicationContext.initialize(ApplicationContext.java:88)
+  at com.disaster.analysis.ui.controller.MainController.initialize(MainController.java:27)
+  at javafx.fxml/javafx.fxml.FXMLLoader.loadImpl(FXMLLoader.java:2670)
+  at javafx.fxml/javafx.fxml.FXMLLoader.loadImpl(FXMLLoader.java:2563)
+  at javafx.fxml/javafx.fxml.FXMLLoader.load(FXMLLoader.java:2531)
+  at com.disaster.analysis.Main.start(Main.java:29)
+  at javafx.graphics/com.sun.javafx.application.LauncherImpl.lambda$launchApplication1$9(LauncherImpl.java:839)
+  at javafx.graphics/com.sun.javafx.application.PlatformImpl.lambda$runAndWait$12(PlatformImpl.java:483)
+  at javafx.graphics/com.sun.javafx.application.PlatformImpl.lambda$runLater$10(PlatformImpl.java:456)
+  at java.base/java.security.AccessController.doPrivileged(AccessController.java:400)
+  at javafx.graphics/com.sun.javafx.application.PlatformImpl.lambda$runLater$11(PlatformImpl.java:455)
+  at javafx.graphics/com.sun.glass.ui.InvokeLaterDispatcher$Future.run(InvokeLaterDispatcher.java:95)
+  at javafx.graphics/com.sun.glass.ui.win.WinApplication._runLoop(Native Method)
+  at javafx.graphics/com.sun.glass.ui.win.WinApplication.lambda$runLoop$3(WinApplication.java:190)
+  at java.base/java.lang.Thread.run(Thread.java:1583)
+
+[2026-06-14 02:39:15.020] [INFO] HikariCP Connection Pool initialized successfully.
+[2026-06-14 02:39:15.181] [INFO] PreprocessingService initialized.
+[2026-06-14 02:39:15.197] [WARN] YouTube API Key missing. Falling back to MockDataSource.
+[2026-06-14 02:39:15.239] [INFO] NewsDataSource initialized with Two-Step Scraping Strategy for 4 sources.
+[2026-06-14 02:39:15.277] [INFO] Initialized API clients for 2 platforms
+[2026-06-14 02:39:16.319] [INFO] SentimentAnalysisService initialized.
+[2026-06-14 02:39:16.336] [INFO] DamageClassificationService initialized.
+[2026-06-14 02:39:16.394] [INFO] Initialized API clients for mock-ai-offline successfully
+[2026-06-14 02:39:16.424] [INFO] ExportService initialized successfully.
+[2026-06-14 02:39:16.424] [INFO] ApplicationContext initialized successfully. All dependencies wired up.
+[2026-06-14 02:39:17.669] [INFO] Application started successfully
+[2026-06-14 02:39:28.096] [INFO] DataCollectionController initialize ...
+[2026-06-14 02:39:28.101] [INFO] Loading collected posts and comments for project ID: 3
+[2026-06-14 02:39:30.633] [INFO] Starting data collection for project: Yagi
+[2026-06-14 02:39:30.635] [INFO] Search query constructed: typhoon #typhoon
+[2026-06-14 02:39:30.642] [INFO] Async thread started collection from: NEWS
+[2026-06-14 02:39:30.643] [INFO] Fetching detailed news articles for query: 'typhoon #typhoon'
+[2026-06-14 02:39:30.644] [INFO] --------------------------------------------------
+[2026-06-14 02:39:30.645] [INFO] Source [VnExpress]: Starting extraction...
+[2026-06-14 02:39:30.645] [INFO] Async thread started collection from: YOUTUBE
+[2026-06-14 02:39:31.613] [INFO]    -> Fetching detail: https://vnexpress.net/khoanh-khac-tiem-kich-typhoon-va-vao-chim-vo-kinh-buong-lai-4916288.html
+[2026-06-14 02:39:31.745] [WARN]       ✗ Skipped: Article is newer than the end date.
+[2026-06-14 02:39:31.745] [INFO]    -> Fetching detail: https://vnexpress.net/anh-co-the-dieu-tiem-kich-typhoon-tuan-tra-khong-phan-ukraine-4851726.html
+[2026-06-14 02:39:31.805] [WARN]       ✗ Skipped: Article is newer than the end date.
+[2026-06-14 02:39:31.806] [INFO]    -> Fetching detail: https://vnexpress.net/ao-dieu-tiem-kich-chan-trinh-sat-co-my-xam-pham-khong-phan-5073510.html
+[2026-06-14 02:39:33.823] [WARN]       ✗ Skipped: Article is newer than the end date.
+[2026-06-14 02:39:33.824] [INFO]    -> Fetching detail: https://video.vnexpress.net/video/giai-tri/typhoon-julian-calor-3372468.html
+[2026-06-14 02:39:34.256] [WARN]       ✗ Skipped: Failed to extract publication date.
+[2026-06-14 02:39:34.256] [INFO]    -> Fetching detail: https://vnexpress.net/thuong-vu-tiem-kich-giup-tho-nhi-ky-giam-phu-thuoc-my-4956889.html
+[2026-06-14 02:39:34.327] [WARN]       ✗ Skipped: Article is newer than the end date.
+[2026-06-14 02:39:34.328] [INFO] Source [VnExpress]: Finished. Extracted 0 full articles.
+[2026-06-14 02:39:34.328] [INFO] --------------------------------------------------
+[2026-06-14 02:39:34.328] [INFO] Source [Tuổi Trẻ]: Starting extraction...
+[2026-06-14 02:39:34.735] [WARN]    -> Warning: No article links found on the search page.
+[2026-06-14 02:39:34.735] [INFO] Source [Tuổi Trẻ]: Finished. Extracted 0 full articles.
+[2026-06-14 02:39:34.736] [INFO] --------------------------------------------------
+[2026-06-14 02:39:34.736] [INFO] Source [Thanh Niên]: Starting extraction...
+[2026-06-14 02:39:34.997] [INFO]    -> Fetching detail: https://thanhnien.vn/goi-mua-20-tiem-kich-typhoon-cua-tho-nhi-ky-bi-che-qua-dat-185251028161343693.htm
+[2026-06-14 02:39:35.165] [WARN]       ✗ Skipped: Article is newer than the end date.
+[2026-06-14 02:39:35.168] [INFO]    -> Fetching detail: https://thanhnien.vn/tho-nhi-ky-mua-20-tiem-kich-typhoon-gia-gan-11-ti-usd-bi-che-mac-185251028072138554.htm
+[2026-06-14 02:39:35.285] [WARN]       ✗ Skipped: Article is newer than the end date.
+[2026-06-14 02:39:35.285] [INFO]    -> Fetching detail: https://thanhnien.vn/xem-chien-dau-co-typhoon-anh-xuat-kich-tuan-tra-khong-phan-ba-lan-185250921220631986.htm
+[2026-06-14 02:39:35.428] [WARN]       ✗ Skipped: Article is newer than the end date.
+[2026-06-14 02:39:35.429] [INFO]    -> Fetching detail: https://thanhnien.vn/anh-dieu-chien-dau-co-typhoon-tuan-tra-khong-phan-ba-lan-185250921084320633.htm
+[2026-06-14 02:39:35.556] [WARN]       ✗ Skipped: Article is newer than the end date.
+[2026-06-14 02:39:35.556] [INFO]    -> Fetching detail: https://thanhnien.vn/tiem-kich-eurofighter-typhoon-them-nguy-hiem-voi-ai-185250710115901925.htm
+[2026-06-14 02:39:35.693] [WARN]       ✗ Skipped: Article is newer than the end date.
+[2026-06-14 02:39:35.694] [INFO]    -> Fetching detail: https://thanhnien.vn/anh-nhat-y-hop-tac-phat-trien-tiem-kich-the-he-thu-sau-185241213210316285.htm
+[2026-06-14 02:39:35.823] [WARN]       ✗ Skipped: Article is newer than the end date.
+[2026-06-14 02:39:35.824] [INFO]    -> Fetching detail: https://thanhnien.vn/my-dieu-tra-am-muu-pha-hoai-cua-nhom-tin-tac-trung-quoc-khet-tieng-185240209073250468.htm
+[2026-06-14 02:39:35.935] [WARN]       ✗ Skipped: Article is older than the start date.
+[2026-06-14 02:39:35.936] [INFO]    -> Fetching detail: https://thanhnien.vn/my-triet-pha-mang-luoi-tin-tac-cao-buoc-trung-quoc-bao-tro-185240201114823281.htm
+[2026-06-14 02:39:36.069] [WARN]       ✗ Skipped: Article is older than the start date.
+[2026-06-14 02:39:36.070] [INFO]    -> Fetching detail: https://thanhnien.vn/dan-mang-trung-quoc-soi-suc-vi-man-ti-thi-chien-dau-co-j-10c-eurofighter-typhoon-185240131102458784.htm
+[2026-06-14 02:39:36.174] [WARN]       ✗ Skipped: Article is older than the start date.
+[2026-06-14 02:39:36.175] [INFO]    -> Fetching detail: https://thanhnien.vn/chien-dau-co-trung-quoc-khong-chien-voi-may-bay-chau-au-9-lan-trong-tap-tran-185240130092607486.htm
+[2026-06-14 02:39:36.304] [WARN]       ✗ Skipped: Article is older than the start date.
+[2026-06-14 02:39:36.305] [INFO]    -> Fetching detail: https://thanhnien.vn/thoi-trang-tre/thanh-pho-katy-dia-diem-thich-hop-du-lich-gia-dinh-185240115213811916.htm
+[2026-06-14 02:39:36.403] [WARN]       ✗ Skipped: Article is older than the start date.
+[2026-06-14 02:39:36.404] [INFO]    -> Fetching detail: https://thanhnien.vn/my-anh-da-dung-vu-khi-gi-de-danh-houthi-185240112165523847.htm
+[2026-06-14 02:39:36.529] [WARN]       ✗ Skipped: Article is older than the start date.
+[2026-06-14 02:39:36.530] [INFO]    -> Fetching detail: https://thanhnien.vn/chien-dau-co-anh-ngan-chan-6-may-bay-nga-gan-ranh-gioi-nato-185230610105129238.htm
+[2026-06-14 02:39:36.659] [WARN]       ✗ Skipped: Article is older than the start date.
+[2026-06-14 02:39:36.660] [INFO]    -> Fetching detail: https://thanhnien.vn/co-van-dong-ngam-o-lau-nam-goc-de-chuyen-chien-dau-co-f-16-den-ukraine-185230131151639873.htm
+[2026-06-14 02:39:36.781] [WARN]       ✗ Skipped: Article is older than the start date.
+[2026-06-14 02:39:36.781] [INFO]    -> Fetching detail: https://thanhnien.vn/anh-chua-muon-cung-cap-chien-dau-co-typhoon-cho-ukraine-lockheed-noi-san-sang-giao-f-16-1851545095.htm
+[2026-06-14 02:39:36.907] [WARN]       ✗ Skipped: Article is older than the start date.
+[2026-06-14 02:39:36.907] [INFO]    -> Fetching detail: https://thanhnien.vn/xem-tiem-kich-typhoon-ho-tong-may-bay-nem-bom-tu-95-cua-nga-1851426833.htm
+[2026-06-14 02:39:37.298] [WARN]       ✗ Skipped: Article is older than the start date.
+[2026-06-14 02:39:37.300] [INFO]    -> Fetching detail: https://thanhnien.vn/chien-dau-co-typhoon-anh-se-tuan-tra-bien-den-giua-cang-thang-nga-ukraine-1851254749.htm
+[2026-06-14 02:39:37.416] [WARN]       ✗ Skipped: Article is older than the start date.
+[2026-06-14 02:39:37.417] [INFO]    -> Fetching detail: https://thanhnien.vn/anh-dieu-chien-dau-co-den-bien-den-giua-cang-thang-ukraine-nga-1851055861.htm
+[2026-06-14 02:39:37.549] [WARN]       ✗ Skipped: Article is older than the start date.
+[2026-06-14 02:39:37.551] [INFO]    -> Fetching detail: https://thanhnien.vn/tham-vong-bay-chien-dau-co-len-ria-khong-gian-ban-ha-ve-tinh-1851040702.htm
+[2026-06-14 02:39:37.721] [WARN]       ✗ Skipped: Article is older than the start date.
+[2026-06-14 02:39:37.724] [INFO]    -> Fetching detail: https://thanhnien.vn/dan-anh-soc-khi-2-tiem-kich-tao-tieng-no-lon-ap-sat-may-bay-dan-su-1851028560.htm
+[2026-06-14 02:39:37.921] [WARN]       ✗ Skipped: Article is older than the start date.
+[2026-06-14 02:39:37.924] [INFO] Source [Thanh Niên]: Finished. Extracted 0 full articles.
+[2026-06-14 02:39:37.924] [INFO] --------------------------------------------------
+[2026-06-14 02:39:37.928] [INFO] Source [Dân Trí]: Starting extraction...
+[2026-06-14 02:39:38.634] [INFO]    -> Fetching detail: https://dantri.com.vn/the-gioi/chien-su-ukraine-264-nga-tap-kich-ukraine-nato-bao-dong-khan-20260426112004039.htm
+[2026-06-14 02:39:38.928] [WARN]       ✗ Skipped: Failed to extract publication date.
+[2026-06-14 02:39:38.928] [INFO]    -> Fetching detail: https://dantri.com.vn/the-gioi/bangladesh-chot-thuong-vu-tiem-kich-eurofighter-20251211140534406.htm
+[2026-06-14 02:39:39.195] [WARN]       ✗ Skipped: Failed to extract publication date.
+[2026-06-14 02:39:39.196] [INFO]    -> Fetching detail: https://dantri.com.vn/the-gioi/anh-loai-bien-tiem-kich-eurofighter-f-35-thong-tri-san-choi-20260108140358198.htm
+[2026-06-14 02:39:39.480] [WARN]       ✗ Skipped: Failed to extract publication date.
+[2026-06-14 02:39:39.482] [INFO]    -> Fetching detail: https://dantri.com.vn/cong-nghe/fbi-treo-giai-10-trieu-usd-truy-lung-nhom-tin-tac-nguy-hiem-20250502025307917.htm
+[2026-06-14 02:39:39.800] [WARN]       ✗ Skipped: Failed to extract publication date.
+[2026-06-14 02:39:39.802] [INFO]    -> Fetching detail: https://dantri.com.vn/the-gioi/ukraine-tuyen-bo-pha-huy-may-bay-chien-dau-40-trieu-usd-cua-nga-20260517164748135.htm
+[2026-06-14 02:39:40.167] [WARN]       ✗ Skipped: Failed to extract publication date.
+[2026-06-14 02:39:40.169] [INFO]    -> Fetching detail: https://dantri.com.vn/the-gioi/ben-trong-nhiem-vu-tiep-lieu-chien-dau-co-phuong-tay-truoc-cua-ngo-cua-nga-20251201141438288.htm
+[2026-06-14 02:39:40.506] [WARN]       ✗ Skipped: Failed to extract publication date.
+[2026-06-14 02:39:40.508] [INFO]    -> Fetching detail: https://dantri.com.vn/giai-tri/vu-an-bi-an-cua-vu-mong-lung-hon-nua-trieu-nguoi-doi-truy-tim-su-that-20251023221507765.htm
+[2026-06-14 02:39:40.534] [WARN]       ✗ Skipped: Failed to extract publication date.
+[2026-06-14 02:39:40.536] [INFO]    -> Fetching detail: https://dantri.com.vn/the-gioi/khoanh-khac-tiem-kich-cuong-phong-anh-chan-ho-mang-chua-su-30-cua-nga-20190618114357662.htm
+[2026-06-14 02:39:40.861] [WARN]       ✗ Skipped: Failed to extract publication date.
+[2026-06-14 02:39:40.861] [INFO]    -> Fetching detail: https://dantri.com.vn/the-gioi/anh-dieu-tiem-kich-chan-may-bay-do-tham-cua-nga-tai-bien-baltic-20230616111321510.htm
+[2026-06-14 02:39:41.144] [WARN]       ✗ Skipped: Failed to extract publication date.
+[2026-06-14 02:39:41.145] [INFO]    -> Fetching detail: https://dantri.com.vn/the-gioi/my-bay-binh-bo-tran-o-trung-dong-iran-tang-cuong-canh-giac-20260126150036502.htm
+[2026-06-14 02:39:41.415] [WARN]       ✗ Skipped: Failed to extract publication date.
+[2026-06-14 02:39:41.416] [INFO]    -> Fetching detail: https://dantri.com.vn/the-gioi/chien-dau-co-chu-luc-cua-nato-hit-khoi-mig-31-nga-20251015132203421.htm
+[2026-06-14 02:39:41.760] [WARN]       ✗ Skipped: Failed to extract publication date.
+[2026-06-14 02:39:41.761] [INFO]    -> Fetching detail: https://dantri.com.vn/the-gioi/tiem-kich-anh-san-sang-giam-sat-ngung-ban-o-ukraine-20250321113903455.htm
+[2026-06-14 02:39:42.190] [WARN]       ✗ Skipped: Failed to extract publication date.
+[2026-06-14 02:39:42.193] [INFO] Source [Dân Trí]: Finished. Extracted 0 full articles.
+[2026-06-14 02:39:42.194] [INFO] News scraping completed. Total full articles retrieved: 0
+[2026-06-14 02:39:42.195] [INFO] Collected 0 posts from NEWS
+[2026-06-14 02:39:42.196] [INFO] Collected 30 posts from YOUTUBE
+[2026-06-14 02:39:42.196] [INFO] Total raw posts collected: 30
+[2026-06-14 02:39:42.204] [INFO] Preprocessing 30 posts...
+[2026-06-14 02:39:42.262] [INFO] Preprocessing completed. Yielded 30 valid posts.
+[2026-06-14 02:39:42.263] [INFO] Valid posts available after preprocessing: 30
+[2026-06-14 02:39:42.389] [INFO] Saved 30 posts to database
+[2026-06-14 02:39:42.428] [INFO] Reloaded 72 posts equipped with database IDs
+[2026-06-14 02:39:42.439] [INFO] Collected 40 comments for post ID: 205
+[2026-06-14 02:39:42.442] [INFO] Collected 24 comments for post ID: 226
+[2026-06-14 02:39:42.450] [INFO] Collected 50 comments for post ID: 258
+[2026-06-14 02:39:42.455] [INFO] Collected 31 comments for post ID: 220
+[2026-06-14 02:39:42.463] [INFO] Collected 34 comments for post ID: 255
+[2026-06-14 02:39:42.466] [INFO] Collected 37 comments for post ID: 203
+[2026-06-14 02:39:42.471] [INFO] Collected 46 comments for post ID: 224
+[2026-06-14 02:39:42.480] [INFO] Collected 23 comments for post ID: 250
+[2026-06-14 02:39:42.489] [INFO] Collected 22 comments for post ID: 204
+[2026-06-14 02:39:42.493] [INFO] Collected 17 comments for post ID: 236
+[2026-06-14 02:39:42.493] [INFO] Collected 17 comments for post ID: 232
+[2026-06-14 02:39:42.494] [INFO] Collected 25 comments for post ID: 237
+[2026-06-14 02:39:42.495] [INFO] Collected 27 comments for post ID: 200
+[2026-06-14 02:39:42.498] [INFO] Collected 35 comments for post ID: 230
+[2026-06-14 02:39:42.499] [INFO] Collected 15 comments for post ID: 242
+[2026-06-14 02:39:42.500] [INFO] Collected 15 comments for post ID: 265
+[2026-06-14 02:39:42.501] [INFO] Collected 44 comments for post ID: 263
+[2026-06-14 02:39:42.504] [INFO] Collected 25 comments for post ID: 264
+[2026-06-14 02:39:42.507] [INFO] Collected 48 comments for post ID: 218
+[2026-06-14 02:39:42.509] [INFO] Collected 38 comments for post ID: 214
+[2026-06-14 02:39:42.511] [INFO] Collected 35 comments for post ID: 249
+[2026-06-14 02:39:42.513] [INFO] Collected 45 comments for post ID: 254
+[2026-06-14 02:39:42.515] [INFO] Collected 18 comments for post ID: 266
+[2026-06-14 02:39:42.517] [INFO] Collected 44 comments for post ID: 209
+[2026-06-14 02:39:42.520] [INFO] Collected 18 comments for post ID: 253
+[2026-06-14 02:39:42.521] [INFO] Collected 26 comments for post ID: 198
+[2026-06-14 02:39:42.523] [INFO] Collected 48 comments for post ID: 260
+[2026-06-14 02:39:42.525] [INFO] Collected 50 comments for post ID: 211
+[2026-06-14 02:39:42.527] [INFO] Collected 39 comments for post ID: 239
+[2026-06-14 02:39:42.528] [INFO] Collected 43 comments for post ID: 256
+[2026-06-14 02:39:42.529] [INFO] Collected 16 comments for post ID: 208
+[2026-06-14 02:39:42.530] [INFO] Collected 31 comments for post ID: 206
+[2026-06-14 02:39:42.532] [INFO] Collected 29 comments for post ID: 244
+[2026-06-14 02:39:42.533] [INFO] Collected 26 comments for post ID: 257
+[2026-06-14 02:39:42.534] [INFO] Collected 48 comments for post ID: 202
+[2026-06-14 02:39:42.536] [INFO] Collected 23 comments for post ID: 195
+[2026-06-14 02:39:42.538] [INFO] Collected 41 comments for post ID: 245
+[2026-06-14 02:39:42.539] [INFO] Collected 33 comments for post ID: 215
+[2026-06-14 02:39:42.540] [INFO] Collected 22 comments for post ID: 262
+[2026-06-14 02:39:42.541] [INFO] Collected 25 comments for post ID: 223
+[2026-06-14 02:39:42.542] [INFO] Collected 37 comments for post ID: 217
+[2026-06-14 02:39:42.544] [INFO] Collected 49 comments for post ID: 231
+[2026-06-14 02:39:42.546] [INFO] Collected 30 comments for post ID: 227
+[2026-06-14 02:39:42.548] [INFO] Collected 40 comments for post ID: 259
+[2026-06-14 02:39:42.550] [INFO] Collected 38 comments for post ID: 235
+[2026-06-14 02:39:42.551] [INFO] Collected 18 comments for post ID: 197
+[2026-06-14 02:39:42.553] [INFO] Collected 36 comments for post ID: 212
+[2026-06-14 02:39:42.555] [INFO] Collected 31 comments for post ID: 199
+[2026-06-14 02:39:42.557] [INFO] Collected 48 comments for post ID: 229
+[2026-06-14 02:39:42.559] [INFO] Collected 49 comments for post ID: 207
+[2026-06-14 02:39:42.562] [INFO] Collected 24 comments for post ID: 247
+[2026-06-14 02:39:42.564] [INFO] Collected 44 comments for post ID: 233
+[2026-06-14 02:39:42.566] [INFO] Collected 48 comments for post ID: 213
+[2026-06-14 02:39:42.567] [INFO] Collected 16 comments for post ID: 252
+[2026-06-14 02:39:42.568] [INFO] Collected 20 comments for post ID: 261
+[2026-06-14 02:39:42.570] [INFO] Collected 29 comments for post ID: 251
+[2026-06-14 02:39:42.572] [INFO] Collected 16 comments for post ID: 248
+[2026-06-14 02:39:42.575] [INFO] Collected 38 comments for post ID: 225
+[2026-06-14 02:39:42.576] [INFO] Collected 18 comments for post ID: 210
+[2026-06-14 02:39:42.577] [INFO] Collected 41 comments for post ID: 238
+[2026-06-14 02:39:42.579] [INFO] Collected 47 comments for post ID: 219
+[2026-06-14 02:39:42.581] [INFO] Collected 41 comments for post ID: 221
+[2026-06-14 02:39:42.582] [INFO] Collected 29 comments for post ID: 234
+[2026-06-14 02:39:42.582] [INFO] Collected 31 comments for post ID: 201
+[2026-06-14 02:39:42.584] [INFO] Collected 16 comments for post ID: 196
+[2026-06-14 02:39:42.586] [INFO] Collected 22 comments for post ID: 246
+[2026-06-14 02:39:42.586] [INFO] Collected 34 comments for post ID: 222
+[2026-06-14 02:39:42.588] [INFO] Collected 42 comments for post ID: 216
+[2026-06-14 02:39:42.590] [INFO] Collected 38 comments for post ID: 243
+[2026-06-14 02:39:42.592] [INFO] Collected 32 comments for post ID: 240
+[2026-06-14 02:39:42.593] [INFO] Collected 20 comments for post ID: 228
+[2026-06-14 02:39:42.596] [INFO] Collected 25 comments for post ID: 241
+[2026-06-14 02:39:42.597] [INFO] Total raw comments collected: 2320
+[2026-06-14 02:39:42.598] [INFO] Preprocessing 2320 comments...
+[2026-06-14 02:39:42.697] [INFO] Preprocessing completed. Yielded 2320 valid comments.
+[2026-06-14 02:39:42.701] [INFO] Valid comments available after preprocessing: 2320
+[2026-06-14 02:39:43.740] [INFO] Saved 2320 comments to database
+[2026-06-14 02:39:43.743] [INFO] Loading collected posts and comments for project ID: 3
+[2026-06-14 02:41:51.198] [INFO] Collection Complete: Data collection finished. Check the collected posts below.
+[2026-06-14 02:42:14.023] [INFO] Shutting down application...
+[2026-06-14 02:42:14.024] [INFO] Application shutdown complete
+[2026-06-14 02:42:14.096] [INFO] Shutting down application...
+[2026-06-14 02:42:14.096] [INFO] Application shutdown complete
+[2026-06-14 06:27:24.551] [INFO] Hệ thống ghi nhật ký (Logging System) đã được khởi động.
+[2026-06-14 06:27:24.553] [INFO] === Disaster Social Media Analysis Application ===
+[2026-06-14 06:27:24.554] [INFO] Starting application with Java version: 21.0.11
+[2026-06-14 06:27:24.557] [INFO] Initializing application...
+[2026-06-14 06:27:24.571] [INFO] Starting application...
+[2026-06-14 06:27:25.055] [INFO] Starting ApplicationContext initialization pipeline...
+[2026-06-14 06:27:25.089] [INFO] Database startup and verification sequence initiated.
+[2026-06-14 06:27:26.211] [INFO] Database [Disasters] already exists. Skipping database creation step.
+[2026-06-14 06:27:26.451] [INFO] Reading schema.sql from system resources to verify entity tables...
+[2026-06-14 06:27:26.496] [ERROR] Critical failure encountered during target database initialization flow! - Exception: com.microsoft.sqlserver.jdbc.SQLServerException: There is already an object named 'projects' in the database.
+Stack trace:
+  at com.microsoft.sqlserver.jdbc.SQLServerException.makeFromDatabaseError(SQLServerException.java:259)
+  at com.microsoft.sqlserver.jdbc.SQLServerStatement.getNextResult(SQLServerStatement.java:1695)
+  at com.microsoft.sqlserver.jdbc.SQLServerStatement.doExecuteStatement(SQLServerStatement.java:920)
+  at com.microsoft.sqlserver.jdbc.SQLServerStatement$StmtExecCmd.doExecute(SQLServerStatement.java:814)
+  at com.microsoft.sqlserver.jdbc.TDSCommand.execute(IOBuffer.java:7675)
+  at com.microsoft.sqlserver.jdbc.SQLServerConnection.executeCommand(SQLServerConnection.java:4137)
+  at com.microsoft.sqlserver.jdbc.SQLServerStatement.executeCommand(SQLServerStatement.java:272)
+  at com.microsoft.sqlserver.jdbc.SQLServerStatement.executeStatement(SQLServerStatement.java:246)
+  at com.microsoft.sqlserver.jdbc.SQLServerStatement.execute(SQLServerStatement.java:787)
+  at com.disaster.analysis.infrastructure.repository.SqlServerDatabaseInitializerImpl.initialize(SqlServerDatabaseInitializerImpl.java:70)
+  at com.disaster.analysis.config.ApplicationContext.initialize(ApplicationContext.java:88)
+  at com.disaster.analysis.ui.controller.MainController.initialize(MainController.java:27)
+  at javafx.fxml/javafx.fxml.FXMLLoader.loadImpl(FXMLLoader.java:2670)
+  at javafx.fxml/javafx.fxml.FXMLLoader.loadImpl(FXMLLoader.java:2563)
+  at javafx.fxml/javafx.fxml.FXMLLoader.load(FXMLLoader.java:2531)
+  at com.disaster.analysis.Main.start(Main.java:29)
+  at javafx.graphics/com.sun.javafx.application.LauncherImpl.lambda$launchApplication1$9(LauncherImpl.java:839)
+  at javafx.graphics/com.sun.javafx.application.PlatformImpl.lambda$runAndWait$12(PlatformImpl.java:483)
+  at javafx.graphics/com.sun.javafx.application.PlatformImpl.lambda$runLater$10(PlatformImpl.java:456)
+  at java.base/java.security.AccessController.doPrivileged(AccessController.java:400)
+  at javafx.graphics/com.sun.javafx.application.PlatformImpl.lambda$runLater$11(PlatformImpl.java:455)
+  at javafx.graphics/com.sun.glass.ui.InvokeLaterDispatcher$Future.run(InvokeLaterDispatcher.java:95)
+  at javafx.graphics/com.sun.glass.ui.win.WinApplication._runLoop(Native Method)
+  at javafx.graphics/com.sun.glass.ui.win.WinApplication.lambda$runLoop$3(WinApplication.java:190)
+  at java.base/java.lang.Thread.run(Thread.java:1583)
+
+[2026-06-14 06:27:26.890] [INFO] HikariCP Connection Pool initialized successfully.
+[2026-06-14 06:27:27.042] [INFO] PreprocessingService initialized.
+[2026-06-14 06:27:27.087] [WARN] YouTube API Key missing. Falling back to MockDataSource.
+[2026-06-14 06:27:27.108] [INFO] NewsDataSource initialized with Two-Step Scraping Strategy for 4 sources.
+[2026-06-14 06:27:27.129] [INFO] Initialized API clients for 2 platforms
+[2026-06-14 06:27:28.020] [INFO] SentimentAnalysisService initialized.
+[2026-06-14 06:27:28.036] [INFO] DamageClassificationService initialized.
+[2026-06-14 06:27:28.122] [INFO] Initialized API clients for mock-ai-offline successfully
+[2026-06-14 06:27:28.157] [INFO] ExportService initialized successfully.
+[2026-06-14 06:27:28.158] [INFO] ApplicationContext initialized successfully. All dependencies wired up.
+[2026-06-14 06:27:29.142] [INFO] Application started successfully
+[2026-06-14 06:27:34.269] [INFO] DataCollectionController initialize ...
+[2026-06-14 06:27:34.276] [INFO] Loading collected posts and comments for project ID: 3
+[2026-06-14 06:28:47.366] [INFO] Starting data collection for project: Yagi
+[2026-06-14 06:28:47.369] [INFO] Search query constructed: typhoon #typhoon
+[2026-06-14 06:28:47.389] [INFO] Async thread started collection from: YOUTUBE
+[2026-06-14 06:28:47.389] [INFO] Async thread started collection from: NEWS
+[2026-06-14 06:28:47.390] [INFO] Fetching detailed news articles for query: 'typhoon #typhoon'
+[2026-06-14 06:28:47.392] [INFO] --------------------------------------------------
+[2026-06-14 06:28:47.392] [INFO] Source [VnExpress]: Starting extraction...
+[2026-06-14 06:28:47.406] [INFO] Collected 27 posts from YOUTUBE
+[2026-06-14 06:28:48.451] [INFO]    -> Fetching detail: https://vnexpress.net/khoanh-khac-tiem-kich-typhoon-va-vao-chim-vo-kinh-buong-lai-4916288.html
+[2026-06-14 06:28:49.353] [WARN]       ✗ Skipped: Article is newer than the end date.
+[2026-06-14 06:28:49.354] [INFO]    -> Fetching detail: https://vnexpress.net/anh-co-the-dieu-tiem-kich-typhoon-tuan-tra-khong-phan-ukraine-4851726.html
+[2026-06-14 06:28:50.147] [WARN]       ✗ Skipped: Article is newer than the end date.
+[2026-06-14 06:28:50.148] [INFO]    -> Fetching detail: https://vnexpress.net/ao-dieu-tiem-kich-chan-trinh-sat-co-my-xam-pham-khong-phan-5073510.html
+[2026-06-14 06:28:50.856] [WARN]       ✗ Skipped: Article is newer than the end date.
+[2026-06-14 06:28:50.856] [INFO]    -> Fetching detail: https://video.vnexpress.net/video/giai-tri/typhoon-julian-calor-3372468.html
+[2026-06-14 06:28:51.366] [WARN]       ✗ Skipped: Failed to extract publication date.
+[2026-06-14 06:28:51.366] [INFO]    -> Fetching detail: https://vnexpress.net/thuong-vu-tiem-kich-giup-tho-nhi-ky-giam-phu-thuoc-my-4956889.html
+[2026-06-14 06:28:52.087] [WARN]       ✗ Skipped: Article is newer than the end date.
+[2026-06-14 06:28:52.088] [INFO] Source [VnExpress]: Finished. Extracted 0 full articles.
+[2026-06-14 06:28:52.088] [INFO] --------------------------------------------------
+[2026-06-14 06:28:52.089] [INFO] Source [Tuổi Trẻ]: Starting extraction...
+[2026-06-14 06:28:52.353] [WARN]    -> Warning: No article links found on the search page.
+[2026-06-14 06:28:52.353] [INFO] Source [Tuổi Trẻ]: Finished. Extracted 0 full articles.
+[2026-06-14 06:28:52.354] [INFO] --------------------------------------------------
+[2026-06-14 06:28:52.354] [INFO] Source [Thanh Niên]: Starting extraction...
+[2026-06-14 06:28:52.654] [INFO]    -> Fetching detail: https://thanhnien.vn/goi-mua-20-tiem-kich-typhoon-cua-tho-nhi-ky-bi-che-qua-dat-185251028161343693.htm
+[2026-06-14 06:28:52.840] [WARN]       ✗ Skipped: Article is newer than the end date.
+[2026-06-14 06:28:52.840] [INFO]    -> Fetching detail: https://thanhnien.vn/tho-nhi-ky-mua-20-tiem-kich-typhoon-gia-gan-11-ti-usd-bi-che-mac-185251028072138554.htm
+[2026-06-14 06:28:52.898] [WARN]       ✗ Skipped: Article is newer than the end date.
+[2026-06-14 06:28:52.899] [INFO]    -> Fetching detail: https://thanhnien.vn/xem-chien-dau-co-typhoon-anh-xuat-kich-tuan-tra-khong-phan-ba-lan-185250921220631986.htm
+[2026-06-14 06:28:53.087] [WARN]       ✗ Skipped: Article is newer than the end date.
+[2026-06-14 06:28:53.088] [INFO]    -> Fetching detail: https://thanhnien.vn/anh-dieu-chien-dau-co-typhoon-tuan-tra-khong-phan-ba-lan-185250921084320633.htm
+[2026-06-14 06:28:53.194] [WARN]       ✗ Skipped: Article is newer than the end date.
+[2026-06-14 06:28:53.194] [INFO]    -> Fetching detail: https://thanhnien.vn/tiem-kich-eurofighter-typhoon-them-nguy-hiem-voi-ai-185250710115901925.htm
+[2026-06-14 06:28:53.348] [WARN]       ✗ Skipped: Article is newer than the end date.
+[2026-06-14 06:28:53.349] [INFO]    -> Fetching detail: https://thanhnien.vn/anh-nhat-y-hop-tac-phat-trien-tiem-kich-the-he-thu-sau-185241213210316285.htm
+[2026-06-14 06:28:53.419] [WARN]       ✗ Skipped: Article is newer than the end date.
+[2026-06-14 06:28:53.420] [INFO]    -> Fetching detail: https://thanhnien.vn/my-dieu-tra-am-muu-pha-hoai-cua-nhom-tin-tac-trung-quoc-khet-tieng-185240209073250468.htm
+[2026-06-14 06:28:53.565] [WARN]       ✗ Skipped: Article is older than the start date.
+[2026-06-14 06:28:53.565] [INFO]    -> Fetching detail: https://thanhnien.vn/my-triet-pha-mang-luoi-tin-tac-cao-buoc-trung-quoc-bao-tro-185240201114823281.htm
+[2026-06-14 06:28:53.619] [WARN]       ✗ Skipped: Article is older than the start date.
+[2026-06-14 06:28:53.620] [INFO]    -> Fetching detail: https://thanhnien.vn/dan-mang-trung-quoc-soi-suc-vi-man-ti-thi-chien-dau-co-j-10c-eurofighter-typhoon-185240131102458784.htm
+[2026-06-14 06:28:53.677] [WARN]       ✗ Skipped: Article is older than the start date.
+[2026-06-14 06:28:53.678] [INFO]    -> Fetching detail: https://thanhnien.vn/chien-dau-co-trung-quoc-khong-chien-voi-may-bay-chau-au-9-lan-trong-tap-tran-185240130092607486.htm
+[2026-06-14 06:28:53.743] [WARN]       ✗ Skipped: Article is older than the start date.
+[2026-06-14 06:28:53.744] [INFO]    -> Fetching detail: https://thanhnien.vn/thoi-trang-tre/thanh-pho-katy-dia-diem-thich-hop-du-lich-gia-dinh-185240115213811916.htm
+[2026-06-14 06:28:53.875] [WARN]       ✗ Skipped: Article is older than the start date.
+[2026-06-14 06:28:53.875] [INFO]    -> Fetching detail: https://thanhnien.vn/my-anh-da-dung-vu-khi-gi-de-danh-houthi-185240112165523847.htm
+[2026-06-14 06:28:53.923] [WARN]       ✗ Skipped: Article is older than the start date.
+[2026-06-14 06:28:53.924] [INFO]    -> Fetching detail: https://thanhnien.vn/chien-dau-co-anh-ngan-chan-6-may-bay-nga-gan-ranh-gioi-nato-185230610105129238.htm
+[2026-06-14 06:28:53.979] [WARN]       ✗ Skipped: Article is older than the start date.
+[2026-06-14 06:28:53.980] [INFO]    -> Fetching detail: https://thanhnien.vn/co-van-dong-ngam-o-lau-nam-goc-de-chuyen-chien-dau-co-f-16-den-ukraine-185230131151639873.htm
+[2026-06-14 06:28:54.135] [WARN]       ✗ Skipped: Article is older than the start date.
+[2026-06-14 06:28:54.136] [INFO]    -> Fetching detail: https://thanhnien.vn/anh-chua-muon-cung-cap-chien-dau-co-typhoon-cho-ukraine-lockheed-noi-san-sang-giao-f-16-1851545095.htm
+[2026-06-14 06:28:54.305] [WARN]       ✗ Skipped: Article is older than the start date.
+[2026-06-14 06:28:54.306] [INFO]    -> Fetching detail: https://thanhnien.vn/xem-tiem-kich-typhoon-ho-tong-may-bay-nem-bom-tu-95-cua-nga-1851426833.htm
+[2026-06-14 06:28:54.358] [WARN]       ✗ Skipped: Article is older than the start date.
+[2026-06-14 06:28:54.359] [INFO]    -> Fetching detail: https://thanhnien.vn/chien-dau-co-typhoon-anh-se-tuan-tra-bien-den-giua-cang-thang-nga-ukraine-1851254749.htm
+[2026-06-14 06:28:54.533] [WARN]       ✗ Skipped: Article is older than the start date.
+[2026-06-14 06:28:54.533] [INFO]    -> Fetching detail: https://thanhnien.vn/anh-dieu-chien-dau-co-den-bien-den-giua-cang-thang-ukraine-nga-1851055861.htm
+[2026-06-14 06:28:54.694] [WARN]       ✗ Skipped: Article is older than the start date.
+[2026-06-14 06:28:54.694] [INFO]    -> Fetching detail: https://thanhnien.vn/tham-vong-bay-chien-dau-co-len-ria-khong-gian-ban-ha-ve-tinh-1851040702.htm
+[2026-06-14 06:28:54.765] [WARN]       ✗ Skipped: Article is older than the start date.
+[2026-06-14 06:28:54.766] [INFO]    -> Fetching detail: https://thanhnien.vn/dan-anh-soc-khi-2-tiem-kich-tao-tieng-no-lon-ap-sat-may-bay-dan-su-1851028560.htm
+[2026-06-14 06:28:54.908] [WARN]       ✗ Skipped: Article is older than the start date.
+[2026-06-14 06:28:54.909] [INFO] Source [Thanh Niên]: Finished. Extracted 0 full articles.
+[2026-06-14 06:28:54.909] [INFO] --------------------------------------------------
+[2026-06-14 06:28:54.909] [INFO] Source [Dân Trí]: Starting extraction...
+[2026-06-14 06:28:55.564] [INFO]    -> Fetching detail: https://dantri.com.vn/the-gioi/chien-su-ukraine-264-nga-tap-kich-ukraine-nato-bao-dong-khan-20260426112004039.htm
+[2026-06-14 06:28:55.955] [WARN]       ✗ Skipped: Failed to extract publication date.
+[2026-06-14 06:28:55.956] [INFO]    -> Fetching detail: https://dantri.com.vn/the-gioi/bangladesh-chot-thuong-vu-tiem-kich-eurofighter-20251211140534406.htm
+[2026-06-14 06:28:56.334] [WARN]       ✗ Skipped: Failed to extract publication date.
+[2026-06-14 06:28:56.334] [INFO]    -> Fetching detail: https://dantri.com.vn/the-gioi/anh-loai-bien-tiem-kich-eurofighter-f-35-thong-tri-san-choi-20260108140358198.htm
+[2026-06-14 06:28:56.795] [WARN]       ✗ Skipped: Failed to extract publication date.
+[2026-06-14 06:28:56.796] [INFO]    -> Fetching detail: https://dantri.com.vn/cong-nghe/fbi-treo-giai-10-trieu-usd-truy-lung-nhom-tin-tac-nguy-hiem-20250502025307917.htm
+[2026-06-14 06:28:57.299] [WARN]       ✗ Skipped: Failed to extract publication date.
+[2026-06-14 06:28:57.299] [INFO]    -> Fetching detail: https://dantri.com.vn/the-gioi/ukraine-tuyen-bo-pha-huy-may-bay-chien-dau-40-trieu-usd-cua-nga-20260517164748135.htm
+[2026-06-14 06:28:57.732] [WARN]       ✗ Skipped: Failed to extract publication date.
+[2026-06-14 06:28:57.733] [INFO]    -> Fetching detail: https://dantri.com.vn/the-gioi/ben-trong-nhiem-vu-tiep-lieu-chien-dau-co-phuong-tay-truoc-cua-ngo-cua-nga-20251201141438288.htm
+[2026-06-14 06:28:58.146] [WARN]       ✗ Skipped: Failed to extract publication date.
+[2026-06-14 06:28:58.146] [INFO]    -> Fetching detail: https://dantri.com.vn/giai-tri/vu-an-bi-an-cua-vu-mong-lung-hon-nua-trieu-nguoi-doi-truy-tim-su-that-20251023221507765.htm
+[2026-06-14 06:28:58.478] [WARN]       ✗ Skipped: Failed to extract publication date.
+[2026-06-14 06:28:58.478] [INFO]    -> Fetching detail: https://dantri.com.vn/the-gioi/khoanh-khac-tiem-kich-cuong-phong-anh-chan-ho-mang-chua-su-30-cua-nga-20190618114357662.htm
+[2026-06-14 06:28:58.783] [WARN]       ✗ Skipped: Failed to extract publication date.
+[2026-06-14 06:28:58.784] [INFO]    -> Fetching detail: https://dantri.com.vn/the-gioi/anh-dieu-tiem-kich-chan-may-bay-do-tham-cua-nga-tai-bien-baltic-20230616111321510.htm
+[2026-06-14 06:28:59.137] [WARN]       ✗ Skipped: Failed to extract publication date.
+[2026-06-14 06:28:59.138] [INFO]    -> Fetching detail: https://dantri.com.vn/the-gioi/my-bay-binh-bo-tran-o-trung-dong-iran-tang-cuong-canh-giac-20260126150036502.htm
+[2026-06-14 06:28:59.648] [WARN]       ✗ Skipped: Failed to extract publication date.
+[2026-06-14 06:28:59.649] [INFO]    -> Fetching detail: https://dantri.com.vn/the-gioi/chien-dau-co-chu-luc-cua-nato-hit-khoi-mig-31-nga-20251015132203421.htm
+[2026-06-14 06:29:00.021] [WARN]       ✗ Skipped: Failed to extract publication date.
+[2026-06-14 06:29:00.022] [INFO]    -> Fetching detail: https://dantri.com.vn/the-gioi/tiem-kich-anh-san-sang-giam-sat-ngung-ban-o-ukraine-20250321113903455.htm
+[2026-06-14 06:29:00.350] [WARN]       ✗ Skipped: Failed to extract publication date.
+[2026-06-14 06:29:00.350] [INFO] Source [Dân Trí]: Finished. Extracted 0 full articles.
+[2026-06-14 06:29:00.351] [INFO] News scraping completed. Total full articles retrieved: 0
+[2026-06-14 06:29:00.351] [INFO] Collected 0 posts from NEWS
+[2026-06-14 06:29:00.352] [INFO] Total raw posts collected: 27
+[2026-06-14 06:29:00.353] [INFO] Preprocessing 27 posts...
+[2026-06-14 06:29:00.360] [INFO] Preprocessing completed. Yielded 27 valid posts.
+[2026-06-14 06:29:00.361] [INFO] Valid posts available after preprocessing: 27
+[2026-06-14 06:29:00.469] [INFO] Saved 27 posts to database
+[2026-06-14 06:29:00.486] [INFO] Reloaded 99 posts equipped with database IDs
+[2026-06-14 06:29:00.493] [INFO] Collected 26 comments for post ID: 205
+[2026-06-14 06:29:00.496] [INFO] Collected 35 comments for post ID: 226
+[2026-06-14 06:29:00.498] [INFO] Collected 30 comments for post ID: 258
+[2026-06-14 06:29:00.501] [INFO] Collected 40 comments for post ID: 220
+[2026-06-14 06:29:00.505] [INFO] Collected 45 comments for post ID: 255
+[2026-06-14 06:29:00.508] [INFO] Collected 22 comments for post ID: 203
+[2026-06-14 06:29:00.509] [INFO] Collected 32 comments for post ID: 224
+[2026-06-14 06:29:00.511] [INFO] Collected 17 comments for post ID: 270
+[2026-06-14 06:29:00.512] [INFO] Collected 46 comments for post ID: 291
+[2026-06-14 06:29:00.512] [INFO] Collected 28 comments for post ID: 250
+[2026-06-14 06:29:00.513] [INFO] Collected 49 comments for post ID: 204
+[2026-06-14 06:29:00.514] [INFO] Collected 47 comments for post ID: 236
+[2026-06-14 06:29:00.515] [INFO] Collected 29 comments for post ID: 289
+[2026-06-14 06:29:00.516] [INFO] Collected 19 comments for post ID: 232
+[2026-06-14 06:29:00.516] [INFO] Collected 39 comments for post ID: 284
+[2026-06-14 06:29:00.517] [INFO] Collected 45 comments for post ID: 275
+[2026-06-14 06:29:00.517] [INFO] Collected 15 comments for post ID: 282
+[2026-06-14 06:29:00.518] [INFO] Collected 41 comments for post ID: 276
+[2026-06-14 06:29:00.518] [INFO] Collected 48 comments for post ID: 237
+[2026-06-14 06:29:00.520] [INFO] Collected 49 comments for post ID: 200
+[2026-06-14 06:29:00.521] [INFO] Collected 34 comments for post ID: 280
+[2026-06-14 06:29:00.523] [INFO] Collected 45 comments for post ID: 292
+[2026-06-14 06:29:00.529] [INFO] Collected 41 comments for post ID: 230
+[2026-06-14 06:29:00.532] [INFO] Collected 49 comments for post ID: 242
+[2026-06-14 06:29:00.535] [INFO] Collected 35 comments for post ID: 265
+[2026-06-14 06:29:00.538] [INFO] Collected 36 comments for post ID: 273
+[2026-06-14 06:29:00.543] [INFO] Collected 36 comments for post ID: 263
+[2026-06-14 06:29:00.545] [INFO] Collected 35 comments for post ID: 264
+[2026-06-14 06:29:00.547] [INFO] Collected 46 comments for post ID: 218
+[2026-06-14 06:29:00.548] [INFO] Collected 46 comments for post ID: 288
+[2026-06-14 06:29:00.550] [INFO] Collected 38 comments for post ID: 214
+[2026-06-14 06:29:00.551] [INFO] Collected 26 comments for post ID: 249
+[2026-06-14 06:29:00.553] [INFO] Collected 38 comments for post ID: 254
+[2026-06-14 06:29:00.554] [INFO] Collected 20 comments for post ID: 266
+[2026-06-14 06:29:00.554] [INFO] Collected 21 comments for post ID: 209
+[2026-06-14 06:29:00.555] [INFO] Collected 33 comments for post ID: 253
+[2026-06-14 06:29:00.556] [INFO] Collected 35 comments for post ID: 278
+[2026-06-14 06:29:00.556] [INFO] Collected 16 comments for post ID: 198
+[2026-06-14 06:29:00.557] [INFO] Collected 28 comments for post ID: 260
+[2026-06-14 06:29:00.557] [INFO] Collected 18 comments for post ID: 211
+[2026-06-14 06:29:00.558] [INFO] Collected 31 comments for post ID: 281
+[2026-06-14 06:29:00.559] [INFO] Collected 22 comments for post ID: 286
+[2026-06-14 06:29:00.560] [INFO] Collected 40 comments for post ID: 274
+[2026-06-14 06:29:00.561] [INFO] Collected 46 comments for post ID: 239
+[2026-06-14 06:29:00.563] [INFO] Collected 21 comments for post ID: 256
+[2026-06-14 06:29:00.564] [INFO] Collected 50 comments for post ID: 208
+[2026-06-14 06:29:00.566] [INFO] Collected 32 comments for post ID: 267
+[2026-06-14 06:29:00.567] [INFO] Collected 39 comments for post ID: 271
+[2026-06-14 06:29:00.568] [INFO] Collected 20 comments for post ID: 206
+[2026-06-14 06:29:00.569] [INFO] Collected 34 comments for post ID: 244
+[2026-06-14 06:29:00.570] [INFO] Collected 22 comments for post ID: 257
+[2026-06-14 06:29:00.572] [INFO] Collected 44 comments for post ID: 202
+[2026-06-14 06:29:00.572] [INFO] Collected 29 comments for post ID: 293
+[2026-06-14 06:29:00.574] [INFO] Collected 42 comments for post ID: 195
+[2026-06-14 06:29:00.575] [INFO] Collected 33 comments for post ID: 245
+[2026-06-14 06:29:00.576] [INFO] Collected 24 comments for post ID: 215
+[2026-06-14 06:29:00.577] [INFO] Collected 44 comments for post ID: 262
+[2026-06-14 06:29:00.580] [INFO] Collected 50 comments for post ID: 223
+[2026-06-14 06:29:00.581] [INFO] Collected 31 comments for post ID: 287
+[2026-06-14 06:29:00.582] [INFO] Collected 16 comments for post ID: 279
+[2026-06-14 06:29:00.583] [INFO] Collected 25 comments for post ID: 217
+[2026-06-14 06:29:00.584] [INFO] Collected 20 comments for post ID: 231
+[2026-06-14 06:29:00.585] [INFO] Collected 47 comments for post ID: 227
+[2026-06-14 06:29:00.586] [INFO] Collected 46 comments for post ID: 268
+[2026-06-14 06:29:00.587] [INFO] Collected 32 comments for post ID: 259
+[2026-06-14 06:29:00.591] [INFO] Collected 26 comments for post ID: 235
+[2026-06-14 06:29:00.594] [INFO] Collected 22 comments for post ID: 269
+[2026-06-14 06:29:00.596] [INFO] Collected 45 comments for post ID: 197
+[2026-06-14 06:29:00.596] [INFO] Collected 24 comments for post ID: 212
+[2026-06-14 06:29:00.597] [INFO] Collected 21 comments for post ID: 199
+[2026-06-14 06:29:00.599] [INFO] Collected 24 comments for post ID: 229
+[2026-06-14 06:29:00.603] [INFO] Collected 35 comments for post ID: 207
+[2026-06-14 06:29:00.605] [INFO] Collected 43 comments for post ID: 283
+[2026-06-14 06:29:00.606] [INFO] Collected 31 comments for post ID: 247
+[2026-06-14 06:29:00.607] [INFO] Collected 31 comments for post ID: 285
+[2026-06-14 06:29:00.608] [INFO] Collected 44 comments for post ID: 233
+[2026-06-14 06:29:00.610] [INFO] Collected 47 comments for post ID: 213
+[2026-06-14 06:29:00.611] [INFO] Collected 24 comments for post ID: 252
+[2026-06-14 06:29:00.612] [INFO] Collected 31 comments for post ID: 261
+[2026-06-14 06:29:00.614] [INFO] Collected 19 comments for post ID: 272
+[2026-06-14 06:29:00.614] [INFO] Collected 23 comments for post ID: 277
+[2026-06-14 06:29:00.616] [INFO] Collected 23 comments for post ID: 251
+[2026-06-14 06:29:00.616] [INFO] Collected 26 comments for post ID: 248
+[2026-06-14 06:29:00.617] [INFO] Collected 41 comments for post ID: 225
+[2026-06-14 06:29:00.618] [INFO] Collected 26 comments for post ID: 210
+[2026-06-14 06:29:00.618] [INFO] Collected 20 comments for post ID: 238
+[2026-06-14 06:29:00.619] [INFO] Collected 17 comments for post ID: 219
+[2026-06-14 06:29:00.620] [INFO] Collected 30 comments for post ID: 221
+[2026-06-14 06:29:00.621] [INFO] Collected 45 comments for post ID: 234
+[2026-06-14 06:29:00.622] [INFO] Collected 31 comments for post ID: 201
+[2026-06-14 06:29:00.622] [INFO] Collected 29 comments for post ID: 196
+[2026-06-14 06:29:00.623] [INFO] Collected 19 comments for post ID: 246
+[2026-06-14 06:29:00.624] [INFO] Collected 50 comments for post ID: 222
+[2026-06-14 06:29:00.625] [INFO] Collected 30 comments for post ID: 290
+[2026-06-14 06:29:00.627] [INFO] Collected 29 comments for post ID: 216
+[2026-06-14 06:29:00.628] [INFO] Collected 16 comments for post ID: 243
+[2026-06-14 06:29:00.629] [INFO] Collected 19 comments for post ID: 240
+[2026-06-14 06:29:00.630] [INFO] Collected 25 comments for post ID: 228
+[2026-06-14 06:29:00.631] [INFO] Collected 34 comments for post ID: 241
+[2026-06-14 06:29:00.631] [INFO] Total raw comments collected: 3218
+[2026-06-14 06:29:00.632] [INFO] Preprocessing 3218 comments...
+[2026-06-14 06:29:00.691] [INFO] Preprocessing completed. Yielded 3218 valid comments.
+[2026-06-14 06:29:00.693] [INFO] Valid comments available after preprocessing: 3218
+[2026-06-14 06:29:01.350] [INFO] Saved 3218 comments to database
+[2026-06-14 06:29:01.354] [INFO] Loading collected posts and comments for project ID: 3
+[2026-06-14 06:29:01.579] [INFO] Collection Complete: Data collection finished. Check the collected posts below.
+[2026-06-14 06:29:10.474] [INFO] Loaded existing AI summary for project: Yagi
+[2026-06-14 06:31:44.162] [INFO] Starting sentiment analysis for 99 posts in project 3
+[2026-06-14 06:31:44.309] [INFO] Starting sentiment analysis for 6988 comments in project 3
+[2026-06-14 06:32:07.549] [INFO] Analysis Complete: Analysis completed for both posts and comments
+>>>>>>> 6e9fef73ef94784e3c9b5b74f2bdb6a4d7614b8f

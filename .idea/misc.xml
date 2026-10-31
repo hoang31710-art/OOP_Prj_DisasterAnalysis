@@ -8,5 +8,9 @@
       </list>
     </option>
   </component>
+<<<<<<< HEAD
   <component name="ProjectRootManager" version="2" languageLevel="JDK_21" default="true" project-jdk-name="liberica-full-21" project-jdk-type="JavaSDK" />
+=======
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_26" project-jdk-name="liberica-full-21" project-jdk-type="JavaSDK" />
+>>>>>>> 6e9fef73ef94784e3c9b5b74f2bdb6a4d7614b8f
 </project>

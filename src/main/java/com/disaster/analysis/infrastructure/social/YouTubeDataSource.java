@@ -32,6 +32,7 @@ public class YouTubeDataSource implements DataSource {
     private static final String APPLICATION_NAME = "Disaster Social Media Analysis"; //Tên định danh ứng dụng khi gọi lên server Google
     private static final JsonFactory JSON_FACTORY = GsonFactory.getDefaultInstance();
     private static final int MAX_RESULTS_PER_PAGE = 50;
+    private static final DateTimeFormatter LOG_DATE_FORMATTER = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss");
 
     private final String apiKey;
     private final YouTube youtubeService;
@@ -71,7 +72,10 @@ public class YouTubeDataSource implements DataSource {
         try {
             List<Post> posts = new ArrayList<>();
             String pageToken = null;
-            LogUtil.info("Searching video on YouTube with keywords: " + query);
+            LogUtil.info("--------------------------------------------------");
+            LogUtil.info("Source [YouTube]: Starting extraction...");
+            LogUtil.info("Source [YouTube]: Query = '" + query + "'");
+            LogUtil.info("Source [YouTube]: Date range = " + formatDateForLog(startDate) + " to " + formatDateForLog(endDate));
 
             while (posts.size() < maxResults) {
                 long resultsNeeded = Math.min(MAX_RESULTS_PER_PAGE, maxResults - posts.size());
@@ -97,18 +101,32 @@ public class YouTubeDataSource implements DataSource {
                         .map(result -> result.getId().getVideoId())
                         .collect(Collectors.toList());
 
-                LogUtil.info("Fetched " + videoIds.size() + " video IDs, now fetching full details...");
+                LogUtil.info("Source [YouTube]: Found " + videoIds.size() + " video IDs, fetching full details...");
 
                 List<Video> fullVideos = fetchFullVideoDetails(videoIds);
                 for (Video video : fullVideos) {
-                    posts.add(transformVideoToPost(video));
+                    if (video == null || video.getId() == null || video.getSnippet() == null) {
+                        LogUtil.warn("      [SKIPPED] YouTube video detail is incomplete.");
+                        continue;
+                    }
+
+                    String videoUrl = buildVideoUrl(video.getId());
+                    LogUtil.info("   -> Fetching detail: " + videoUrl);
+                    LogUtil.info("      Published at: " + formatPublishedAt(video));
+                    LogUtil.info("      Channel: " + safeText(video.getSnippet().getChannelTitle()));
+                    LogUtil.info("      Title: " + safeText(video.getSnippet().getTitle()));
+
+                    Post post = transformVideoToPost(video);
+                    posts.add(post);
+                    LogUtil.info("      [SUCCESS] YouTube video collected: " + post.getUrl());
                 }
 
-                LogUtil.info("Fetched " + fullVideos.size() + " YouTube videos with full descriptions (total: " + posts.size() + ")");
+                LogUtil.info("Source [YouTube]: Collected " + posts.size() + " videos so far.");
 
                 pageToken = response.getNextPageToken();
                 if (pageToken == null) break;
             }
+            LogUtil.info("Source [YouTube]: Finished. Extracted " + posts.size() + " videos.");
             return posts;
         } catch (IOException e) {
             throw new DataSourceException(getPlatform(), "Lỗi mạng khi gọi YouTube API", e);
@@ -133,8 +151,9 @@ public class YouTubeDataSource implements DataSource {
 
             List<Comment> comments = new ArrayList<>();
             String pageToken = null;
+            String videoUrl = buildVideoUrl(videoId);
 
-            LogUtil.info("Fetching YouTube comments for video: " + videoId);
+            LogUtil.info("   -> Fetching YouTube comments: " + videoUrl);
 
             while (comments.size() < maxResults) {
                 long resultsNeeded = Math.min(MAX_RESULTS_PER_PAGE, maxResults - comments.size());
@@ -155,21 +174,25 @@ public class YouTubeDataSource implements DataSource {
                 } catch (com.google.api.client.googleapis.json.GoogleJsonResponseException e) {
                     if (e.getStatusCode() == 403) {
                         if (e.getMessage().contains("commentsDisabled")) {
-                            LogUtil.info("Comments are disabled for video: " + videoId);
+                            LogUtil.info("      [SKIPPED] Comments are disabled: " + videoUrl);
                             return comments; // Return empty or partial list
                         } else if (e.getMessage().contains("quotaExceeded")) {
+                            LogUtil.warn("      [FAILED] YouTube API quota exceeded while fetching comments: " + videoUrl);
                             throw new DataSourceException(Platform.YOUTUBE,
                                     "YouTube API quota exceeded. Please try again later.", e);
                         }
                     }
                     else if (e.getStatusCode() == 404) {
-                        LogUtil.warn("Video not found: " + videoId);
+                        LogUtil.warn("      [SKIPPED] Video not found: " + videoUrl);
                         return comments;
                     }
                     throw e;
                 }
 
-                if (response.getItems() == null || response.getItems().isEmpty()) break;
+                if (response.getItems() == null || response.getItems().isEmpty()) {
+                    LogUtil.info("      [INFO] No comments found: " + videoUrl);
+                    break;
+                }
 
                 for (com.google.api.services.youtube.model.CommentThread thread : response.getItems()) {
                     comments.add(transformYouTubeCommentToComment(thread.getSnippet().getTopLevelComment(), post));
@@ -186,6 +209,7 @@ public class YouTubeDataSource implements DataSource {
                 pageToken = response.getNextPageToken();
                 if (pageToken == null) break;
             }
+            LogUtil.info("      [SUCCESS] Collected " + comments.size() + " YouTube comments: " + videoUrl);
             return comments;
         } catch (IOException e) {
             throw new DataSourceException(Platform.YOUTUBE, "Lỗi cào bình luận", e);
@@ -239,7 +263,7 @@ public class YouTubeDataSource implements DataSource {
         Post post = new Post();
         post.setPlatform(Platform.YOUTUBE.name());
         post.setPlatformId("youtube_" + video.getId());
-        post.setUrl("https://www.youtube.com/watch?v=" + video.getId());
+        post.setUrl(buildVideoUrl(video.getId()));
         post.setContent(video.getSnippet().getTitle() + "\n\n" + video.getSnippet().getDescription());
         post.setAuthor(video.getSnippet().getChannelTitle());
 
@@ -250,6 +274,32 @@ public class YouTubeDataSource implements DataSource {
         }
         post.setCollectedAt(LocalDateTime.now());
         return post;
+    }
+
+    private String buildVideoUrl(String videoId) {
+        return "https://www.youtube.com/watch?v=" + videoId;
+    }
+
+    private String formatPublishedAt(Video video) {
+        if (video.getSnippet() == null || video.getSnippet().getPublishedAt() == null) {
+            return "Unknown";
+        }
+
+        return LocalDateTime.ofInstant(
+                java.time.Instant.ofEpochMilli(video.getSnippet().getPublishedAt().getValue()),
+                ZoneId.systemDefault()
+        ).format(LOG_DATE_FORMATTER);
+    }
+
+    private String formatDateForLog(LocalDateTime dateTime) {
+        return dateTime == null ? "not set" : dateTime.format(LOG_DATE_FORMATTER);
+    }
+
+    private String safeText(String text) {
+        if (text == null || text.trim().isEmpty()) {
+            return "Unknown";
+        }
+        return text.replaceAll("\\s+", " ").trim();
     }
 
     private String extractVideoId(Post post) {
